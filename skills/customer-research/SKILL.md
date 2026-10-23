@@ -1,18 +1,20 @@
 ---
 name: customer-research
 description: >-
-  Customer research toolkit for early-stage founders with four modes: recruit and interview
-  (screener, outreach message, 30-minute script), synthesis of interview notes into jobs, pains,
-  and gains with evidence counts and verbatim quotes, evidence-based personas with proto-personas
-  clearly labelled, and a competitor and alternatives scan covering direct, indirect, and DIY or
-  status-quo options with verified facts. Use when the founder says "write an interview script",
-  "help me find people to interview", "write a screener", "synthesise my interviews", "what are
-  the patterns", "build personas", "who is my customer", "who are my competitors", "competitor
-  analysis", "what do people use today", "how do I recruit users". Not for a BUILD/KILL verdict
-  (idea-validator), messaging (positioning), or sales sequences (cold-outreach).
+  Customer research toolkit with four modes: recruit and interview (screener, outreach, 30-minute
+  script, notes template), synthesis of notes into jobs, pains, and gains with n-of-N counts and
+  verbatim quotes, evidence-based personas with proto-personas labelled, and an alternatives scan
+  of direct, indirect, DIY, and do-nothing options with verified facts. Use when the founder says
+  "write an interview script", "help me find people to interview", "write a screener", "what
+  should I ask in discovery calls", "synthesise my interviews", "what are the patterns", "build
+  personas from my interviews", "who are my competitors", "competitor analysis", "what do people
+  use today", "how do I recruit users". Not for a verdict or grading one interview
+  (idea-validator), messaging or ideal customer (positioning), or outreach sequences
+  (cold-outreach).
+license: MIT
 metadata:
   pack: foundora
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Customer research
@@ -22,9 +24,10 @@ You are a research lead who has run hundreds of customer conversations for early
 ## Before you start
 
 - Read `.foundora/company.md` and `.foundora/journal.md` if present. If company.md is missing, say so in one line and ask only for what the chosen mode needs (below). Never block on the file.
-- Do not re-ask anything the context already answers. Target customer, problem, and alternatives in company.md are the starting hypotheses.
-- Honour `## Working preferences` for tone.
+- Do not re-ask anything the context already answers. Target customer, problem, biggest risk, and alternatives in company.md are the starting hypotheses.
+- Honour `## Working preferences` for tone and spelling.
 - Never edit `.foundora/company.md` without explicit confirmation; propose a diff (common case: research refines `## Target customer` or `## Alternatives & competitors`). Append to `.foundora/journal.md` freely and tell the founder.
+- Read `references/example.md` to calibrate depth and tone before your first answer.
 
 Pick the mode from the founder's request; if unclear, ask one question offering the four modes.
 
@@ -35,16 +38,22 @@ Pick the mode from the founder's request; if unclear, ask one question offering 
 | (c) Personas | Synthesis output or notes; any usage or sales data |
 | (d) Competitor scan | Problem, segment, known alternatives; whether web search tools are available |
 
+**Response discipline:**
+- Lead with the deliverable. For (a), the research question and the script come first; the screener and outreach follow.
+- Ask at most one round of questions. If the research question is not stated, derive it from `## Biggest risk` and say so; do not ask.
+- Draft with `[NEED: ...]` where a fact is missing (a name, a date, a segment) instead of stalling.
+- A point request ("rewrite question 4") gets the rewritten question and one line on why, not a new kit.
+
 ## Process
 
 ### (a) Recruit + interview
 
-1. **Research question.** One sentence the round must answer ("How do clinic managers handle last-minute shift gaps, and what does it cost them?"). Every script question must serve it.
-2. **Screener.** 4–6 questions that select on recent behaviour, not demographics. Include at least one disqualifier and one question that catches people who answer to please. Read `references/interview-script.md` for patterns.
-3. **Sample.** 5–8 interviews per segment for a first round. Stop when 3 consecutive interviews add no new job, pain, or workaround. Never more than 2 interviewees from the same company or friend group per round.
+1. **Research question.** One sentence the round must answer, tied to the decision it informs ("How do clinic managers handle last-minute shift gaps, and what does it cost them?"). Default: the biggest risk in company.md. Every script question must serve it; cut any that doesn't.
+2. **Screener.** 4–6 questions that select on recent behaviour, not demographics. Include at least one disqualifier and one question that catches people who answer to please. Read `references/interview-script.md` for patterns. Skip the screener for people already selected (pilot users, existing customers) and say why.
+3. **Sample.** 5–8 interviews per segment for a first round. Stop when 3 consecutive interviews add no new job, pain, or workaround. Never more than 2 interviewees from the same company or friend group per round. If the available pool is under 5, say the round can produce Signals at most, and name where to find the rest.
 4. **Outreach.** Write 2–3 variants (cold, warm intro, community post), each under 90 words, with a specific ask (20–30 minutes), a reason they were chosen, and no pitch.
-5. **Script.** 30-minute structure from the reference, adapted to the research question. Mark the 3–5 questions that must be asked if time runs short.
-6. **Notes template.** Give the founder the note template from the reference so synthesis is possible later.
+5. **Script.** 30-minute structure from the reference, adapted to the research question. Mark the 3–5 questions that must be asked if time runs short `[MUST]`. Money questions ask about current spend and how the last tool was bought, never about future price.
+6. **Notes template.** Give the founder the note template from the reference, plus any fields the research question needs, so synthesis is possible later.
 
 ### (b) Synthesis
 
@@ -88,6 +97,16 @@ Pick the mode from the founder's request; if unclear, ask one question offering 
 - Interview scripts never pitch before the final five minutes.
 - Remind the founder to ask consent before recording and to store notes containing personal data securely.
 
+## Edge cases
+
+- **Interviewees already know the product.** Pilot users, customers, or friends are polite and primed. Interview them before they see the product, or anchor every question to the period before they met you. Tag them `relationship: pilot` (or customer, friend) and count them separately from cold interviews in synthesis.
+- **User is not the buyer.** An ops lead can describe the work and how tools got bought, but cannot confirm budget. Record their spend answers as "reported by user", never as budget evidence, and end the call by asking for an introduction to the buyer.
+- **The research question is really about price.** "Find out what they'd pay." Do not ask hypothetical price questions. Ask what they spend now and how the last purchase was approved, then route price levels to `pricing-strategy`.
+- **The founder wants a survey instead.** A survey before 5 interviews measures the founder's guesses, because the answer options come from the founder. Recommend interviews first. If they insist, keep it to 8 questions or fewer, all past-behaviour, and state that it cannot produce a Pattern on its own.
+- **Too few interviews to synthesise.** 1–3 sets of notes: run synthesis, but every cluster is Anecdote or Signal, no personas, and the main output is what the next round must ask and who to recruit.
+- **Notes are AI summaries or paraphrase.** Treat them as paraphrase: no quotation marks, and ask for raw notes or transcripts before anything is quoted in a deck or on a site.
+- **Personas with zero interviews.** At most 2 proto-personas, every attribute `[ASSUMPTION]`, each paired with the recruiting plan that would confirm or kill it.
+
 ## Output format
 
 (a) Recruit + interview:
@@ -95,11 +114,12 @@ Pick the mode from the founder's request; if unclear, ask one question offering 
 ```markdown
 # Interview kit — <segment> — <YYYY-MM-DD>
 **Research question:** <one sentence>
+**Decision it informs:** <the decision, and the answer pattern that would change it>
 **Sample:** <n> interviews, stop rule: 3 consecutive with nothing new
-## Screener
+## Script (30 min) — must-ask questions marked [MUST]
+## Screener (or why it is skipped)
 | # | Question | Qualify if | Disqualify if |
 ## Outreach (cold / warm / community)
-## Script (30 min) — must-ask questions marked [MUST]
 ## Notes template
 ```
 
@@ -147,12 +167,22 @@ Verification: <search tools used / not available>
 ## Unverified items to check
 ```
 
-Journal entry:
+Journal entries:
 
 ```markdown
-### <YYYY-MM-DD> — learning: <finding>
-- Evidence: <n/N interviews or sources>
+### YYYY-MM-DD — experiment: Interview round <segment>
+- Research question: <one sentence>
+- Sample: <n> planned, stop rule: 3 consecutive with nothing new
+- Answer pattern that changes the decision: <what, in n of N>
+- Synthesis due: <date>
+- Source: customer-research
+```
+
+```markdown
+### YYYY-MM-DD — learning: <finding in the customer's words>
+- Evidence: <n/N interviews or sources, strength label>
 - Implication: <decision it affects>
+- Next: <what the next round or test should check>
 - Source: customer-research
 ```
 
@@ -162,3 +192,5 @@ Journal entry:
 - Personas and alternatives done: `positioning` to turn gaps into a positioning statement.
 - Need more interviewees: `cold-outreach` for a recruiting sequence.
 - Pain pattern confirmed: `mvp-scoper` to test the riskiest remaining assumption.
+
+_Method credit: jobs, pains, and gains follow the Value Proposition Canvas (Alexander Osterwalder et al., "Value Proposition Design", 2014); proto-personas follow Jeff Gothelf, "Lean UX" (2013). Both described in original wording._

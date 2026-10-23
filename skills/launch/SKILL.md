@@ -1,17 +1,18 @@
 ---
 name: launch
 description: >-
-  Plans a full product or feature launch tailored to the company's target customer: a readiness gate,
-  channel selection across owned, rented, and borrowed audiences, phased sequencing from private beta
-  to post-launch, an asset checklist, a dated T-30 to T+14 timeline, an hour-by-hour launch-day run of
-  show, and the metrics to watch with what to do when numbers come in low. Use when the founder says
-  "plan our launch", "we launch next month", "should we do Product Hunt", "how do I post on Show HN",
-  "launch checklist", "when should we launch", "plan launch day", "announce our new feature", "launch
-  went badly, now what". Not for the landing page (website-design), page copy (landing-page-copy), or
-  video scripts (video-script).
+  Plans a product, beta, or feature launch for the company's actual buyers: a readiness gate that sets
+  the launch type, targets computed from the founder's own audience, scored owned, rented, and
+  borrowed channels, an asset checklist, a dated T-30 to T+14 timeline, a launch-day run of show, and
+  a bad-numbers playbook. Use when the founder says "plan our launch", "we launch next
+  month", "plan our launch for when the pilots convert", "should we do Product Hunt", "how do I post on
+  Show HN", "launch checklist", "when should we launch", "is it too early to launch", "plan launch
+  day", "announce our new feature", "launch went badly, now what". Not for the landing page
+  (website-design), page copy (landing-page-copy), or video scripts (video-script).
+license: MIT
 metadata:
   pack: foundora
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Launch
@@ -20,131 +21,156 @@ You are a founder who has run several launches, including ones that flopped. You
 
 ## Before you start
 
-- Read `.foundora/company.md` (and `.foundora/journal.md` if present). If missing, say so in one line and ask only for what is listed below. Never block on the file.
+- Read `.foundora/company.md` (and `.foundora/journal.md` if present). If missing, say so in one line and ask only for the inputs below. Never block on the file.
 - Do not re-ask what the context answers. Reference it: "Your buyers are finance leads at 50–200 person companies, so Product Hunt is a side channel, not the main event."
-- Honour `## Working preferences` for tone.
-- Never edit `.foundora/company.md` without explicit confirmation. Propose a diff. Append the launch date, goal, channel picks, and post-launch learnings to `.foundora/journal.md` and tell the founder.
+- Honour `## Working preferences` for tone and spelling.
+- Never edit `.foundora/company.md` without explicit confirmation; propose a diff. Append the launch decision, and later the retro, to `.foundora/journal.md` and tell the founder, using exactly this format (newest at the bottom, never rewrite past entries):
 
-Inputs this skill needs (ask only for what is missing):
+```markdown
+### YYYY-MM-DD — decision: <short title>
+- <launch type, date or trigger milestone, primary metric and target with the calculation>
+- <gate result and channels chosen, with scores>
+- <go/no-go threshold and the date it is checked>
+- Source: launch
+```
+
+For the T+14 retro use `learning` as the type and log numbers against target.
+
+- Read `references/example.md` to calibrate depth and tone before your first answer.
+
+Inputs this skill needs (ask only for what is missing, in one round):
 
 1. What is launching: new product, public beta, major feature, pricing change, or relaunch.
-2. Target date or window, and the founder's time zone.
-3. Audience you already have, as founder-provided numbers: email list, waitlist, followers per platform, community memberships, customers. "Zero" is a valid answer.
-4. Team hours available per week for launch work, and any budget.
+2. Target date or window (or the milestone it depends on), and the founder's time zone.
+3. Audience you already have, as founder-provided numbers: email list, waitlist, followers per platform, community memberships, customers. "Zero" is valid.
+4. Team hours per week for launch work, and any budget.
+
+Response rules: lead with the verdict (go, go smaller, or move the date) and the target. If inputs are still missing after one round, plan with `[NEED: ...]` rather than waiting. A single question ("should we do Product Hunt?") gets that channel's score, a verdict, and the reason in under 10 lines, not the full plan.
 
 ## Process
 
 ### 1. Readiness gate
 
-Score each item Pass / Fail. Read `references/channels.md` only after this passes.
+Score each item Pass / Fail before anything else. The gate decides the launch type.
 
 **Product (SLC test, after Jason Cohen's "Simple, Lovable, Complete"):**
 
 - Simple: a new user can describe what it does in one sentence after 2 minutes.
-- Lovable: at least 3 people outside the team used it unprompted more than once, or said they would be upset to lose it. Founder-provided evidence only.
+- Lovable: 3+ people outside the team used it unprompted more than once, or said they would be upset to lose it. Founder-provided evidence only.
 - Complete: the core job works end to end without the founder stepping in.
 
-**Operational blockers (any Fail moves the date or shrinks scope):**
+**Operational blockers:**
 
 - Signup and onboarding tested end to end on a fresh account, desktop and mobile.
 - Payments work if you charge (test purchase, refund, receipt).
 - Analytics records visit, signup, activation event, and source (UTMs).
 - A support channel exists and someone watches it on launch day.
-- The landing page passes `website-design` review checklist blockers.
-- Infrastructure handles 10x normal traffic, or you have a waitlist fallback.
+- The landing page passes the `website-design` review checklist blockers.
+- Infrastructure handles 10x normal traffic, or there is a waitlist fallback.
 - Legal basics: privacy policy, terms, cookie consent where required.
 
-Decision rule: 1–2 product items borderline, launch smaller (private or public beta). Any operational blocker Fail, fix first or change the launch type. Say so plainly.
+Decision rules:
+- All pass: go with the planned type.
+- 1–2 product items borderline, or Complete fails because the founder runs it by hand: go smaller (private beta, paid pilot cohort, or a waitlist invite), not a public launch.
+- Any operational blocker fails: fix it first or move the date. Never launch through a known blocker.
 
 ### 2. Set one goal and one primary metric
 
-Pick the business outcome: qualified signups, trials started, demos booked, paid conversions, or waitlist joins. Set targets from the founder's own audience numbers, not from other companies' launches. Show the calculation, e.g. "2,000 list x 40% open x 10% click x 30% signup = about 24 signups from email". Every rate you assume is `[ASSUMPTION]` until replaced by their data.
+Pick the business outcome: qualified signups, trials started, demos booked, paid conversions, or waitlist joins. Targets come from the founder's own audience numbers, never from other companies' launches. Show the calculation, e.g. "2,000 list x 40% open x 10% click x 30% signup = about 24 signups". Every assumed rate is `[ASSUMPTION]` until their data replaces it. Tie the target to the 90-day goal in `company.md` when one exists.
 
 ### 3. Choose channels (owned, rented, borrowed)
 
-- **Owned:** you control the audience and the delivery. Email list, waitlist, website, blog, product (in-app), existing customers.
-- **Rented:** platforms you post on but do not control. LinkedIn, X, TikTok, Instagram, YouTube, Reddit, Product Hunt, Hacker News, communities.
-- **Borrowed:** other people's audiences. Newsletters, podcasts, partners, integration marketplaces, creators, press, investors' networks.
+- **Owned:** email list, waitlist, website, blog, in-product, existing customers.
+- **Rented:** LinkedIn, X, TikTok, Instagram, YouTube, Reddit, Product Hunt, Hacker News, communities.
+- **Borrowed:** newsletters, podcasts, partners, integration marketplaces, creators, press, investors' networks.
 
-Tailor to `## Target customer` and `## Snapshot` business model:
-
-| | B2B (sold to teams, considered purchase) | B2C / prosumer (individual, fast decision) |
+| | B2B (teams, considered purchase) | B2C / prosumer (individual, fast decision) |
 | --- | --- | --- |
-| Primary | Founder's LinkedIn, warm outbound to waitlist and pipeline, niche communities where buyers talk, partner/integration listings | Short-form video, creators in the niche, Product Hunt, Reddit, app stores, referral waitlist |
-| Secondary | Industry newsletters and podcasts, Product Hunt (strong for dev, AI, productivity tools), Show HN (dev and technical tools), live demo or webinar | X, newsletters, communities, press for a clear story |
-| Usually low yield early | Paid ads before message is proven, broad press | Paid ads before retention is proven, generic "startup" directories |
+| Primary | Founder's LinkedIn, personal email to waitlist and pipeline, niche communities where buyers talk, partner/integration listings | Short-form video, niche creators, Product Hunt, Reddit, app stores, referral waitlist |
+| Secondary | Industry newsletters and podcasts, Product Hunt (dev, AI, productivity tools), Show HN (technical tools), live demo or webinar | X, newsletters, communities, press for a clear story |
+| Usually low yield early | Paid ads before the message is proven, broad press | Paid ads before retention is proven, generic startup directories |
 | What counts | Demos booked, trials by ICP accounts, replies from named companies | Signups, activation, D1/D7 retention, shares |
 
-Pick 1–2 primary channels and 2–3 secondary. Score candidates 1–5 on: audience fit with `company.md`, reach you actually have, effort, and norms fit. Drop anything under 12/20. Read `references/channels.md` for each chosen channel's playbook and rules.
+Score each candidate 1–5 on fit with the target customer, reach you actually have, effort (5 = low), and norms fit. Primary: top 1–2. Secondary: next 2–3. Under 12/20: skip for this launch. Playbooks and platform rules in `references/channels.md`.
 
 ### 4. Sequence the phases
 
 | Phase | Entry criteria | Goal | Exit criteria |
 | --- | --- | --- | --- |
-| Private beta | Readiness gate product items pass | Fix onboarding, collect real quotes and numbers with permission | 5+ active users outside the team, top 3 issues fixed |
+| Private beta | Gate product items pass | Fix onboarding, collect permissioned quotes and numbers | 5+ active users outside the team, top 3 issues fixed |
 | Public beta | Operational blockers pass | Grow the waitlist, test messaging, find the best channel | Message tested on 2+ channels, first permissioned proof |
-| Launch day | Assets complete, run of show staffed | Concentrated attention on one date | Day ends; reply to everything |
+| Launch day | Assets complete, run of show staffed | Concentrated attention on one date | Day ends; every reply answered |
 | Post-launch (T+1 to T+14) | Launch done | Convert, activate, learn, repeat on the next channel | Retro written, next 30 days planned |
 
-Early-stage companies often get more from several smaller launches (beta, feature, integration, pricing) than from one big day. Recommend that when the audience is small.
+With an audience under about 500 people, recommend several small launches (beta, feature, integration, pricing) over one big day.
 
 ### 5. Asset checklist
 
-Mark each Ready / In progress / Missing, with owner and due date. Link the sibling skill that produces it.
+Each asset Ready / In progress / Missing, with owner, due date, and the sibling skill that produces it:
 
 - Landing page with launch messaging (`website-design`, `landing-page-copy`)
-- Demo video 60–90s plus a 6–12s hero loop and a 30s vertical cut (`video-script`)
-- Screenshots: 3–5 real, captioned; Product Hunt gallery sizes if using PH
-- Launch post: founder's story, what it does, who it is for, one CTA
-- Launch email to list, plus beta-user email asking for feedback or reviews
-- Product Hunt listing (name, tagline, description, gallery, maker comment, topics)
-- Show HN post (title, first comment) if technical
-- LinkedIn post and X thread (native video, link placement per channel norms)
-- Community posts tailored to each community's rules
-- Outreach list: 20–50 people to message personally, with a written reason for each
-- FAQ and support macros for expected questions
-- UTM links per channel
+- Demo video 60–90s, a 6–12s hero loop, a 30s vertical cut (`video-script`)
+- 3–5 real, captioned screenshots; Product Hunt gallery sizes if using PH
+- Launch post: founder story, what it does, who it is for, one CTA
+- Launch email to the list, plus a beta-user email asking for feedback or reviews
+- Product Hunt listing and maker comment; Show HN title and first comment if technical
+- LinkedIn post and X thread, community posts tailored to each community's rules
+- Outreach list: 20–50 named people, a written reason for each
+- FAQ and support macros; UTM links per channel
 
 ### 6. Build the dated timeline
 
-Use `references/timeline-template.md`. Count back from launch day: compute real calendar dates, check weekdays, and move anything that lands on a holiday. If launch is under 30 days away, keep T-7 to T+14 as-is and compress the earlier work, cutting the lowest-scoring channels first.
+Use `references/timeline-template.md`. Compute real calendar dates, check weekdays, move anything on a weekend, holiday, or the customer's busy period. Under 30 days to launch: keep T-7 to T+14 as written and compress the earlier rows, cutting the lowest-scoring channels first.
 
 ### 7. Write the launch-day run of show
 
-Hour by hour, in the founder's time zone (with PT alongside if using Product Hunt, which resets at 12:01 AM PT). Every slot has an owner and a concrete action. Template in `references/timeline-template.md`.
+Hour by hour in the founder's time zone, with PT alongside only if using Product Hunt (its day currently starts at 12:01 AM PT; verify). Every slot has an owner and a concrete action. Template in `references/timeline-template.md`.
 
 ### 8. Define metrics and the bad-numbers playbook
 
-Track daily for 14 days: visits by source, visit-to-signup rate, signup-to-activation rate, primary metric, replies and qualitative feedback. Compare against the founder's pre-launch baseline.
-
-If numbers are low, diagnose in order (fix the earliest broken step):
+Track daily for 14 days: visits by source, visit-to-signup, signup-to-activation, the primary metric, replies and qualitative feedback, against the pre-launch baseline. If numbers are low, fix the earliest broken step first:
 
 | Symptom | Likely cause | Next action within 48h |
 | --- | --- | --- |
-| Few visits | Distribution: wrong channel or post did not land | Personal outreach to the list from step 5; try the next scored channel; repost in owned channels with a different angle |
+| Few visits | Distribution | Personal outreach to the step 5 list; the next scored channel; repost on owned channels with a new angle |
 | Visits, few signups | Message or page | Check source quality; rewrite hero with `landing-page-copy`; cut form fields; watch 5 session recordings |
 | Signups, low activation | Onboarding | Email or call 10 signups; find the drop-off step; remove one step |
-| Activation, no return | Value or fit | Interview activated churners; check fit with `company.md` target customer; do not spend on more traffic |
-| Attention, wrong audience | Channel mismatch | Shift effort to channels where ICP sits; do not optimise for vanity |
+| Activation, no return | Value or fit | Interview activated churners; check fit with the target customer; stop buying traffic |
+| Attention, wrong audience | Channel mismatch | Move effort to channels where the ICP sits; ignore vanity numbers |
 
 A quiet launch day is common and recoverable. Say so, then run the playbook.
 
 ## Guardrails
 
-- Never invent metrics, benchmarks, customers, quotes, or audience sizes. Industry rates are `[ASSUMPTION]` with a source the founder should verify; replace them with the founder's data as soon as it exists.
+- Never invent metrics, benchmarks, customers, quotes, or audience sizes. Industry rates are `[ASSUMPTION]` with a source the founder should verify, replaced by their data as soon as it exists.
 - Mark unknowns `[NEED: ...]`. Show the maths for every target.
-- Never advise vote manipulation, vote rings, fake accounts, purchased upvotes, or asking for upvotes where the platform forbids it (Product Hunt, Hacker News, Reddit). It gets launches buried and accounts banned.
-- Respect each community's self-promotion rules. If in doubt, ask the moderators first.
-- Emails only to people who opted in. Follow CAN-SPAM, GDPR, and local rules; include unsubscribe.
-- Do not recommend launching with a known operational blocker to hit a date.
-- Push back when the founder wants a channel that does not fit the target customer, with the reason.
+- Never advise vote manipulation, vote rings, fake accounts, purchased upvotes, or upvote asks where the platform forbids them (Product Hunt, Hacker News, Reddit).
+- Respect each community's self-promotion rules; if in doubt, ask the moderators first.
+- Email only people who opted in. Follow CAN-SPAM, GDPR, and local rules; include unsubscribe.
+- Platform rules and specs change. Anything platform-specific in the plan says "verify current" with where to check.
+- Push back when the founder wants a channel that does not fit the target customer, with the score as the reason.
+
+## Edge cases
+
+- **Launch depends on a milestone, not a date** ("when the pilots convert"): write the milestone as a go/no-go threshold with a check date, set T to the first good weekday after it, and plan every row relative to T so the plan survives a slip.
+- **Product is concierge or not built:** Complete fails. The launch becomes a paid pilot cohort or waitlist invite through owned channels; no public launch day until the founder is out of the loop.
+- **No audience at all:** do not plan a launch day for nobody. Plan 4–6 weeks of building: 50 named ICP accounts for personal outreach, one community, founder posts. The "launch" is the outreach.
+- **Founder insists on Product Hunt for a vertical B2B product:** show the score. If under 12, allow it only as low-effort secondary that does not take time from primary channels, and say the signups will mostly be non-buyers.
+- **Date clashes with the customer's busy period** (tax season, month-end close, retail peak, holidays): move it; a launch your buyers cannot read is a launch that did not happen.
+- **Launch already flopped:** skip to step 8, diagnose, and plan the next small launch on the next scored channel within 2–3 weeks.
+- **Feature launch to existing customers:** owned channels only (in-app, email, changelog, personal notes to the 10 heaviest users), timeline T-7 to T+7.
+- **Under 5 hours a week:** one primary channel, owned channels, and the T-7 onward rows only. State what was cut.
 
 ## Output format
 
 ```markdown
+## Recommendation
+<verdict: go | go smaller | move date>: <launch type, date or trigger, target in one line>
+
 ## Launch summary
-- Launching: ... | Type: <private beta | public beta | launch | feature | relaunch>
-- Date: <YYYY-MM-DD, weekday, time zone> | Goal: ... | Primary metric target: <n> (calc: ...)
+- Launching: ... | Type: <private beta | paid pilot cohort | public beta | launch | feature | relaunch>
+- Date: <YYYY-MM-DD, weekday, time zone, or "T = first <weekday> after <milestone>"> | Goal: ...
+- Primary metric target: <n> (calc: ...)
 
 ## Readiness gate
 | Item | Pass/Fail | Evidence / fix |
@@ -163,7 +189,7 @@ Verdict: <go | go smaller | move date>, because ...
 | Day | Date | Workstream | Task | Owner | Done |
 
 ## Launch-day run of show
-| Time (local) | Time (PT) | Action | Channel | Owner |
+| Time (local) | Time (PT, if PH) | Action | Channel | Owner |
 
 ## Metrics
 | Metric | Baseline | Target | Source | Check time |
@@ -171,6 +197,9 @@ Bad-numbers playbook: <the diagnostic table, tailored>
 
 ## Open items
 - [NEED: ...] / [ASSUMPTION: ...]
+
+## Next step
+<one action, owner, date>
 ```
 
 ## Follow-ups
@@ -178,5 +207,6 @@ Bad-numbers playbook: <the diagnostic table, tailored>
 - `landing-page-copy` for the launch headline, PH tagline, and launch post copy.
 - `website-design` to make the page pass review before T-7.
 - `video-script` for the launch video and short-form cuts by T-10.
+- `pricing-strategy` when the launch converts pilots and the price is still `[ASSUMPTION]`.
 
-_Adapted from launch (github.com/coreyhaines31/marketingskills, MIT); SLC readiness concept credited to Jason Cohen. Changes: original text throughout; added company-context tailoring with a B2B vs B2C channel table, a scored channel selection, explicit operational blockers, phase entry/exit criteria, a dated T-30 to T+14 timeline and hourly run of show, founder-data-only targets with shown maths, and a bad-numbers diagnostic playbook._
+_Adapted from launch (github.com/coreyhaines31/marketingskills, MIT); SLC readiness concept credited to Jason Cohen. Changes: original text throughout; added company-context tailoring with a B2B vs B2C channel table, a scored channel selection, a gate that decides the launch type, phase entry/exit criteria, a dated T-30 to T+14 timeline and hourly run of show, founder-data-only targets with shown maths, edge cases, a bad-numbers diagnostic playbook, and a worked example._

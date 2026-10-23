@@ -37,7 +37,8 @@ Starting points, by product type. Score candidates with the 5-criterion table in
 Rules of thumb:
 - Prefer metrics the customer already tracks (locations, employees, orders). They predict the bill without a calculator.
 - Avoid metrics that make customers use less of the product to save money, if usage drives retention.
-- AI inference costs: confirm the value metric keeps gross margin healthy at the heaviest realistic usage, not the average.
+- AI inference costs: confirm the value metric keeps gross margin at or above 60% for the 90th percentile customer, not only the average. If it does not, add allowances, overage, or credits.
+- If charging per seat would make the buyer withhold access from people who need to see the work (reviewers, approvers, clients), the metric works against adoption. Prefer an account-level metric.
 
 ## Free options
 

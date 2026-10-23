@@ -136,6 +136,7 @@ Restate the shift in one line, then the CTA, then a reason to act now that is tr
 - Title 50–60 characters: `<Primary phrase or outcome> | <Brand>`.
 - Description 140–160 characters: outcome + audience + action. Write for the person scanning search results, not for keyword stuffing.
 - Count characters and report the counts.
+- These are safe ranges, not hard limits: search engines truncate by pixel width and sometimes rewrite descriptions. Verify current display behaviour if a specific length matters.
 
 ## Voice-of-customer mining
 

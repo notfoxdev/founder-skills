@@ -4,7 +4,7 @@ Read this when filling or reviewing a canvas. Each block has: the question it an
 
 ## Why this order
 
-The fill order front-loads the blocks that kill most early companies: nobody has the problem badly enough, or the customer you picked cannot be reached. Solution comes fourth on purpose. Founders tend to start with the solution and back-fill a customer to justify it; the order prevents that.
+The fill order front-loads the blocks that kill most early companies: nobody has the problem badly enough, or the customer you picked cannot be reached. Customer segments and problem are drafted together because each sharpens the other. Solution comes fourth on purpose. Founders tend to start with the solution and back-fill a customer to justify it; the order prevents that.
 
 ## 1. Customer segments + early adopters
 
@@ -66,7 +66,11 @@ Split into two lines:
 - **First 10:** usually manual. Founder network, communities, direct outreach, partnerships, events.
 - **At scale:** content/SEO, paid, partnerships, sales team, marketplaces, product-led loops.
 
-Quality check: compare channel cost to price. Human-led sales rarely works below a few thousand dollars of annual contract value. Paid acquisition rarely works when LTV is under a few hundred dollars unless conversion is strong. Flag mismatches.
+Quality check: compare channel cost to price using max allowable CAC (LTV ÷ 3).
+- Founder-led selling for the first 10 customers is fine at any price, as long as the hours are costed in CAC.
+- A hired sales team at scale rarely pays back below roughly $5,000 of annual contract value.
+- Paid acquisition rarely works when LTV is under a few hundred dollars unless conversion is strong.
+Flag any channel whose estimated CAC exceeds max allowable CAC.
 
 ## 6. Revenue streams
 
@@ -124,4 +128,4 @@ Reject without evidence: passion, hard work, the team, first mover, better UX, "
 
 ## Credit
 
-The Lean Canvas is Ash Maurya's adaptation of Alexander Osterwalder's Business Model Canvas, tuned for early-stage uncertainty by replacing blocks such as key partners and key resources with problem, solution, key metrics, and unfair advantage. It is shared under a Creative Commons Attribution-ShareAlike licence. This guide is original text.
+The Lean Canvas is Ash Maurya's adaptation of Alexander Osterwalder's Business Model Canvas, tuned for early-stage uncertainty. It replaces four Business Model Canvas blocks (key partners, key activities, key resources, customer relationships) with problem, solution, key metrics, and unfair advantage, and reframes value propositions as a unique value proposition. It is shared under a Creative Commons Attribution-ShareAlike licence. This guide is original text.

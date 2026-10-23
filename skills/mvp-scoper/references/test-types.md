@@ -2,6 +2,8 @@
 
 Read after the decision tree picks a type. Costs are in founder-days of effort and are rough planning ranges, not promises; adjust to the founder's skills. Examples are hypothetical and illustrate the shape of a test, not real companies' results.
 
+Origins, for credit: "MVP" and the concierge test were popularised by Eric Ries, "The Lean Startup" (2011). "Wizard of Oz" comes from human-computer interaction research (J. F. Kelley, 1984). Descriptions below are in original wording.
+
 Signal strength scale:
 - **Strong:** customers spend money or sustained effort; behaviour, not stated intent.
 - **Medium:** customers take a real action with low cost to them (click, sign up with real data, book a call).

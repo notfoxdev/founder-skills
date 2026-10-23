@@ -114,7 +114,7 @@ Subject: `your work on {{project}}` / `{{role}} at {{company}}` / `{{specific sk
 > {{sender}}
 
 **Touch 2**
-> One more detail: {{what makes the role distinct — ownership, technical challenge, compensation range if the founder is willing to share}}.
+> One more detail: {{what makes the role distinct: ownership, technical challenge, compensation range if the founder is willing to share}}.
 
 **Breakup**
 > I'll stop here. If timing changes, the door's open.
@@ -160,11 +160,11 @@ Max 2 follow-ups for investors, each with a real update (new customer, metric, m
 
 ---
 
-## LinkedIn connection note (under 300 characters)
+## LinkedIn connection note (under 200 characters)
 
 > Hi {{first_name}}, {{reason_for_you, one clause}}. I'm {{working on / researching}} {{topic}} and would value your take. Open to connecting?
 
-## X DM (under 280 characters)
+## X DM (keep under 280 characters by choice; the platform allows more)
 
 > Hi {{first_name}}, your post on {{topic}} ({{what it said, briefly}}) matches what I'm seeing with {{segment}}. Building {{short one-liner}}. Open to a 15-min call sometime?
 

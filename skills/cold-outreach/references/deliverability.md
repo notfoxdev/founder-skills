@@ -4,7 +4,7 @@ Read this before the first send of any sequence. The founder should verify curre
 
 ## Domain and inbox setup
 
-- **Authenticate:** publish SPF and DKIM records for the sending domain, and a DMARC record (start with `p=none` to monitor, tighten later). Google and Yahoo now require authentication from senders; bulk senders face stricter rules.
+- **Authenticate:** publish SPF and DKIM records for the sending domain, and a DMARC record (start with `p=none` to monitor, tighten later). Since 2024, Google and Yahoo require SPF or DKIM from all senders. Bulk senders (Google's threshold is around 5,000 messages a day to Gmail addresses) also need SPF, DKIM, and DMARC together, plus one-click unsubscribe for marketing mail. Founder-scale outreach is far below that threshold, but set up all three anyway.
 - **Domain choice:** sending from the main company domain is fine at founder-scale volumes. If planning higher volume, consider a separate, similar-looking domain or subdomain so mistakes do not damage the primary domain's reputation. Set it up weeks before use.
 - **Domain age:** brand-new domains and inboxes have no reputation. Use the inbox normally for 2–4 weeks before outreach (real conversations, newsletters you subscribe to, replies).
 - **Warm-up:** ramp volume gradually. Automated warm-up services exist; real low-volume, high-reply sending is the safer warm-up.
@@ -52,7 +52,7 @@ Google Postmaster Tools shows domain reputation and spam rate for mail sent to G
 
 ## Platform rules
 
-- **LinkedIn:** connection notes have a character limit (300) and free accounts may face monthly caps on personalised invites. Automation tools and scraping can violate LinkedIn's terms and risk account restriction. Send manually.
+- **LinkedIn:** connection notes have a character limit (200 on free accounts at the time of writing; Premium allows more), and free accounts get only a few personalised notes per month. Limits change; check LinkedIn's help pages. Automation tools and scraping can violate LinkedIn's terms and risk account restriction. Send manually.
 - **X:** many users restrict DMs. Do not mass-DM; it can trigger spam enforcement.
 - **Scraping:** do not scrape personal emails or profile data in violation of a site's terms of service.
 
@@ -61,18 +61,20 @@ Google Postmaster Tools shows domain reputation and spam rate for mail sent to G
 General orientation only. Rules differ by country and change; the founder should check the regimes that apply to their recipients.
 
 ### United States: CAN-SPAM (commercial email)
+- Applies to commercial email whose primary purpose is promoting a product or service, including business-to-business email. It does not require prior consent.
 - Accurate "From", "To", and routing information.
 - Subject line must not be deceptive.
-- Identify the message as commercial where required.
+- Identify the message as an advertisement where required (messages to people who gave prior consent are treated differently).
 - Include a valid physical postal address.
-- Provide a clear way to opt out, and honour opt-outs within 10 business days.
+- Provide a clear way to opt out that works for at least 30 days after sending, and honour opt-outs within 10 business days without charging a fee or asking for more than an email address.
 - You remain responsible if a contractor sends on your behalf.
+- A pure research request may not count as commercial, but include the opt-out and address anyway; the line between research and sales is easy to cross.
 
 ### EU / UK: GDPR plus ePrivacy rules (PECR in the UK)
 - You need a lawful basis to process personal data such as a work email. For B2B outreach this is commonly legitimate interest: the message is relevant to the person's professional role, the data used is minimal, and you have weighed their interests. Document that assessment.
-- Tell recipients who you are, where you got their data (if asked or on first contact, per local practice), and how to object.
-- Honour objections and deletion requests promptly.
-- E-marketing rules differ for individual subscribers versus corporate addresses, and by country. Some countries require prior consent even for B2B. Check the recipient's country.
+- When you did not collect the data from the person directly, GDPR expects you to tell them who you are, where you got their data, and how to object, at the latest in your first message to them. A short line plus a link to a privacy notice is the common approach.
+- Honour objections to direct marketing immediately and deletion requests promptly.
+- E-marketing rules differ for individual subscribers versus corporate addresses, and by country. In the UK (PECR), emailing a corporate address does not need prior consent, but sole traders and some partnerships count as individuals and generally do. Some EU countries require prior consent even for B2B. Check the recipient's country.
 
 ### Canada: CASL
 - Generally requires consent (express or implied) before sending commercial electronic messages. Implied consent may exist when an address is conspicuously published, relevant to the person's role, and not marked "no unsolicited messages". Requires sender identification and an unsubscribe mechanism.

@@ -56,7 +56,7 @@ This is the default for most early-stage startups because it reduces head-on com
 
 ## Strategy 3: New category
 
-Define and lead a category that does not yet exist.
+Define and lead a category that does not yet exist. Apply the four conditions below as a checklist: if any one fails, choose big fish, small pond instead and say which condition failed.
 
 Use when all are true:
 - Every existing category label misleads buyers about what you do or invites the wrong comparison.
@@ -88,9 +88,9 @@ Answer in order. Stop at the first "yes".
 ## Testing a category choice
 
 - **Expectation check:** list the competitors, features, and price a buyer will assume for the label. If any of these hurt you, adjust.
-- **Comprehension check:** show the one-liner to 5 people in the target segment. Ask what the product is, who it is for, and what it would replace. Count correct answers.
+- **Comprehension check:** show the one-liner to 5 people in the target segment. Ask what the product is, who it is for, and what it would replace. Pass at 4 of 5 correct; at 2 or fewer, the label or the one-liner is wrong.
 - **Search check:** do best-fit customers use this label when they look for solutions? Founder can check search tools and community language; do not guess volumes.
-- **Sales check:** use the category in the opening line of 10 sales or discovery conversations. Note whether buyers lean in or ask "so it's like <wrong thing>?"
+- **Sales check:** use the category in the opening line of 10 sales or discovery conversations. Note whether buyers lean in or ask "so it's like <wrong thing>?" If 3 or more of 10 map you to the wrong thing, change the label.
 
 ## Trends
 
@@ -103,4 +103,4 @@ Reject trends that:
 
 ## Credit
 
-The idea that category is a frame of reference chosen late in the positioning process, and the three category strategies, follow April Dunford's work in *Obviously Awesome*. This guide is original text.
+The idea that category is a frame of reference chosen late in the positioning process, and the three category strategies, follow April Dunford's work in *Obviously Awesome*. Her process runs: understand the customers who love the product, then competitive alternatives, unique attributes, value themes, best-fit customers, market category, and an optional trend. She calls the third strategy creating a new game. This guide is original text.

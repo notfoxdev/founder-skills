@@ -24,11 +24,14 @@ description: >-
   One dense paragraph (60–120 words): what the skill does, then "Use when the founder says ..."
   with 8–15 quoted trigger phrases real founders type, then "Not for ..." pointing to sibling
   skills so the agent routes correctly.
+license: MIT                     # Apache-2.0 for website-design (adapted material)
 metadata:
   pack: foundora
-  version: 1.0.0
+  version: 1.1.0
 ---
 ```
+
+Spec limits (agentskills.io): `name` ≤ 64 chars, lowercase/digits/hyphens, equals folder; `description` ≤ 1024 chars; SKILL.md under 500 lines (this pack targets 120–260); references one level deep.
 
 Descriptions are the routing layer. Be concrete, use founder vocabulary ("is this idea any good", "kill or keep", "write my investor update"), and name sibling skills for neighbouring jobs.
 
@@ -45,6 +48,17 @@ Rules every skill states in a "Before you start" section:
 - Do not re-ask anything the context already answers. Reference it ("Since you're at MVP stage with 3 design partners...").
 - Honour `## Working preferences` for tone.
 - Never edit `.foundora/company.md` without explicit confirmation. Propose a diff instead. Append to `.foundora/journal.md` freely (dated, one entry per decision/learning) and tell the founder you did.
+- If `company.md` is missing entirely and the founder wants ongoing help, suggest `company-context` to create it (one line, not a blocker).
+
+### Journal entry format (identical in every skill)
+
+```markdown
+### YYYY-MM-DD — <decision | assumption | experiment | learning | review>: <short title>
+- <2–5 skill-specific bullets: what, evidence, thresholds, next step / revisit date>
+- Source: <skill-name>
+```
+
+Newest entries go at the bottom. Never rewrite or delete past entries; supersede them with a new entry that names the old one.
 
 ## Body structure
 
@@ -54,10 +68,26 @@ Use these sections, in this order, omitting ones that do not apply:
 2. `## Before you start` — context loading rules above + the 2–4 inputs this skill needs.
 3. `## Process` — numbered steps. Each step produces something concrete. Include decision rules, not vibes.
 4. `## Guardrails` — hard rules. Always include: never invent metrics, customers, quotes, investors, or market sizes; mark assumptions as `[ASSUMPTION]` and missing data as `[NEED: ...]`; cite where a number came from (founder-provided, calculation, or public source the founder should verify).
-5. `## Output format` — an exact skeleton (markdown headings/tables) the founder receives.
-6. `## Follow-ups` — 2–4 sibling skills to suggest next, with when.
+5. `## Edge cases` — 4–8 bullets: the situations where following the process literally gives a bad result (no data at all, conflicting context, founder pushes back, request is out of scope, stage mismatch) and exactly what to do instead.
+6. `## Output format` — an exact skeleton (markdown headings/tables) the founder receives.
+7. `## Follow-ups` — 2–4 sibling skills to suggest next, with when.
 
 Keep the body lean. Move frameworks, long checklists, examples, and scripts into `references/` and link them with "Read `references/x.md` when ...".
+
+### Worked example (required)
+
+Every skill ships `references/example.md`: one realistic request, the relevant context, and a complete model answer in the skill's output format, built on the fictional company in `evals/fixture-company.md` (Ledgerline). The SKILL.md links it with "Read `references/example.md` to calibrate depth and tone before your first answer." Rules:
+
+- Clearly labelled as illustrative and fictional at the top.
+- Numbers in the example come only from the fixture or are shown calculations.
+- Show the skill doing the hard part well: a pushback, a `[NEED: ...]`, a decision rule applied. Not a happy path where everything is known.
+- Never copy the example's content into a real answer; it calibrates depth and format only. Say this in the example's header.
+
+## Response discipline
+
+- Lead with the answer or verdict, then the support.
+- Ask at most one round of questions before producing something useful; if inputs are missing, produce a draft with `[NEED: ...]` markers instead of stalling.
+- Match length to the ask: a point request ("fix this headline") gets a short answer, not the full template.
 
 ## Voice
 

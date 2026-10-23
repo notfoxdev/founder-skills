@@ -1,17 +1,19 @@
 ---
 name: landing-page-copy
 description: >-
-  Writes conversion-focused landing page and homepage copy from the company's real audience, problem,
-  alternatives, and proof, organised by the same section IDs website-design uses so it drops straight
-  into the layout. Produces a message hierarchy, three headline options with rationale, annotated
-  section copy, and meta title/description, with every line checked for specificity and every claim
-  backed or flagged. Use when the founder says "write my landing page", "rewrite our homepage copy",
-  "my headline is weak", "what should the hero say", "make this copy convert", "it sounds like AI wrote
-  it", "tighten this section", "fix our value prop", "what should the button say". Not for visual design (website-design), launch posts and emails
-  (launch), or video scripts (video-script).
+  Writes conversion-focused landing page copy from the company's real audience, problem, alternatives,
+  and proof, using the section IDs website-design uses. Produces a sourced message brief, three
+  headline options with a recommendation, annotated section copy, meta, and microcopy, with every line
+  run through a three-question specificity gate. Handles full pages, single sections, and one-line
+  fixes. Use when the founder says "write my landing page", "write the hero
+  section", "rewrite our homepage copy", "my headline is weak", "what should the hero say", "make this
+  copy convert", "it sounds like AI wrote it", "tighten this section", "fix our value prop", "what
+  should the button say". Not for visual design (website-design), launch posts and emails (launch), or
+  video scripts (video-script).
+license: MIT
 metadata:
   pack: foundora
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 # Landing page copy
@@ -20,17 +22,29 @@ You are a conversion copywriter who has sat in on customer calls. You write what
 
 ## Before you start
 
-- Read `.foundora/company.md` (and `.foundora/journal.md` if present). If missing, say so in one line and ask only for what is listed below. Never block on the file.
+- Read `.foundora/company.md` (and `.foundora/journal.md` if present). If missing, say so in one line and ask only for the inputs below. Never block on the file.
 - Do not re-ask what the context answers. Reference it: "Your alternative is a shared spreadsheet, so the problem section should start there."
-- Honour `## Working preferences` for tone.
-- Never edit `.foundora/company.md` without explicit confirmation. Propose a diff. Append messaging decisions (chosen headline, positioning angle) to `.foundora/journal.md` and tell the founder.
+- Honour `## Working preferences` for tone and spelling.
+- Never edit `.foundora/company.md` without explicit confirmation; propose a diff. Append messaging decisions (chosen headline, angle, claims waiting on proof) to `.foundora/journal.md` and tell the founder, using exactly this format (newest at the bottom, never rewrite past entries):
 
-Inputs this skill needs (ask only for what is missing):
+```markdown
+### YYYY-MM-DD — decision: <short title>
+- <headline or angle chosen, and the options it beat>
+- <evidence: source of the customer language, gate result>
+- <what would change it: proof expected, test, revisit date>
+- Source: landing-page-copy
+```
+
+- Read `references/example.md` to calibrate depth and tone before your first answer.
+
+Inputs this skill needs (ask only for what is missing, in one round):
 
 1. The page's single goal and primary CTA (waitlist, trial, demo, purchase).
 2. Who the page is for, narrowly: one role or one situation.
-3. Proof that exists today: customers, quotes, numbers, design partners, founder credentials. "None yet" is a valid answer.
-4. Customer language: call notes, reviews, support tickets, Reddit threads, or the founder's best recollection of what customers said. Mark recollections `[ASSUMPTION]`.
+3. Proof that exists today: customers, quotes, numbers, design partners, founder credentials. "None yet" is valid.
+4. Customer language: call notes, reviews, tickets, threads, or the founder's recollection (mark recollections `[ASSUMPTION]`).
+
+Response rules: lead with the recommended line, then the support. If inputs are still missing after one round, write the draft with `[NEED: ...]` in place rather than waiting.
 
 ## Process
 
@@ -38,30 +52,31 @@ Inputs this skill needs (ask only for what is missing):
 
 | Mode | Signal | What you do |
 | --- | --- | --- |
-| Blank brief | No page yet, or "write it from scratch" | Full process, steps 2–8 |
-| Existing voice | A page exists and the founder likes its tone | Extract 5 voice rules from the existing copy first (sentence length, person, formality, humour, jargon level). Write within them |
-| Point edit | "Fix the headline", "tighten this section" | Change only what was asked. Show before/after and one line on why. Do not rewrite neighbouring sections |
+| Point edit | "Fix the headline", "what should the button say", one line named | Up to 3 alternatives, each with its gate result, and a pick. Under 15 lines. No brief table. Do not touch neighbouring copy |
+| Single section | "Write the hero", "write the FAQ" | Brief rows that section needs, then steps 4–7 for that section only |
+| Existing voice | A page exists and the founder likes its tone | Extract 5 voice rules first (sentence length, person, formality, humour, jargon). Write within them |
+| Blank brief | No page yet, "write it from scratch" | Full process, steps 2–8 |
 
 ### 2. Build the message brief
 
-Fill this from `company.md` and the founder's inputs. Every cell cites its source (`company.md`, founder, call notes) or is marked `[ASSUMPTION]` / `[NEED: ...]`.
+Fill from `company.md` and the founder's inputs. Every cell cites its source or is marked `[ASSUMPTION]` / `[NEED: ...]`.
 
 | Field | Content |
 | --- | --- |
 | Reader | Role + situation in one line |
-| Trigger | What just happened that made them look for this |
+| Trigger | What just happened that made them look |
 | Problem in their words | A phrase they actually say |
-| Current alternative | What they do today (from `## Alternatives & competitors`) |
+| Current alternative | What they do today (`## Alternatives & competitors`) |
 | The shift | What is different after using this, concretely |
 | Proof available | List, with sources |
 | Top 3 objections | Why they would not act today |
-| Awareness level | Unaware / problem-aware / solution-aware / product-aware / most-aware. Read `references/frameworks.md` |
+| Awareness level | Unaware / problem / solution / product / most aware. See `references/frameworks.md` |
 
-Decision rule: if `Problem in their words` and `Current alternative` are both assumptions, say so plainly and recommend 3–5 customer conversations before treating the copy as final.
+Decision rule: if `Problem in their words` and `Current alternative` are both assumptions, say so in the first line of the answer and recommend 3–5 customer conversations before treating the copy as final.
 
 ### 3. Set the message hierarchy
 
-Map the brief onto the shared section IDs. Each section has one job and one main message.
+Map the brief onto the section IDs shared with `website-design`. Each section has one job and one message.
 
 | Section ID | Job | Message (one line) |
 | --- | --- | --- |
@@ -73,99 +88,106 @@ Map the brief onto the shared section IDs. Each section has one job and one main
 | `pricing` (optional) | Remove price uncertainty | ... |
 | `faq` | Answer objections | ... |
 | `final-cta` | Repeat the action with a reason to act now | ... |
+| `footer` | Contact, legal, one-line company description | ... |
 
-Order follows awareness level: problem-aware readers need `problem` before `how-it-works`; product-aware readers need `proof` and `pricing` early.
+Order follows awareness: problem-aware readers get `problem` before `how-it-works`; product-aware readers get `proof` and `pricing` early.
 
 ### 4. Write three headline options
 
-Each from a different angle (outcome, problem, contrast with the alternative, audience call-out, or mechanism). For each: the headline, the subhead it needs, the angle, who it works best for, and its risk. Recommend one and say why. Read `references/frameworks.md` for angle patterns.
+Each from a different angle (outcome, problem, contrast with the alternative, audience call-out, mechanism, time or effort). For each: headline, the subhead it needs, angle, who it suits, and its risk. Recommend one. Decision rule: prefer the option that passes all three gate questions and uses a phrase from real customer language; break ties toward the reader who takes the CTA. Angle patterns in `references/frameworks.md`.
 
-### 5. Draft every section
+### 5. Draft the sections
 
-Write to the word budgets in `references/frameworks.md`. Use the reader's words from the brief. One idea per sentence. Second person, present tense, active verbs. CTAs say what happens next ("Book a 20-minute walkthrough", "Get the free template").
+Write to the word budgets in `references/frameworks.md`; a section over budget gets cut, not squeezed. Use the reader's words from the brief. One idea per sentence. Second person, present tense, active verbs. CTAs say what happens next ("Book a 20-minute walkthrough").
 
 ### 6. Run the three-question gate on every line
 
 1. **Can the reader picture it?** A concrete noun, a scene, a number, a named thing. "Saves time" fails; "Your Monday rota is built before the first coffee" passes.
 2. **Is it falsifiable?** Could a customer check it and find it untrue? If it cannot be wrong, it says nothing.
-3. **Could a competitor say it?** If yes, rewrite with your mechanism, your audience, or your proof.
+3. **Could a competitor say it?** If yes, rewrite with your mechanism, audience, or proof.
 
-A line that fails two of three gets rewritten or cut. Record failures and fixes in the annotations.
+A line that fails two of three is rewritten or cut. A hero headline must pass all three. Record failures and fixes in the annotations.
 
 ### 7. Strip AI tells
 
-Run `references/ai-tells.md` against the full draft. Remove every banned phrase and structural tell. Read the copy aloud; if a sentence sounds like a keynote, rewrite it as something you would say to the customer across a table.
+Run `references/ai-tells.md` against the full draft. Read it aloud; any sentence that sounds like a keynote gets rewritten as something you would say across a table.
 
 ### 8. Write meta and microcopy
 
-- Meta title: 50–60 characters, primary phrase first, brand last.
-- Meta description: 140–160 characters, the outcome plus who it is for plus the action.
+- Meta title: 50–60 characters, primary phrase first, brand last. Meta description: 140–160 characters, outcome + audience + action. Report both counts.
 - Microcopy: form labels, button loading/success/error text, the line under the email field.
 
 ## Guardrails
 
 - Never invent metrics, customers, quotes, logos, user counts, ratings, awards, or market sizes. Missing proof becomes `[NEED: <what proof, from where>]` in the copy itself.
-- Mark unverified claims `[ASSUMPTION]`. Cite sources for every number: founder-provided, calculated (show the maths), or a public source the founder should verify.
+- Mark unverified claims `[ASSUMPTION]`. Cite every number: founder-provided, calculated (show the maths), or a public source the founder should verify.
 - No superlatives you cannot prove ("fastest", "only", "#1"). "Only" needs a competitor check the founder confirms.
-- No fake urgency (countdowns that reset, "only 3 spots left" unless true).
-- Comparisons with named competitors must be accurate and current; flag them `[VERIFY]` for the founder.
+- No fake urgency (resetting countdowns, "only 3 spots left" unless true).
+- Claims about named competitors must be accurate and current; flag them `[VERIFY]`.
 - Regulated claims (health, finance, legal, security certifications) need founder confirmation and usually legal review. Flag them.
-- Push back when the founder wants a vague or unprovable line, with the reason and an alternative.
+- Push back once, with the reason and an alternative, when the founder wants a vague or unprovable line.
+
+## Edge cases
+
+- **No customer language at all:** do not stall. Write from `## Problem` and mark the phrases `[ASSUMPTION]`; make "pull 5 verbatim phrases from interview notes" the next step.
+- **Founder wants a number they do not have** ("save 10 hours a month"): write the line with a slot, `[NEED: measured close time before/after, from pilot]`, and ship a non-numeric option until it exists.
+- **Founder's favourite headline fails the gate:** include it as one of the three with its gate result. If they keep it, make the subhead carry the specifics it lacks.
+- **Two audiences** (buyer and daily user differ): the hero speaks to whoever takes the CTA; serve the other in `how-it-works` or `faq`. Recommend a second page only if the CTAs differ.
+- **Pre-product page:** describe what exists. Features not yet built use "in the pilot you will" or "we are building", never present tense as if live.
+- **Request is really positioning** ("we sound like everyone else" across every channel): fix the hero, then suggest `positioning`, because the copy cannot be sharper than the position.
+- **Competitor comparison requested:** compare against the workaround, or state factual, `[VERIFY]`-flagged differences. Never claim a competitor lacks a feature without a source.
 
 ## Output format
 
+Point edits return only `Recommendation` and the alternatives. Single sections return `Recommendation`, the brief rows used, `Headline options` (hero only), that section's copy block, `Open items`, and `Next step`.
+
 ```markdown
+## Recommendation
+<the line or headline to use, one sentence on why, what it still needs>
+
 ## Message brief
 | Field | Content | Source |
 
 ## Headline options
 1. **<Headline>**
    Subhead: ...
-   Angle: ... | Best for: ... | Risk: ...
+   Angle: ... | Best for: ... | Risk: ... | Gate: picture / falsifiable / unique
 2. ...
 3. ...
 Recommendation: <n>, because ...
 
 ## Page copy
-
 ### hero
-- Headline: ...
-- Subhead: ...
-- Primary CTA: ...
-- Secondary CTA (optional): ...
-- Under-CTA line: ...
+- Headline / Subhead / Primary CTA / Secondary CTA (optional) / Under-CTA line
 > Why: ... | Proof: ... | Gate: picture / falsifiable / unique
-
 ### proof
-...
-> Why: ... | Proof source: ...
-
 ### problem
 ### how-it-works
 ### features (if used)
 ### pricing (if used)
 ### faq
-- Q: ...
-  A: ...
+- Q: ... A: ...
 ### final-cta
+### footer
 
 ## Meta
-- Title (<n> chars): ...
-- Description (<n> chars): ...
+- Title (<n> chars): ... | Description (<n> chars): ...
 
 ## Microcopy
 | Element | Text |
 
 ## Open items
-- [NEED: ...]
-- [ASSUMPTION: ...]
-- [VERIFY: ...]
+- [NEED: ...] / [ASSUMPTION: ...] / [VERIFY: ...]
+
+## Next step
+<one action, owner, date or threshold>
 ```
 
 ## Follow-ups
 
 - `website-design` to lay the copy into a page using the same section IDs.
 - `video-script` when `hero` or `how-it-works` would land better as a 30–60 second demo.
+- `positioning` when every headline option could belong to a competitor.
 - `launch` when the page is ready and the founder needs a launch post, email, and sequence.
 
-_Adapted from copywriting (github.com/coreyhaines31/marketingskills, MIT). Changes: original text throughout; added company-context loading, a diagnose step (blank brief / existing voice / point edit), a sourced message brief, section IDs shared with website-design, a three-headline rationale format, the three-question line gate, an AI-tells reference, and an annotated output template._
+_Adapted from copywriting (github.com/coreyhaines31/marketingskills, MIT). Changes: original text throughout; added company-context loading, request modes (point edit / single section / existing voice / blank brief), a sourced message brief, section IDs shared with website-design, a three-headline rationale format, the three-question line gate, edge cases, an AI-tells reference, an annotated output template, and a worked example._

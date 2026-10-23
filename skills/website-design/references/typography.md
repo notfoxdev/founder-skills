@@ -99,7 +99,7 @@ Fluid display size example: `font-size: clamp(2.5rem, 1.6rem + 4.5vw, 4.75rem);`
 
 ## Curated shortlist by personality
 
-Starting points, not rules. Verify availability and licence before use. Overused defaults (Inter, Poppins, Montserrat, DM Sans, Plus Jakarta Sans, Space Grotesk) are allowed only with a stated reason.
+Starting points, not rules. Verify availability and licence before use. Overused defaults (Inter, Roboto, Poppins, Montserrat, DM Sans, Plus Jakarta Sans, Space Grotesk) are allowed only with a stated reason. Libraries change; confirm each family still exists at its source before naming it in a plan.
 
 | Personality | Fits | Display | Text | Mono |
 | --- | --- | --- | --- | --- |

@@ -2,6 +2,11 @@
 
 Read this when setting price levels from evidence. Stated willingness to pay is weaker than paid behaviour. Treat every method below as a way to narrow a range, then confirm with real purchases.
 
+Which method, by stage:
+- **No customers, fewer than ~30 reachable qualified buyers:** interviews with a named price, then a paid-pilot ask. Skip surveys.
+- **30+ qualified respondents who understand the product:** Van Westendorp for the range, Gabor-Granger for points inside it.
+- **Live pipeline or pricing page traffic:** behavioural tests beat any survey.
+
 ## Evidence ladder
 
 | Level | Evidence | Weight |
@@ -40,7 +45,7 @@ Log each interview: segment, role, current spend (stated), price named, reaction
 
 ## Van Westendorp Price Sensitivity Meter
 
-Four questions, asked in this order, about a clearly described product:
+Four open-ended price questions about a clearly described product. Practitioners use different question orders; pick one and keep it identical for every respondent:
 
 1. At what price would this be so expensive that you would not consider buying it? (too expensive)
 2. At what price would you start to think it is expensive, but still worth considering? (expensive)
@@ -55,6 +60,8 @@ Analysis:
   - **Optimal price point:** "too cheap" crosses "too expensive".
   - **Indifference price point:** "cheap" crosses "expensive".
 - The acceptable price range sits between marginal cheapness and marginal expensiveness.
+- Conventions differ: some analysts define the marginal points with the "expensive" and "cheap" curves instead of their inverses. State which definition you used.
+- The method gives an acceptable range, not purchase likelihood or a demand curve. The Newton-Miller-Smith extension adds purchase-likelihood questions at the respondent's own "cheap" and "expensive" prices if you need that.
 
 Rules:
 - Respondents must be in the target segment and understand the product. Show a description, demo, or screenshot first.
@@ -84,7 +91,7 @@ Stronger than surveys. Prefer these as soon as there is traffic or a pipeline.
 
 | Test | How | Read |
 |---|---|---|
-| Price laddering in sales | Quote a higher price to each next batch of 3–5 qualified prospects | Hold when close rate drops noticeably versus the previous step |
+| Price laddering in sales | Quote a higher price to each next batch of 3–5 qualified prospects | Hold when close rate falls to about two-thirds of the previous step or lower. Batches this small are directional; look for a clear drop, not one lost deal |
 | Pre-sale / deposit | Ask for a refundable deposit or annual prepay at the target price | % of qualified prospects who pay |
 | Sequential cohort on pricing page | Change price for new visitors in a time-boxed window, compare to prior window | Conversion and ARPA per visitor; watch seasonality |
 | Fake-door tier or add-on | Show the option; measure clicks; explain it is coming | Click-through as demand signal, not revenue |

@@ -4,7 +4,7 @@ Read this when computing unit economics, interpreting results, or estimating wit
 
 ## Core formulas (subscription / SaaS)
 
-Use monthly figures throughout. Convert annual figures before plugging in.
+Use monthly figures throughout. Convert annual figures before plugging in. These definitions are shared with pricing-strategy; keep them identical if either skill changes.
 
 | Metric | Formula | Notes |
 |---|---|---|
@@ -12,6 +12,7 @@ Use monthly figures throughout. Convert annual figures before plugging in.
 | ARPA | MRR ÷ paying customers | Use per-account, not per-seat, unless pricing is per-seat and you model seats |
 | COGS | Hosting, inference/API costs, third-party licences per customer, payment fees, customer support and onboarding labour | Not R&D, not sales |
 | Gross margin % | (Revenue − COGS) ÷ Revenue | |
+| Gross profit / customer / month | ARPA × Gross margin % | The denominator of payback and the monthly building block of LTV |
 | CAC | (Sales + marketing spend in period, fully loaded) ÷ new paying customers in period | Include salaries, tools, ads, agencies, events, founder sales time at a stated rate |
 | Monthly churn (logo) | Customers lost in month ÷ customers at start of month | |
 | Revenue churn | MRR lost (cancellations + downgrades) ÷ MRR at start of month | Use when ARPA varies a lot |
@@ -19,6 +20,7 @@ Use monthly figures throughout. Convert annual figures before plugging in.
 | LTV | ARPA × Gross margin % × Lifetime | Equivalent: ARPA × GM% ÷ monthly churn (before the cap) |
 | LTV:CAC | LTV ÷ CAC | |
 | CAC payback (months) | CAC ÷ (ARPA × Gross margin %) | Months of gross profit to recover acquisition cost |
+| Max allowable CAC | LTV ÷ 3 | The most you can spend per customer and still hit the 3:1 heuristic |
 | Contribution margin / customer / month | ARPA − all variable costs per customer | Variable costs = COGS + any variable selling cost (commissions, affiliate fees, transaction fees) |
 | Contribution margin % | Contribution margin ÷ ARPA | |
 
@@ -55,6 +57,7 @@ Same formulas. Churn is usually higher and CAC more channel-dependent. Model per
 ### Usage-based
 - ARPA varies with usage. Use median and 25th percentile, not mean, when a few large accounts skew it.
 - Gross margin must be computed per unit of usage (price per unit − cost per unit). Inference-heavy AI products often have margins that move with model pricing and usage mix; recompute when either changes.
+- Check margin at the 90th percentile customer, not only the median. A flat price with uncapped usage can make heavy users unprofitable while the average looks fine.
 
 ## Heuristic ranges
 
@@ -89,7 +92,7 @@ For paid channels:
 
 ### Churn without history
 - Use the heuristic range for the segment as pessimistic/base/optimistic, tagged `[ASSUMPTION]`.
-- Replace with observed cohort data as soon as 3 months exist, even on a small base, and note the sample size.
+- Switch to observed cohort churn once you have at least 3 months and about 20 customers. Before that, show observed churn next to the heuristic range with the sample size, and model on the range.
 
 ### Gross margin without history
 - List every per-customer cost line: hosting, inference per action × expected actions, third-party APIs, payment fees, support minutes × hourly cost.
@@ -110,6 +113,7 @@ Inputs: ARPA $200/month [ASSUMPTION], gross margin 80% [ASSUMPTION], monthly chu
 - Lifetime = 1 ÷ 0.04 = 25 months (under the 36-month cap)
 - LTV = 160 × 25 = $4,000
 - LTV:CAC = 4,000 ÷ 1,500 = 2.7 → below the 3:1 heuristic, flag
+- Max allowable CAC = 4,000 ÷ 3 = $1,333 → CAC must fall by about $167 to clear 3:1
 - Payback = 1,500 ÷ 160 = 9.4 months → within SMB heuristic
 
 Reading: payback is acceptable but LTV:CAC is thin. Levers in order of usual ease: reduce churn, raise price, improve conversion to cut CAC.

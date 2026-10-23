@@ -26,9 +26,9 @@ Fits: developer tools, AI tools, productivity, design, prosumer and consumer app
 
 Prep (start by T-14):
 - Maker account active for some time with genuine participation (comment on others' launches). New accounts with no history get less reach (heuristic).
-- Listing: name, tagline (60 characters max), description (about 260 characters), topics, gallery images (1270x760 recommended), thumbnail (240x240, GIF allowed), optional YouTube video. Verify current specs in the PH submission form.
+- Listing (verify current specs in the PH submission form; they change): name, tagline (60 characters max at the time of writing), description (write the key point in the first 260 characters, which is what previews tend to show), up to 3 topics, gallery images (1270x760 recommended), thumbnail (240x240, GIF allowed), optional YouTube video.
 - Maker comment ready: who you are, why you built it, what it does, what is free, what feedback you want.
-- Schedule the launch in advance; launches go live at 12:01 AM Pacific and the day runs 24 hours on PT.
+- Schedule the launch in advance. At the time of writing, launches go live at 12:01 AM Pacific and the day runs 24 hours on PT; verify current timing.
 - Self-hunting is normal; a well-known hunter is optional.
 
 Norms:
@@ -42,8 +42,9 @@ Norms:
 Fits: developer tools, infrastructure, open source, technical products, unusual technical approaches. Poor fit for marketing-led consumer apps.
 
 Rules (from HN's Show HN guidelines; re-read before posting):
-- Show HN is for something people can try now. Landing pages, waitlists, fundraisers, and blog posts are not Show HN.
-- Make it easy to try without barriers like signups where possible. A demo, playground, or open-source repo works.
+- Show HN is for something you made that people can try now. Landing pages, sign-up pages, waitlists, newsletters, fundraisers, and blog posts are not Show HN; if it is not ready to try, wait.
+- The project should be non-trivial and something you are around to discuss. Minor version bumps usually do not qualify; a major overhaul may.
+- Make it easy to try without barriers like signups or emails where possible. A demo, playground, or open-source repo works.
 - Title starts with `Show HN:` followed by the product name and a plain description. No marketing language, no superlatives, no exclamation marks.
 - Do not ask friends or colleagues to upvote or comment. HN detects voting rings and penalises them.
 
@@ -82,6 +83,7 @@ Fits: consumer and creator products; some B2B with a visible problem (trades, ho
 
 ### Communities (Slack, Discord, forums, Indie Hackers)
 - Only communities where the target customer actually is. One relevant 300-person Slack beats a 50,000-member general startup group.
+- For vertical B2B, ask interviewees where they ask peers for help: professional associations, practitioner forums, software user communities, regional groups. Those beat any startup community.
 - Follow posting rules and channel conventions (often a #launches or #show-and-tell channel).
 - Tailor the post to the community: what is relevant to them, and an offer if appropriate.
 - Indie Hackers suits founder-story posts with real numbers.
@@ -99,7 +101,7 @@ Fits: consumer and creator products; some B2B with a visible problem (trades, ho
 - Sponsorships: worth testing only after the message converts on owned channels. Ask for audience size and past sponsor results, and start with one issue.
 
 ### Partners and integration marketplaces
-- If you integrate with a platform (Slack, Shopify, HubSpot, Notion, Zapier, Chrome Web Store, app stores), list there. Listings can take days to weeks for review; submit by T-21.
+- If you integrate with a platform (Slack, Shopify, HubSpot, Notion, Zapier, Chrome Web Store, accounting and practice-management app stores), list there. Most marketplaces require a working integration and a review; it can take days to weeks, so submit by T-21. No integration yet: skip the channel rather than building one for the launch. Check each marketplace's current listing requirements.
 - Ask partners for a co-announcement, a newsletter mention, or a spot in their marketplace "new" section.
 
 ### Creators and influencers

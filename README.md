@@ -1,6 +1,6 @@
 # Foundora founder skills
 
-Sixteen agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
+Seventeen agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
 
 ## Install
 
@@ -20,7 +20,7 @@ This repository is private: installing requires Git or GitHub CLI credentials wi
 
 ## Load your company context
 
-Every skill reads `.foundora/company.md` first, so it never re-asks what you already told it. Foundora generates this file for you at the end of onboarding, along with a prompt that writes it into your repo and points `CLAUDE.md` / `AGENTS.md` at it. You can also copy [`templates/company.md`](templates/company.md) and fill it in by hand.
+Every skill reads `.foundora/company.md` first, so it never re-asks what you already told it. Foundora generates this file for you at the end of onboarding, along with a prompt that writes it into your repo and points `CLAUDE.md` / `AGENTS.md` at it. No onboarding? Ask your agent to "set up my company context" and the `company-context` skill interviews you and writes it. Or copy [`templates/company.md`](templates/company.md) and fill it in by hand.
 
 The agent keeps a running decision log in `.foundora/journal.md`.
 
@@ -44,6 +44,7 @@ The agent keeps a running decision log in `.foundora/journal.md`.
 | `fundraising` | Readiness, round sizing, investor pipeline, meeting prep, close |
 | `investor-update` | Honest monthly updates with consistent metrics |
 | `weekly-review` | North Star scoreboard, three priorities, kill list, 90-day resets |
+| `company-context` | Create or update `.foundora/company.md` when you pivot, change stage, or get new numbers |
 
 ## Principles
 
@@ -51,5 +52,6 @@ The agent keeps a running decision log in `.foundora/journal.md`.
 - Never invent metrics, customers, quotes, investors, or market sizes. Gaps are marked `[NEED: ...]`, guesses `[ASSUMPTION]`.
 - Every skill ends with an exact output format and the next skill to run.
 - Visual skills hold a high design bar and ban generic AI aesthetics.
+- Every skill ships a worked example and an edge-case section, and is regression-tested with [`evals/scenarios.md`](evals/scenarios.md).
 
-See [CONVENTIONS.md](CONVENTIONS.md) for authoring rules and [ATTRIBUTION.md](ATTRIBUTION.md) for adapted sources.
+See [CONVENTIONS.md](CONVENTIONS.md) for authoring rules, [CHANGELOG.md](CHANGELOG.md) for what changed, and [ATTRIBUTION.md](ATTRIBUTION.md) for adapted sources.

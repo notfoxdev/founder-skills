@@ -7,6 +7,8 @@ Read this in steps 6 and 7. Replace `T` with the launch date, compute every real
 - B2B: Tuesday to Thursday, avoiding public holidays, end of quarter, and major industry events where buyers are away (heuristic).
 - B2C: depends on the channel; weekends can work for consumer apps and lower-competition Product Hunt days (heuristic).
 - Avoid dates that clash with large tech events if your audience follows them.
+- Avoid the customer's own busy periods: month-end close for finance and bookkeeping buyers, tax season, retail peak, school term start. Ask a customer if unsure.
+- If the launch waits on a milestone, set T to the first good weekday after the go/no-go check and keep every row relative to T.
 - The founder must be available all day and the next two days.
 
 ## T-30 to T+14

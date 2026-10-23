@@ -24,6 +24,11 @@ The Apache-2.0 license text for the adapted `website-design` material is availab
 | `launch` | Simple, Lovable, Complete readiness idea | Jason Cohen |
 | `fundraising` | Standard SAFE forms are referenced, not reproduced | Y Combinator |
 
+| `cofounder` | One-way / two-way doors; pre-mortem | Jeff Bezos, 2015 Amazon shareholder letter; Gary Klein, HBR 2007 |
+| `positioning` | "For / who / is a / that / Unlike" statement shape | Geoffrey Moore, *Crossing the Chasm* |
+| `customer-research` | Jobs, pains, gains; proto-personas | Osterwalder et al., *Value Proposition Design*; Jeff Gothelf, *Lean UX* |
+| `mvp-scoper` | MVP and concierge; Wizard of Oz | Eric Ries; J. F. Kelley (1984) |
+
 ## Original
 
-`cofounder`, `mvp-scoper`, `customer-research`, `video-script`, `pitch-deck`, `investor-update`, `fundraising`, `weekly-review`, `idea-validator`, `lean-canvas`, `positioning`.
+`cofounder`, `mvp-scoper`, `customer-research`, `video-script`, `pitch-deck`, `investor-update`, `fundraising`, `weekly-review`, `idea-validator`, `lean-canvas`, `positioning`, `company-context`.

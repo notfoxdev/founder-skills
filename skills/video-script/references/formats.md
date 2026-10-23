@@ -18,9 +18,10 @@ Purpose: make the launch feel real, show the product doing its one thing, and gi
 Notes:
 - Founder on camera works for the hook, turn, and CTA; the product moment is screen.
 - Make a 16:9 master, then cut a 1:1 or 4:5 for LinkedIn/X feeds and a 9:16 for short-form.
-- Product Hunt gallery video: links to YouTube; keep it under about 2 minutes and front-load the product.
+- Product Hunt gallery video: at the time of writing the listing takes a YouTube link; verify current requirements in the submission form. Keep it under about 2 minutes and front-load the product (heuristic).
+- A "demo" of 90 seconds or less uses these beats with the product moment stretched to 50–60% of runtime.
 
-## Product demo (2–3 min)
+## Product demo (over 90s, typically 2–3 min)
 
 Purpose: help a qualified viewer understand how it works for their case. Viewers here chose to watch; clarity beats pace.
 
@@ -34,7 +35,7 @@ Purpose: help a qualified viewer understand how it works for their case. Viewers
 | Proof + CTA | 2:35–3:00 | Stage or customer proof, then one next step (trial, book a call) |
 
 Notes:
-- Add YouTube chapters (timestamps in description, first at 0:00, at least 3 chapters, each 10s+).
+- Add YouTube chapters (timestamps in description, first at 0:00, at least 3 chapters, each 10s+; verify current YouTube rules).
 - Speak to one viewer. "You" not "users".
 - Cut dead time: loading, typing long strings, navigation. Use jump cuts or speed ramps, not waiting.
 - For sales follow-up, record a version that names the prospect's use case only if the founder sends it individually.
@@ -53,7 +54,7 @@ Purpose: earn attention from people who did not ask to see you. Retention throug
 Notes:
 - 1080x1920, 30fps (60 for UI motion), native platform captions or burned-in captions.
 - Cut every 1.5–3s. A static shot longer than 4s needs motion in it (zoom, cursor, text).
-- Text and faces inside safe zones (see SKILL.md step 7).
+- Text and faces inside safe zones (see SKILL.md step 7; approximate, verify against the current platform overlay).
 - Design the last frame to loop into the first where possible; replays count.
 - One idea per video. Series beat one-offs: a recurring format ("One spreadsheet we killed this week") is easier to keep shipping.
 - Platform behaviour and length limits change often. Check current limits before publishing; stay in 15–45s regardless.
@@ -100,7 +101,7 @@ Platform tendencies (verify current norms):
 
 - Pace: tight on hook and problem, a beat slower on the key product moment so viewers can read the UI.
 - Music: licensed, instrumental, sitting about 15–20dB under the voice. Duck under speech.
-- Loudness: about -14 LUFS integrated for social and YouTube; peaks below -1 dBTP.
+- Loudness: about -14 LUFS integrated is a common target for social and YouTube; peaks below -1 dBTP. Platforms normalise differently and change it; verify current guidance.
 - Captions: sentence case, 1–2 lines, max about 32–42 characters per line, synced to speech. Check auto-captions by hand; product names are often wrong.
 - End card: logo, URL, the CTA words, held 2–3 seconds.
 
