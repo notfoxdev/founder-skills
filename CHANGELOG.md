@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.2.0 — 2026-10-23
+
+**New skill**
+- `motion-video`: designs and builds motion-graphics videos in code (launch videos, teasers, feature clips, cutdowns, silent hero loops). Remotion license check before any build, a frame-accurate 30fps storyboard with a reading-time guard, brand motion tokens (easing, springs, durations in frames), scene components re-laid out per aspect, ffmpeg delivery recipes, and a 20-point self-check with truthfulness and accessibility gates. A license-free path (HTML/CSS captured with Playwright) is included.
+
+**website-design**
+- Content inventory before layout: sections exist only if they hold real content.
+- 22 named AI-default tells (T1 to T22) with what to do instead, a code scan, and icon discipline built on a deletion test.
+- Exact craft defaults: grid, 4px baseline, spacing scale, computed type scale with `clamp()`, tinted neutral ramps, the one-accent rule, motion durations and easing.
+- Required pre-ship critique: 8 blockers, 9 named audits (squint, swap, tell scan, icon, contrast, mobile 375, keyboard, performance, content) and a 30-point scorecard with a ship threshold.
+
+**video-script**
+- Launch playbook: six concepts chosen by stage and audience, with second-by-second beats at 30, 60 and 90 seconds.
+- Production mode (live capture, motion, hybrid), banned openers, exact word-budget math, text hold and size rules, 9:16 safe zones, and a 14-point self-check.
+- Storyboard hand-off contract consumed by `motion-video`.
+
+**Install prompt**
+- The generated install prompt pins the `skills` CLI version and only allows the install and list commands; anything else in a draft (links, scripts, extra commands) sends it back to the standard prompt.
+
 ## 1.1.0 — 2026-10-23
 
 **New skill**

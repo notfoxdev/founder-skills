@@ -27,7 +27,7 @@ description: >-
 license: MIT                     # Apache-2.0 for website-design (adapted material)
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.2.0                 # bump the minor version when a skill's behaviour changes
 ---
 ```
 

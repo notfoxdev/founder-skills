@@ -1,6 +1,6 @@
 # Foundora founder skills
 
-Seventeen agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
+Eighteen agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
 
 ## Install
 
@@ -8,15 +8,13 @@ Seventeen agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skill
 npx skills add notfoxdev/founder-skills
 ```
 
-Non-interactive, for one agent (what the Foundora install prompt runs):
+Non-interactive, for one agent (what the Foundora install prompt runs, with the CLI version pinned):
 
 ```bash
-npx skills add notfoxdev/founder-skills --skill '*' -a claude-code -y   # or -a codex / -a cursor
+npx -y skills@1.7.4 add notfoxdev/founder-skills --skill '*' -a claude-code -y   # or -a codex / -a cursor
 ```
 
 Add `-g` to install for every project on your machine. Requires Node.js 22.20+.
-
-This repository is private: installing requires Git or GitHub CLI credentials with read access to it.
 
 ## Load your company context
 
@@ -34,11 +32,12 @@ The agent keeps a running decision log in `.foundora/journal.md`.
 | `customer-research` | Interview kits, synthesis, evidence-based personas, alternatives scan |
 | `mvp-scoper` | Cheapest test of the riskiest assumption; ruthless feature triage |
 | `positioning` | Alternatives → unique value → category → messaging hierarchy |
-| `website-design` | Distinctive, production-quality landing pages and sites, designed and built |
+| `website-design` | Pages designed for your company, not generated: content first, named AI-tell scan, scored pre-ship critique |
 | `landing-page-copy` | Conversion copy that drops into the `website-design` section layout |
 | `pricing-strategy` | Value metric, model, tiers, willingness-to-pay research, price tests |
 | `launch` | Readiness gate, channel plan, T-30 → T+14 timeline, launch-day run of show |
-| `video-script` | Launch, demo, and short-form scripts with timed VISUAL / AUDIO tables |
+| `video-script` | Launch and demo video concepts, hooks, timed scripts, captions, and a storyboard for the build |
+| `motion-video` | Builds the video in code: frame-accurate storyboard, brand motion tokens, render, cutdowns, hero loops |
 | `cold-outreach` | Short, verifiable, personalised outreach sequences |
 | `pitch-deck` | Narrative-first seed decks and slide-by-slide critique |
 | `fundraising` | Readiness, round sizing, investor pipeline, meeting prep, close |
@@ -51,7 +50,7 @@ The agent keeps a running decision log in `.foundora/journal.md`.
 - Context first: read `.foundora/company.md`, ask only for what is missing.
 - Never invent metrics, customers, quotes, investors, or market sizes. Gaps are marked `[NEED: ...]`, guesses `[ASSUMPTION]`.
 - Every skill ends with an exact output format and the next skill to run.
-- Visual skills hold a high design bar and ban generic AI aesthetics.
+- Visual skills hold a high design bar, ban generic AI aesthetics by name, and score their own output before calling it done.
 - Every skill ships a worked example and an edge-case section, and is regression-tested with [`evals/scenarios.md`](evals/scenarios.md).
 
 See [CONVENTIONS.md](CONVENTIONS.md) for authoring rules, [CHANGELOG.md](CHANGELOG.md) for what changed, and [ATTRIBUTION.md](ATTRIBUTION.md) for adapted sources.
