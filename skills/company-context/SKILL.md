@@ -9,17 +9,17 @@ description: >-
   company context", "create company.md", "update company.md", "the agent doesn't know my
   company", "we pivoted", "our stage changed", "we're at MVP now", "new traction numbers",
   "update our metrics", "our biggest risk changed", "new 90-day goal", "I didn't come through
-  the Foundora website". Not for deciding what to work on (use cofounder), judging the idea
+  the Foundora website", "is my company context complete". Not for deciding what to work on (use cofounder), judging the idea
   (use idea-validator), or the weekly scoreboard (use weekly-review).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Company context
 
-You are the founder's chief of staff, keeping the company's source-of-truth file accurate. You record what the founder says, tightened but in their meaning, and nothing you guessed.
+You keep the company's source-of-truth file accurate, the way a good chief of staff would. You write down what the founder says, tighter but in their words and meaning, and nothing you guessed.
 
 ## Before you start
 
@@ -53,10 +53,22 @@ How to respond:
    - Biggest risk: one sentence that kills the company if wrong. Several risks → ask which one first.
    - 90-day goal: one outcome with a number. "Grow" or "launch" alone gets one follow-up.
    - Tighten length, never meaning. If the tightened line changes what they said, show both and ask.
+   - Keep their words. Other skills borrow phrasing from this file for pages, emails and posts, so "partners can't see who's blocked" stays; don't polish it into "lack of visibility into workflow status".
 4. **Draft the file** in the exact format under Output format. Frontmatter: `foundora: 1`, `company` quoted, `stage` as one of the five lowercase values, `updated` as today's date. Keep the two agent-instruction lines under the title.
-5. **Preview and confirm.** Show the full file, list every `[NEED: ...]`, and ask for a yes. Write only after an explicit yes ("yes", "write it", "looks good"). Silence or a new question is not a yes.
-6. **Write, then log** a `decision` entry ("Company context created") in `.foundora/journal.md`, creating the journal if needed. Tell the founder both files changed.
-7. **Wire agent instructions.** If neither `CLAUDE.md` nor `AGENTS.md` references `.foundora/company.md`, offer the Foundora section from Output format. Append it only after a yes and never change other content in those files. If neither file exists, ask which one to create.
+5. **Clarity check.** Test the draft against five plain questions, the ones a good accelerator application asks. Each maps to a section that already exists; there are no new sections.
+
+| Question | Answered in |
+|---|---|
+| What do you do, in about 50 characters? | Snapshot → One-liner (if it runs long, offer a short version; the founder picks which goes in the file) |
+| What's your progress? | Traction & metrics |
+| Why this idea, why you, why now? | Team → Founder role; Problem (a "why now" line, if the founder gives one) |
+| Who else does this, and what do you understand that they don't? | Alternatives & competitors (one "what we see that they miss" line) |
+| How do you, or will you, make money? | Snapshot → Business model; Target customer; a price in the 90-day goal or traction |
+
+   A question the file can't answer plainly is a gap, and often the most useful thing the founder learns in the session. List gaps under the preview. They never block the write: the founder answers in a line (it goes into the matching section) or skips (it goes in the journal entry's "Still missing").
+6. **Preview and confirm.** Show the full file, list every `[NEED: ...]` and clarity gap, and ask for a yes. Write only after an explicit yes ("yes", "write it", "looks good"). Silence or a new question is not a yes.
+7. **Write, then log** a `decision` entry ("Company context created") in `.foundora/journal.md`, creating the journal if needed. Tell the founder both files changed.
+8. **Wire agent instructions.** If neither `CLAUDE.md` nor `AGENTS.md` references `.foundora/company.md`, offer the Foundora section from Output format. Append it only after a yes and never change other content in those files. If neither file exists, ask which one to create.
 
 ### Update
 
@@ -74,7 +86,7 @@ How to respond:
 2. **Ask only about touched sections**, same batch rules.
 3. **Check for conflicts.** If a new fact contradicts another section or the journal (for example, "early-traction" with "No revenue"), show both and ask which is current. Never resolve it silently.
 4. **Show a diff** of changed lines only, with `updated` bumped. Do not reword untouched sections.
-5. **Confirm, write, log.** Use `decision` when the founder chose a direction (pivot, new goal, stage call) and `learning` when evidence changed a fact (new numbers, risk retired). Each entry states old → new and why. On a pivot, facts removed from `company.md` are copied into the journal entry so nothing is lost. Then, if neither CLAUDE.md nor AGENTS.md references `.foundora/company.md`, offer the Foundora section once (Create step 7 rules).
+5. **Confirm, write, log.** Use `decision` when the founder chose a direction (pivot, new goal, stage call) and `learning` when evidence changed a fact (new numbers, risk retired). Each entry states old → new and why. On a pivot, facts removed from `company.md` are copied into the journal entry so nothing is lost. Then, if neither CLAUDE.md nor AGENTS.md references `.foundora/company.md`, offer the Foundora section once (Create step 8 rules). On a pivot or stage change, rerun the clarity check on the touched sections.
 
 ### Migrate
 
@@ -87,7 +99,8 @@ Map every line of the existing file into the template sections. Content that fit
 - Exact template: same frontmatter keys, same headings, same order. No new sections; extra material goes under Notes.
 - Never rewrite or delete journal entries; supersede with a new entry that names the old one.
 - No secrets or personal data: no credentials, bank details, ID numbers, or customer personal data. The file may be committed to git.
-- Do not add strategy, advice, or scoring to the file. It holds facts; other skills do the judging.
+- Do not add strategy, advice, or scoring to the file. It holds facts; other skills do the judging. The clarity check reports gaps; it never fills them.
+- Ask like a person, not a form: "What do they do today when close goes wrong?" beats "Please describe current alternative solutions."
 
 ## Edge cases
 
@@ -118,7 +131,8 @@ Preview or diff (create shows the full file; update shows a `diff` block of chan
 **Proposed `.foundora/company.md`** (<new file | N sections changed>)
 <full file or diff>
 **Still missing:** [NEED: ...]
-Write this? Reply yes, or tell me what to change.
+**Clarity check:** 50-char version <yes | gap: proposed short line> · progress <yes | gap> · why this / why now <yes | gap> · what you see that others miss <yes | gap> · how you make money <yes | gap>
+Write this? Reply yes, or tell me what to change. Answer any gap in a line, or skip it.
 ```
 
 If the diff still contains `[ASSUMPTION]` lines, replace the last line with: "Answer the questions above and I'll show the final diff to approve."
@@ -199,3 +213,6 @@ Journal entry appended to `.foundora/journal.md`:
 - **cofounder**: right after the file is created or a pivot is logged, to turn the new context into this week's plan.
 - **weekly-review**: when the 90-day goal or biggest risk changed, to reset the North Star and inputs.
 - **idea-validator**: when the update shows a new direction or the biggest risk is still "will anyone want this".
+- **positioning** or **competitor-teardown**: when the clarity check can't answer "what do you understand that they don't".
+
+_Method credit: the clarity check adapts the questions in the Y Combinator application (one-line description, progress, why this idea, competitors and what you understand that they don't, how you make money), described in original wording._

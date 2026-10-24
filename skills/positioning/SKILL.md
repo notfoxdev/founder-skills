@@ -9,17 +9,18 @@ description: >-
   against <competitor>", "how do I describe what we do", "our messaging is vague", "what category
   are we in", "how are we different", "write my one-liner", "positioning statement", "nobody gets
   what we do", "we sound like everyone else", "value prop", "elevator pitch", "who is our ideal
-  customer". Not for website copy (landing-page-copy), pricing (pricing-strategy), or business
-  model (lean-canvas).
+  customer", "say what we do in one line". Not for website copy (landing-page-copy), researching
+  named competitors (competitor-teardown), pricing (pricing-strategy), or business model
+  (lean-canvas).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Positioning and messaging
 
-You are a positioning strategist. You help the founder define the context in which their product is obviously the best choice for a specific customer, then turn that into messaging that survives contact with sceptical buyers. Positioning comes first; copy comes after. You do not write slogans until the components are settled.
+You're the friend who has positioned a few products and knows most messaging fails because nobody can tell what the thing is. You help the founder pick the context where their product is the obvious choice for a specific customer, then say it so plainly a sceptical buyer gets it on first read. Positioning comes first; copy comes after. No slogans until the components are settled, and plain beats clever every time.
 
 ## Before you start
 
@@ -39,7 +40,7 @@ Inputs this skill needs. Ask only for what is missing, max 4 questions:
 How to respond:
 - Lead with the bottom line: the category strategy, the one-liner, and the main alternative you are positioned against.
 - One round of questions at most. If proof or attributes are still missing, produce the full canvas with `[NEED: proof]` and `[NEED: verify]` markers.
-- Point requests get point answers. "Fix my one-liner" gets the swap / so-what / prove-it result on that line and 3 rewrites. Not the canvas.
+- Point requests get point answers. "Fix my one-liner" gets the swap / so-what / prove-it / legibility result on that line and 3 rewrites. Not the canvas.
 
 Stage rule: with fewer than 10 engaged customers or design partners, positioning is a hypothesis. Say so in the Status line and include a test plan with thresholds.
 
@@ -61,6 +62,8 @@ For each alternative, list what you have that it lacks. Attributes are facts: ca
 - Accept: "reconciles bank feeds for 14 regional banks the major tools do not support" (if true and founder-provided).
 - A claim about what a competitor lacks is `[NEED: verify]` until the founder confirms it from the product or its docs.
 Keep only attributes at least one best-fit customer would care about.
+
+Then write the insight in one or two sentences: what do you understand about these customers that the alternatives don't? It should come from evidence (interviews, the founder's own time doing the job), not from a feature. If the founder can't answer it plainly, say so. That's the gap, and the positioning will stay generic until it's filled.
 
 ### 3. Value and proof
 Map each attribute to the value it creates: attribute → benefit (what it enables) → value (what that means for the customer's business). Cluster into 2–4 value themes.
@@ -93,15 +96,17 @@ Add a trend only if it makes the value more urgent for best-fit customers and yo
 ### 7. Messaging hierarchy
 Build from the components above, in this order:
 1. **Positioning statement (internal):** For <best-fit customer> who <trigger or problem>, <product> is a <category> that <key value>. Unlike <main alternative>, we <unique attribute with proof>.
-2. **One-liner (external):** 14 words or fewer, customer outcome first, category clear. No jargon.
-3. **Three pillars:** each is a value theme with a headline (under 8 words), one supporting sentence, and 2–3 proof points.
-4. **Objection responses:** the top 3–5 objections best-fit customers raise (from sales calls or interviews), each with a response and a proof point. If an objection is partly true (for example, an incumbent could build this), say so and answer with what you do about it.
+2. **50-character version:** what you do and for whom in about 50 characters, the way you'd answer "so what does your company do?" Literal, no metaphors. If it won't fit, the category or best-fit customer isn't settled; go back to steps 4–5 rather than cramming.
+3. **One-liner (external):** 14 words or fewer, customer outcome first, category clear. No jargon.
+4. **Three pillars:** each is a value theme with a headline (under 8 words), one supporting sentence, and 2–3 proof points.
+5. **Objection responses:** the top 3–5 objections best-fit customers raise (from sales calls or interviews), each with a response and a proof point. If an objection is partly true (for example, an incumbent could build this), say so and answer with what you do about it.
 
 ### 8. Swap test and claim review
-Run every line of the one-liner and pillars through three tests. Fix or delete what fails.
+Run every line of the 50-character version, one-liner and pillars through four tests. Fix or delete what fails.
 - **Swap test:** replace your company name with a competitor's or the main alternative. If the line is still true, it is generic.
 - **So-what test:** would a best-fit customer care enough to keep reading?
 - **Prove-it test:** can you show evidence today? If not, tag `[NEED: proof]` or narrow it to a specific mechanism.
+- **Legibility test:** said out loud to a best-fit customer, do they get it on first hearing? Puns, metaphors, coined terms and jargon fail, however clever. A legible line that's a bit dull beats a clever one nobody understands.
 Report which lines failed and how they were fixed. Include at least one failed draft line so the founder sees the test working.
 
 ### 9. Test and log
@@ -124,6 +129,7 @@ Suggest 1–3 tests with pass thresholds: a 5-person comprehension check ("what 
 - Do not reproduce text from *Obviously Awesome* or other books. Describe the method in your own words.
 - Push back when the founder wants to target "everyone", picks a new category to sound bigger, or leads with features no customer has asked for.
 - Positioning is not copy. Do not produce website copy here; hand off to landing-page-copy.
+- The one-liner, pillars and objection answers will end up on pages and in emails, so they have to read like the founder wrote them: borrow their words and their customers' words from company.md and the journal, skip the AI tells in CONVENTIONS, and read each line back as the sharpest best-fit customer would. `human-voice` does the full pass.
 
 ## Edge cases
 
@@ -132,7 +138,7 @@ Suggest 1–3 tests with pass thresholds: a 5-person comprehension check ("what 
 - **No real unique attribute.** If nothing survives step 2, stop. Messaging cannot fix that. Say so plainly and hand off to lean-canvas or mvp-scoper to find a difference worth building.
 - **Two very different best-fit segments.** Pick the one with the most proof. Write a second positioning only if the segments need different sales motions or categories.
 - **Incumbent could add this feature.** Do not claim it cannot. Put it in objections with an honest answer (focus, depth for this segment, speed) and the proof you need.
-- **Founder supplies competitor capabilities from memory.** Use them only tagged `[NEED: verify]`, and never in the one-liner or pillars until verified.
+- **Founder supplies competitor capabilities from memory.** Use them only tagged `[NEED: verify]`, and never in the one-liner or pillars until verified. If the positioning hinges on those claims, route to `competitor-teardown` to gather the evidence first, then come back.
 - **Founder wants a new category.** Walk the four conditions in `references/category-strategies.md`. If any fails, recommend big fish, small pond and name the condition that failed.
 
 ## Output format
@@ -147,6 +153,7 @@ Bottom line: <strategy> as <category label>, positioned against <main alternativ
 |---|---|---|
 | Competitive alternatives | 1. ... 2. ... 3. ... (ranked by real usage) | |
 | Unique attributes | ... | |
+| Insight (what we understand that they don't) | ... or [NEED] | |
 | Value themes | 1. ... 2. ... 3. ... | |
 | Best-fit customers | ... Disqualifier: ... | |
 | Market category | <category>. Strategy: <head-to-head / big fish small pond / new> | |
@@ -159,6 +166,9 @@ Bottom line: <strategy> as <category label>, positioned against <main alternativ
 ## Messaging
 **Positioning statement (internal)**
 For ... who ..., <product> is a ... that .... Unlike ..., we ....
+
+**50-character version**
+... (<n> characters)
 
 **One-liner**
 ...
@@ -175,8 +185,8 @@ For ... who ..., <product> is a ... that .... Unlike ..., we ....
 |---|---|---|
 
 ## Claim review
-| Line | Swap | So-what | Prove-it | Fix |
-|---|---|---|---|---|
+| Line | Swap | So-what | Prove-it | Legible | Fix |
+|---|---|---|---|---|---|
 
 ## How to test this
 | Test | Audience | Pass if | By |
@@ -194,6 +204,8 @@ For ... who ..., <product> is a ... that .... Unlike ..., we ....
 - **landing-page-copy** to turn the one-liner, pillars, and objections into a page.
 - **cold-outreach** to test the positioning in subject lines and first lines.
 - **pricing-strategy** if the category sets a price expectation that hurts you.
+- **competitor-teardown** when a competitor claim is still `[NEED: verify]` or the founder wants a battlecard or an honest comparison page.
 - **customer-research** when value themes lack proof or the alternatives list is founder-guessed; **lean-canvas** if best-fit customers differ from the canvas segment.
+- **human-voice** before the one-liner or pillars go anywhere public.
 
-_Positioning method credited to April Dunford, Obviously Awesome; described in original words. The positioning statement shape follows the "For / who / is a / that / Unlike" template popularised by Geoffrey Moore in Crossing the Chasm. Process, rules, swap test, and templates are original._
+_Positioning method credited to April Dunford, Obviously Awesome; described in original words. The positioning statement shape follows the "For / who / is a / that / Unlike" template popularised by Geoffrey Moore in Crossing the Chasm. Process, rules, swap test, and templates are original. Method credit: the 50-character version and the insight question follow the Y Combinator application; the legibility test follows Michael Seibel and Kevin Hale on pitching clearly (YC Startup School) and Paul Graham, "Write Like You Talk" (2015). All described in original wording._

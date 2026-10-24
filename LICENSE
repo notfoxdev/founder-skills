@@ -22,10 +22,19 @@ SOFTWARE.
 
 ---
 
-Portions of `skills/landing-page-copy`, `skills/launch`, `skills/pricing-strategy`
-and `skills/cold-outreach` are adapted from coreyhaines31/marketingskills:
+Portions of `skills/landing-page-copy`, `skills/launch`, `skills/pricing-strategy`,
+`skills/cold-outreach`, `skills/competitor-teardown`, `skills/seo-content`,
+`skills/onboarding`, `skills/product-analytics`, `skills/sales-call`,
+`skills/lifecycle-emails` and `skills/human-voice` (copy-editing material) are
+adapted from coreyhaines31/marketingskills:
 
-MIT License. Copyright (c) Corey Haines. Permission is hereby granted, free of
+MIT License. Copyright (c) 2025 Corey Haines. Permission is hereby granted, free
+of charge, to any person obtaining a copy of this software and associated
+documentation files, under the same terms as above.
+
+Portions of `skills/human-voice` are adapted from blader/humanizer:
+
+MIT License. Copyright (c) 2025 Siqi Chen. Permission is hereby granted, free of
 charge, to any person obtaining a copy of this software and associated
 documentation files, under the same terms as above.
 

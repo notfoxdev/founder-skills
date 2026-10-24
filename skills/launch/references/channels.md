@@ -6,7 +6,8 @@ Read this after picking channels in step 3. Platform rules change; tell the foun
 
 ### Email list and waitlist
 - Your highest-intent channel. Send the launch email first, before rented channels, so your warmest people see it while you can still reply.
-- Plain, personal, from the founder's name. One CTA. Subject line says what happened ("[Product] is live: <what it does>").
+- For a first launch, this is the whole launch: a plain-text email from the founder's own inbox to 10–50 hand-picked people. Write each one individually, with a line on why you picked them ("you told me in August that close slips every month"). Ask them to try it and offer to set it up with them on a call. A link to a 30–60 second clip of it working is the only extra. It should look like an email a person wrote, because it is one.
+- Plain, personal, from the founder's name. One CTA. Subject line says what happened ("[Product] is live: <what it does>"), or for the first circle, what you'd write to a colleague ("The close tracker I mentioned").
 - Segment: beta users (ask for feedback, a review, or a reply), waitlist (invite with access), general list (announcement).
 - Follow-up 2–3 days later to non-clickers with a different angle (demo video, a customer story), not the same email.
 - Measure clicks and replies, not opens (open tracking is unreliable).

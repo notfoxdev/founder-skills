@@ -1,6 +1,6 @@
 # Foundora skill pack conventions
 
-Every skill in this pack follows the same contract so they behave like one coherent cofounder instead of 16 unrelated prompts. Read this before adding or editing a skill.
+Every skill in this pack follows the same contract so they behave like one coherent cofounder instead of a pile of unrelated prompts. Read this before adding or editing a skill.
 
 ## Layout
 
@@ -27,7 +27,7 @@ description: >-
 license: MIT                     # Apache-2.0 for website-design (adapted material)
 metadata:
   pack: foundora
-  version: 1.2.0                 # bump the minor version when a skill's behaviour changes
+  version: 1.3.0                 # bump the minor version when a skill's behaviour changes
 ---
 ```
 
@@ -92,6 +92,18 @@ Every skill ships `references/example.md`: one realistic request, the relevant c
 ## Voice
 
 Direct, specific, founder-to-founder. No hype words (revolutionary, seamless, unlock, game-changing, leverage). No exclamation marks. Plain verbs. Short sentences. Push back when the founder is wrong, with the reason.
+
+### Sound like a person
+
+The skills talk to a founder the way a sharp friend who has done the job would: warm, plain, and on their side, without flattery. Anything a skill writes for the founder to publish (posts, emails, pages, scripts, updates) has to read like the founder wrote it on a good day.
+
+- Write the way people talk. Contractions are fine. "We" and "you", not "the user" and "stakeholders".
+- Say the specific thing. "Two firms said they'd pay $150" beats "strong early signal".
+- Vary sentence length. A short line after a long one is how people actually write.
+- Use the founder's own words from `company.md`, the journal and their messages. Borrow their phrasing before inventing yours.
+- Leave out the AI tells: "it's not X, it's Y" contrasts, forced lists of three, tidy one-line closers, staged openers ("Here's the thing:"), stacked em dashes, bold labels on every line, "delve", "elevate", "robust", "in today's fast-paced world".
+- If a sentence would fit any company, rewrite it until it only fits this one, or cut it.
+- Before handing over publishable text, read it as the founder's sharpest customer would. If a line sounds like a brochure, rewrite it. `human-voice` holds the full pattern list.
 
 ## Design-quality bar (visual skills)
 

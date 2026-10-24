@@ -87,3 +87,36 @@ For each candidate input, answer yes to all four or replace it:
 2. Is there a plausible causal link to the North Star?
 3. Is it measured the same way every week?
 4. Would a change in it lead to a different decision?
+
+## Weekly growth rate
+
+Weekly growth = (this week − last week) ÷ last week. Report the 4-week average too, because single weeks are noisy.
+
+Rule of thumb for early startups (Paul Graham, "Startup = Growth"): about 5–7% a week is good, 10% a week is exceptional, around 1% means you haven't figured it out yet. It applies to a North Star that compounds (revenue, active users who got value). It does not apply to a pre-revenue commitment count like "paid pilots".
+
+What the rates compound to over a year (calculation, 52 weeks):
+
+| Weekly | After 52 weeks |
+|---|---|
+| 1% | ~1.7x |
+| 5% | ~12.6x |
+| 7% | ~33x |
+| 10% | ~142x |
+
+Converting: weekly ≈ (1 + monthly)^(12/52) − 1. 20% a month is roughly 4.3% a week; 50% a month is roughly 9.8% a week.
+
+Small numbers: below a base of about 20 (customers, active accounts, or a few hundred dollars of MRR), one customer swings the rate by 5–100%. Show "+n" next to the percentage, judge on the absolute change, and set the weekly goal as a count ("2 more active firms") until the base is big enough. Switch to a percentage goal at the monthly retro when the base passes ~20.
+
+Daily question the weekly goal should create: "What did I do today that moves this week's number?"
+
+## Default alive check (monthly)
+
+Paul Graham's question: at current expenses and current revenue growth, does the company reach profitability with the money it has?
+
+1. Inputs: cash in the bank, monthly expenses (all of them, including founder pay), monthly revenue, revenue growth rate per month (3-month average). Any missing → `[NEED: ...]`, no estimate.
+2. Assume expenses stay flat (or use the planned hires if they're committed). Project revenue forward month by month at the current growth rate.
+3. Find the first month revenue ≥ expenses. Add up the losses until then.
+4. Cumulative losses < cash → **default alive**, with the month it turns profitable. Otherwise → **default dead**, with the month cash runs out.
+5. Pre-revenue or flat revenue is default dead by definition. That isn't a verdict on the company; it tells you the date by which revenue growth or a raise has to land. Fundraising usually takes months, so name the date to start, not just the cash-out date.
+
+Show the table (month, revenue, expenses, cash left) in the retro. Never round runway up.

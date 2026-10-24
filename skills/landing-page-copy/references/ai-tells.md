@@ -2,6 +2,8 @@
 
 Read this in step 7 and run it against the full draft. These phrases and patterns make copy read as machine-written and interchangeable. Remove them unless the founder insists, and even then say why it costs them.
 
+This is the short list for landing pages. The `human-voice` skill keeps the canonical, fuller pattern list and does a deeper rewrite pass; use it when this list clears but the page still sounds generic.
+
 ## Banned phrases
 
 | Tell | Why it fails | Rewrite direction |

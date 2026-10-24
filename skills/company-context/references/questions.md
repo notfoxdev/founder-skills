@@ -6,7 +6,7 @@ Max 3 questions per message, one batch per message, every question skippable. Us
 
 1. What are you building, in one line, and for whom? (e.g. "Scheduling for physio clinics with 2–10 staff")
 2. Which stage fits best: idea, validation, mvp, early-traction, or growth? (definitions below; offer them only if asked or if the answer is unclear)
-3. How do you make money, and do you have a website yet? (b2b-saas, b2c, marketplace, services, other; URL or "none yet")
+3. How do you make money (or plan to, and roughly at what price), and do you have a website yet? (b2b-saas, b2c, marketplace, services, other; URL or "none yet")
 
 Business model can often be inferred from the one-liner. Propose it as "Sounds like B2B SaaS, right?" instead of asking cold.
 
@@ -14,12 +14,12 @@ Business model can often be inferred from the one-liner. Propose it as "Sounds l
 
 1. What problem do you solve, and who has it? (role and company type, not "businesses")
 2. Who pays, who uses it day to day, and how do they buy? (card, invoice, procurement, app store)
-3. What do they do today instead? (tools, spreadsheets, an agency, a person, doing nothing)
+3. What do they do today instead, and what do you understand about this that those options miss? (tools, spreadsheets, an agency, a person, doing nothing; "I don't know yet" is a fine answer for the second half)
 
 ## Batch 3: Team and traction
 
 1. Do you have a cofounder? Name and role if so.
-2. What is your role, and what in your background fits this problem?
+2. What is your role, what in your background fits this problem, and why is now the time? (a change in tools, rules, or behavior; skip if nothing changed)
 3. What numbers do you have so far? Interviews, signups, pilots, users, revenue: whatever exists, each with a count. "None yet" is a fine answer.
 
 ## Batch 4: Constraints and direction
@@ -55,6 +55,8 @@ Common founder words: "pre-seed" and "seed" are funding stages, not company stag
 | "Grow" / "launch" | "What number tells you in 90 days that it worked?" |
 | Three risks | "Which one, if wrong, ends the company first?" |
 | "A few months of runway" | "Roughly how many months? Or skip it." |
+| One-liner over ~50 characters | "If you had one short line on a form, what would it say?" (offer a draft; they pick) |
+| "We're just better" | "Better at what, that a customer would notice the first week?" |
 
 ## Update triggers
 

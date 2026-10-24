@@ -1,6 +1,6 @@
 # Foundora founder skills
 
-Eighteen agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
+Twenty-six agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
 
 ## Install
 
@@ -44,12 +44,21 @@ The agent keeps a running decision log in `.foundora/journal.md`.
 | `investor-update` | Honest monthly updates with consistent metrics |
 | `weekly-review` | North Star scoreboard, three priorities, kill list, 90-day resets |
 | `company-context` | Create or update `.foundora/company.md` when you pivot, change stage, or get new numbers |
+| `human-voice` | Make anything you post or send sound like you wrote it: same facts, no AI tells |
+| `competitor-teardown` | Fair, deep look at named alternatives; battlecard; honest comparison page |
+| `feature-spec` | A two-minute spec your coding agent can build from: job, time box, no-gos, acceptance checks |
+| `onboarding` | Signup to the aha moment: cut steps, founder-led setup, screen copy |
+| `product-analytics` | Activation event, retention signal, a tracking plan of 12 events at most |
+| `sales-call` | Call prep, discovery, a demo of their pain, objections, a dated next step |
+| `lifecycle-emails` | The 3–5 emails that matter to people who signed up, sent from you |
+| `seo-content` | The few pages buyers search for, written from first-hand experience |
 
 ## Principles
 
 - Context first: read `.foundora/company.md`, ask only for what is missing.
 - Never invent metrics, customers, quotes, investors, or market sizes. Gaps are marked `[NEED: ...]`, guesses `[ASSUMPTION]`.
 - Every skill ends with an exact output format and the next skill to run.
+- Everything it writes for you to publish reads like you wrote it: your words, no AI tells.
 - Visual skills hold a high design bar, ban generic AI aesthetics by name, and score their own output before calling it done.
 - Every skill ships a worked example and an edge-case section, and is regression-tested with [`evals/scenarios.md`](evals/scenarios.md).
 

@@ -22,6 +22,25 @@
 **What would change this:** Both pilot firms agreeing to $150/month conversion terms (H4 to 4 or 5), plus notes showing at least 5 of the 11 interviewees describing a specific recent close failure (H2 and H3 to 4). That makes BUILD reachable.
 **Not counted as evidence:** The 2 free pilots count toward H1 (time commitment), not H4. The 62 waitlist signups are attention, not demand, and 53 of them are outside your band. Your 4 years running close at a firm count toward H7; for H2 and H3 they are one data point (cap 2).
 
+## Problem profile
+
+| Popular | Growing | Urgent | Expensive | Mandatory | Frequent |
+|---|---|---|---|---|---|
+| Partly: 11 interviewees in band; [NEED: count of firms with 3–15 staff, from a source you can check] | [NEED]: nothing dated in company.md (same gap as H6) | Yes: client close deadlines slip (company.md) | Partly: reviewers redo work, hours not counted [NEED: hours per close] | Partly: close is required for every client; tracking it is not | Yes: every month, across 20–80 clients |
+
+**Read:** urgent and frequent, so it's not a nice-to-have. What's unproven is the money: nobody has put a cost on a slipped close, and that's what a partner pays to avoid.
+
+## Red flags
+
+| Flag | Status | Evidence | Clears if |
+|---|---|---|---|
+| Solution in search of a problem | Clear | You ran close at a 9-person firm for 4 years; the problem came first (company.md) | n/a |
+| Tarpit | [NEED] | Practice tools exist and do adjacent jobs, which is a good sign for the market. Unknown: has anyone sold a standalone close tracker to small firms and stalled or been absorbed? | A 2-hour search names past attempts and why they stalled, or finds none |
+| Made-up idea | Clear | 2 firms gave a month of their time to a pilot | n/a |
+| Wide, not deep | Clear, watch it | The depth is 2 pilot firms and 11 interviews, not the 62 signups. Don't let the waitlist count become the story | Stays clear while the scoreboard counts pilot firms, not signups |
+
+The tarpit check at `[NEED]` blocks BUILD on its own, so it's test 6 below.
+
 ## Hypotheses and scores
 
 | # | Hypothesis (We believe... / Wrong if...) | Score | Evidence (type, source) | Cap applied |
@@ -39,7 +58,7 @@
 - PROVISIONAL: not applied. 11 conversations clears the floor of 5, provided they were about past behavior [NEED: confirm]. If most were demos, this becomes PROVISIONAL — KEEP TESTING.
 - KILL: not matched. H2 and H3 are 3, not 2 or below. Incumbent risk is a threat, not a structural blocker. H7 is 4.
 - PIVOT: not matched. H2 and H3 are not both 4+. H4's 2 comes from a question never asked, which cannot trigger PIVOT anyway.
-- BUILD: not matched. H2 and H3 are below 4; H4 is below 3 with no commitment.
+- BUILD: not matched. H2 and H3 are below 4; H4 is below 3 with no commitment; the tarpit check is at `[NEED]`.
 - KEEP TESTING: matched. Flip hypothesis: H4. Re-run by 2026-11-06.
 
 ## How this dies
@@ -61,6 +80,7 @@
 | 3 | Risk 1, H4 | Ask the interviewees who use Karbon or TaxDome: "When did you last try to run close in its templates? What happened?" | 2 / $0 | 2 weeks | Up to 11 [NEED: how many use either tool] | 5+ tried and stopped, with a specific reason | 5+ run close in the template and are satisfied |
 | 4 | H2, H3 | Recount the 11 sets of notes: per person, a specific recent close failure and hours lost | 0.5 / $0 | 2 days | 11 | 5+ of 11 with an event and hours | 2 or fewer of 11: H2 drops to 2 and the KILL rule (10+ interviews) is checked |
 | 5 | H6 | Write the why-now with one dated, sourced change, or accept H6 at 1 | 0.5 / $0 | 2 days | n/a | One specific change with a source | None found: H6 stays 1, flag for `pitch-deck` |
+| 6 | Tarpit flag | Search for standalone close trackers aimed at small firms that shut down, pivoted, or were absorbed; ask 3 interviewees what they tried before Sheets | 0.25 / $0 | 2 days | n/a | Attempts named with a reason you can avoid, or none found | 2+ attempts stalled on the same "firms won't pay outside their practice tool" reason: that's the biggest risk confirmed, so rerun the verdict early |
 
 Threshold for test 2, derived: the 90-day goal is 3 paying firms. If both pilots convert you need 1 more; the pass line is 2 to absorb one pilot not converting.
 
@@ -84,6 +104,6 @@ Logged to `.foundora/journal.md` (created):
 | Context use | All seven scores built from company.md; nothing re-asked; notes requested as `[NEED]`, not as a blocker |
 | Honesty | No invented interview content, hours, or competitor facts; H6 left at 1; pricing gap called missing, not negative |
 | Decision quality | Caps shown per score; every verdict rule checked in order; flip hypothesis and re-run date named |
-| Pushback | Free pilots and waitlist explicitly not counted toward H4; incumbent-feature risk rated High |
+| Pushback | Free pilots and waitlist explicitly not counted toward H4; incumbent-feature risk rated High; tarpit left at `[NEED]` and blocking BUILD instead of assumed clear |
 | Format | Mode A template, tables, US spelling |
 | Actionability | Cheapest money test first, with pass/fail lines and a 2026-11-06 re-run |

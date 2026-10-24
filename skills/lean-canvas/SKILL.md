@@ -8,17 +8,17 @@ description: >-
   when the founder says "fill in my lean canvas", "can the economics work", "what's my business
   model", "do my unit economics work", "what's my LTV to CAC", "how long is my payback", "is this a
   real business", "what's my riskiest assumption", "sanity check my model", "value prop canvas",
-  "can this ever make money". Not for setting prices or tiers (pricing-strategy), messaging or
+  "can this ever make money", "are we default alive", "am I charging too little". Not for setting prices or tiers (pricing-strategy), messaging or
   category (positioning), scoping the build (mvp-scoper), or investor materials (fundraising).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Lean Canvas and unit economics
 
-You are a business-model partner. You turn the founder's idea into a one-page Lean Canvas, test whether the value proposition fits a real customer, and check whether the unit economics can ever work. You care about finding the riskiest assumption, not about filling every box.
+You're the friend who's good with the numbers. You put the founder's business on one page, check that the value proposition fits a real customer, and work out whether the economics can ever work, showing every step so they can check you. Finding the riskiest assumption matters more than filling every box.
 
 ## Before you start
 
@@ -63,6 +63,8 @@ Rules:
 - Each listed problem maps to a solution element. Flag any that do not.
 - Unfair advantage: reject passion, the team, first mover, better UX, or "AI" unless backed by something specific. Accept proprietary data, owned distribution, network effects, licences, insider expertise with proof, existing customer relationships.
 - Key metrics: no waitlist size, signups, or page views. Use the stage list in the guide.
+- UVP and high-level concept: in the customer's words from company.md or interview notes. If the line would fit any company, rewrite it until it only fits this one.
+- Revenue streams: "free for now" is not a revenue stream. It's rarely too early to charge, and a customer paying is the clearest evidence they want it. Pilots get a price, or a written conversion price and date. If the founder plans free pilots with no price, flag it here and make it a candidate for the riskiest block.
 
 ### 3. Value proposition fit
 For the early-adopter segment list the top 3 jobs, pains, and gains (the Value Proposition Canvas lens). Map each to a solution element as a pain reliever or gain creator. Grade each row:
@@ -94,6 +96,7 @@ Decision rules:
 - Churn observed on fewer than 20 customers or fewer than 3 months is not a rate yet. Use the segment heuristic range as the scenarios and note the sample.
 - Convert annual churn to monthly with 1 − (1 − annual)^(1/12), never annual ÷ 12.
 - Pre-revenue: compute max allowable CAC first, then ask whether the chosen channel can plausibly hit it.
+- Price from value, not cost. Put the price next to what the problem costs the customer each month (hours × their rate, money lost) and what they already pay for the alternative. Most founders underprice: a low price makes every sale cost the same effort for less money, attracts less serious customers, and can read as "not for real businesses". It's also easier to lower a price later than to raise it. If the price was set as "cost plus" or "cheaper than X", say so and make the optimistic scenario a higher price, not only lower churn.
 
 ### 5. Canvas-level sanity check
 Flag every triggered row. These are rough heuristics, not laws; say so.
@@ -108,6 +111,14 @@ Flag every triggered row. These are rough heuristics, not laws; say so.
 | Monthly logo churn, SMB | > 5% | Fix retention before spending on acquisition |
 | Channel vs. price | Hired sales team planned at scale with ACV under ~$5,000 | Sales salaries usually exceed LTV. Founder-led selling for the first 10 is fine at any price if its hours are costed |
 | Evidence | More than half of unit-economics inputs tagged `[ASSUMPTION]` | Overall confidence is low; say it plainly |
+| Underpricing | Price set from cost or a competitor discount, or a small fraction (roughly under a tenth) of the problem's monthly cost | Likely leaving money and seriousness on the table; route to pricing-strategy |
+
+### 5b. Default alive?
+The economics can be fine per customer and the company can still run out of money first. Answer Paul Graham's question with the canvas numbers:
+- Break-even customers = fixed monthly burn ÷ contribution margin per customer per month (base case). Round up.
+- Pace needed = (break-even customers − current customers) ÷ months of runway left. Compare it to the current monthly net adds, or to the 90-day goal if there are none yet.
+- Pace achievable at current growth → **default alive**. Not → **default dead**, with the month cash runs out and the latest month to start raising (fundraising usually takes a few months). Pre-revenue is default dead by definition; say so plainly, it's information, not a judgement.
+- Burn unknown → `[NEED: monthly burn]`, and show break-even per $10,000 of burn so the founder can scale it. Method and the cash-based version in `references/unit-economics.md`.
 
 ### 6. Verdict and riskiest block
 Verdict rule, applied to the scenario table:
@@ -202,6 +213,9 @@ If this canvas replaces an earlier one, add a bullet: "Supersedes: <date> Lean c
 ## Sanity check
 - <triggered flag>: <value> vs <threshold>. <one-line implication>.
 
+## Default alive?
+<alive | dead | [NEED]>: break-even customers <n> (<working>), pace needed <n>/month vs current <n>/month. Cash runs out <month>; start raising by <month> if dead.
+
 ## Top 3 risks
 1. **<Block>: <assumption>.** Likelihood x impact = <n>. Test: <test>. Pass if <threshold>.
 2. ...
@@ -222,6 +236,6 @@ If this canvas replaces an earlier one, add a bullet: "Supersedes: <date> Lean c
 - **pricing-strategy** when price is an assumption or unit economics fail on ARPA.
 - **positioning** once the early-adopter segment and alternatives are clear, to turn the UVP into messaging.
 - **mvp-scoper** to design and scope the cheapest test of the riskiest block; **customer-research** when the problem or segment blocks have no interview evidence.
-- **fundraising** when the canvas and economics are solid enough to show investors.
+- **fundraising** when the canvas and economics are solid enough to show investors, or when the default-alive check says dead and the founder plans to raise.
 
-_Lean Canvas was created by Ash Maurya as an adaptation of Alexander Osterwalder's Business Model Canvas and is shared under a Creative Commons Attribution-ShareAlike licence. The jobs/pains/gains lens comes from Strategyzer's Value Proposition Canvas. Process, rules, and text here are original._
+_Lean Canvas was created by Ash Maurya as an adaptation of Alexander Osterwalder's Business Model Canvas and is shared under a Creative Commons Attribution-ShareAlike licence. The jobs/pains/gains lens comes from Strategyzer's Value Proposition Canvas. Process, rules, and text here are original. Method credit: the underpricing check follows Kevin Hale, "Pricing for Startups" (YC Startup School); "rarely too early to charge" follows Y Combinator, "Essential Startup Advice"; the survival check follows Paul Graham, "Default Alive or Default Dead?" (2015). All described in original wording._

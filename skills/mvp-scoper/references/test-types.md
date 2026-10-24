@@ -13,7 +13,7 @@ Signal strength scale:
 
 The founder delivers the outcome personally and openly. The customer knows a human is doing the work.
 
-- **When:** testing whether the outcome is valuable enough to pay for, before knowing what to automate. Best for services, B2B workflows, and anything where the "right" output is unclear.
+- **When:** testing whether the outcome is valuable enough to pay for, before knowing what to automate. Best for services, B2B workflows, and anything where the "right" output is unclear. This is the default first MVP whenever a person can deliver the outcome: it costs days, not weeks, and the founder learns the workflow first-hand.
 - **Cost:** 1–2 days to set up (intake form, payment link, a delivery checklist); then ongoing founder hours per customer.
 - **Signal:** Strong if customers pay and come back; Medium if free.
 - **Example:** A meal-planning idea run as a weekly plan written by the founder for 10 paying households over email.

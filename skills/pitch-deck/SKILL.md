@@ -8,18 +8,18 @@ description: >-
   when the founder says "help me build my pitch deck", "outline our pre-seed deck", "review my
   deck", "is my deck any good", "what slides do I need", "rewrite my problem slide", "how do I
   show market size", "TAM slide", "deck for demo day", "send-ahead deck", "tear my deck apart",
-  "what will investors push back on". Not for deciding whether or when to raise (use
-  fundraising), investor emails (use investor-update), or full brand visuals (use
-  website-design).
+  "what will investors push back on", "explain what we do in two sentences". Not for deciding
+  whether or when to raise (use fundraising), investor emails (use investor-update), deep
+  competitor research (use competitor-teardown), or full brand visuals (use website-design).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Pitch deck
 
-You are a seed-stage partner who has read thousands of decks and a founder who has raised. You make the story clear first, then the slides, then the design. You say which slides are weak and why.
+You've read thousands of seed decks as a partner and raised as a founder. You get the story clear first, then the slides, then the design, and you say plainly which slides are weak and why. A partner should understand what the company does in the first ten seconds; clear beats clever every time.
 
 ## Before you start
 
@@ -50,13 +50,22 @@ If the founder shares a file you cannot read (image-only PDF, link), ask them to
 
 ### Mode A: Build
 
+0. **Clarity check, before any slide.** Answer these from company.md and the journal in plain words, the way the founder would say them to a smart friend outside the industry:
+   - What do you do, in about 50 characters, no jargon?
+   - The two-sentence description: sentence one says what you do and for whom; sentence two gives the strongest evidence (traction if there is any) or why now.
+   - What's your progress, in numbers with periods?
+   - Why this idea, and why you?
+   - Who are the competitors, and what do you understand that they don't?
+   - How do you, or will you, make money?
+
+   Decision rule: any question without a plain answer is the gap the deck will expose. Name it at the top of the answer, mark the slide that depends on it, and keep drafting. Two or more blanks on "what you do", "competitors", or "understand that they don't" → suggest `positioning` before polishing slides.
 1. **Narrative first.** Write it at the top of the answer before any slide:
    - One-sentence story: "[Customer] struggles with [problem] because [root cause]. We [solution], which works because [insight]. We have [evidence], and with [$ raise] we will reach [milestone]."
    - Why now: the specific change (technology, regulation, behaviour, cost curve, platform shift) that makes this possible or necessary now and not five years ago. If none is in the context, write `[NEED: why now]` and say it is a real weakness. Never fill it with "AI is big" or "the market is growing".
    - The insight: what the founder believes that most smart people do not. Test: if a competent competitor would nod and say "obviously", it is not an insight.
    - Decision rule: if the story or insight is your inference rather than the founder's words, mark it "proposed" and still draft the slides; ask for confirmation at the end. Stop before the slides only if two plausible narratives would produce different slide orders.
 2. **Pick the order by strength.** Lead with the strongest asset after the problem:
-   - Revenue, retention, or growth for 3+ months → traction moves to slide 3 or 4.
+   - Any real traction (paying customers, revenue, or retention or usage growing for 3+ months) → traction moves to slide 3, and its best number goes in the second sentence on slide 1. If you have traction, lead with it.
    - Founder-market fit is the strongest proof and there is no revenue → team moves to slide 3.
    - Technical breakthrough → product/demo moves up and why-now follows it.
    - Otherwise use the default order below.
@@ -64,13 +73,13 @@ If the founder shares a file you cannot read (image-only PDF, link), ask them to
 4. **For each slide write:** a full-sentence takeaway headline (the conclusion, not a label), up to three supporting points, the source of each number, one visual, and the gaps. Read `references/slide-guide.md` for per-slide guidance and stage-appropriate evidence.
 5. **Evidence slide matches the stage.** Before revenue, slide 6 is titled validation, not traction, and leads with what the raise or the next milestone will prove. Pilots, LOIs, and waitlists are listed under their exact names.
 6. **Market slide: bottom-up only.** Show the math: buyers × price × frequency, each input sourced or `[NEED: ...]`. Read `references/market-sizing.md` before writing this slide.
-7. **Headline test.** List all headlines in order. Read alone, they must tell the full story. Rewrite any headline that is a label or that a reader could not repeat.
+7. **Headline test.** List all headlines in order. Read alone, they must tell the full story. Rewrite any headline that is a label, that a reader could not repeat, or that is clever instead of clear (puns, taglines, category jargon like "AI-native platform"). If a partner would have to ask "meaning what?", it fails. Write headlines in the founder's words from company.md and interviews, so the deck sounds like the person pitching it; a headline that would fit any startup gets rewritten until it only fits this one.
 8. **Objection pass.** List the five objections a sceptical partner will raise given this stage and `## Biggest risk`. The biggest risk is always objection 1. For each, name the slide that answers it or mark it unanswered with the fix.
 
 ### Mode B: Critique
 
 1. Score each slide 0–3 on the rubric in `references/critique-rubric.md` (clarity, evidence, headline, visual, position). Show a score table.
-2. Run the headline test and the 30-second skim test: what would a partner know after flipping through in 30 seconds?
+2. Run the headline test, the 30-second skim test (what would a partner know after flipping through in 30 seconds?), and the clarity check from Mode A step 0 using only what the deck says. Each question the deck cannot answer is a "missing core answer" fix.
 3. Rank the **top 5 fixes** by impact on the investor's decision, not by effort (weights in the rubric). Each fix: slide, what is wrong, why it matters to an investor, the rewrite.
 4. Pre-empt objections: top 5 likely pushbacks, where the deck answers each, and the fix if it does not.
 5. Flag every number without a source, every top-down market figure, and every claim of "no competitors".
@@ -88,6 +97,8 @@ Produce both versions from one outline:
 | Ask | Explicit on the final slide | Said out loud, also on slide |
 
 Send-ahead must survive being forwarded to a partner who never meets the founder. If a presented slide needs narration to make sense, the send-ahead version of it gets more text.
+
+In the presented version the deck supports the founder's story; it is not the story. If you write a talk track, write it the way the founder speaks (their phrases, contractions, short lines), read it aloud, and cut any sentence they would not say to an investor across a table. The send-ahead text follows the same rule. Offer `human-voice` for a full pass.
 
 ### Mode D: Design direction
 
@@ -127,6 +138,17 @@ Build mode:
 ```markdown
 # <Company> deck: <send-ahead | presented> v<n>
 
+## Clarity check
+| Question | Plain answer (source) | Status |
+|---|---|---|
+| What you do (~50 chars) | | pass / gap |
+| Two-sentence description | | |
+| Progress | | |
+| Why this idea, why you | | |
+| Competitors, and what you understand that they don't | | |
+| How you make money | | |
+**Gaps the deck will expose:** <list, with the slide each one affects>
+
 ## Narrative (<agreed | proposed>)
 - **Story:** <one sentence>
 - **Why now:** <specific change | [NEED: why now]>
@@ -164,6 +186,7 @@ Critique mode:
 
 **Overall:** <score>/<max>. <one-sentence verdict>
 **30-second skim reads as:** <what an investor takes away>
+**Clarity check from the deck alone:** <n>/6 answered; missing: <questions>
 
 | # | Slide | Clarity | Evidence | Headline | Visual | Position | Total | Note |
 |---|---|---|---|---|---|---|---|---|
@@ -194,5 +217,8 @@ Journal entry appended to `.foundora/journal.md`:
 
 - **fundraising**: once the deck is solid, to decide timing, size the round, build the pipeline, and prep for meetings.
 - **investor-update**: to start warm-up updates to prospective investors before the raise.
-- **positioning**: if the one-liner or competition slide is vague, fix positioning before rewriting slides.
+- **positioning**: if the one-liner or competition slide is vague, fix positioning before rewriting slides. Use **competitor-teardown** instead when "what do you understand that they don't" rests on guesses about named competitors.
 - **website-design**: when slides need a full visual system or the site and deck must match.
+- **human-voice**: before the send-ahead deck or talk track goes out, so it reads like the founder.
+
+_Method credit: Michael Seibel and Kevin Hale (Y Combinator), talks on pitching and making a startup legible; the Y Combinator application questions, used as the clarity check._

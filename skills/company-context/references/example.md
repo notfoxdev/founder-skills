@@ -14,9 +14,9 @@
 No company file found, so I'll build one. Five short rounds, three questions each; skip anything. Or paste a deck or notes and I'll only ask about gaps.
 1. What are you building, in one line, and for whom?
 2. Which stage fits best: idea, validation, mvp, early-traction, or growth?
-3. How do you make money, and do you have a website yet?
+3. How do you make money (or plan to, roughly at what price), and do you have a website yet?
 
-> Founder: "Month-end close checklist and reconciliation tracker for bookkeeping firms with 3–15 staff. We're pre-seed, kind of in beta. SaaS. ledgerline.app, just a waitlist."
+> Founder: "Month-end close checklist and reconciliation tracker for bookkeeping firms with 3–15 staff. We're pre-seed, kind of in beta. SaaS, probably around $150 a month per firm. ledgerline.app, just a waitlist."
 
 **Agent, round 2**
 
@@ -25,7 +25,7 @@ No company file found, so I'll build one. Five short rounds, three questions eac
 **Creating `.foundora/company.md`: round 2 of 5, Problem and customer**
 1. What problem do you solve, and who has it?
 2. Who pays, who uses it day to day, and how do they buy?
-3. What do they do today instead?
+3. What do they do today instead, and what do you understand about this that those options miss?
 
 > Founder: "Small firms run close for 20–80 clients in spreadsheets and email. Partners can't see who's blocked, deadlines slip, reviewers redo work. Ops leads and managing partners feel it. Partner buys on a card or annual invoice, no procurement; ops lead and bookkeepers use it. They already pay for QBO or Xero and Karbon or TaxDome. Honestly nobody does this properly, so no real competitors."
 
@@ -35,7 +35,7 @@ On competitors: I can't record "none", because every skill would then assume an 
 
 **Creating `.foundora/company.md`: round 3 of 5, Team and traction**
 1. Do you have a cofounder? Name and role if so.
-2. What is your role, and what in your background fits this problem?
+2. What is your role, what in your background fits this problem, and why is now the time?
 3. What numbers do you have so far, each with a count? "None yet" is fine.
 
 > Founder: "Google Sheets checklists, Karbon and TaxDome workflow templates, or nothing. Cofounder is Priya, CTO, ex-fintech engineer. I'm CEO, ran ops at a 9-person bookkeeping firm for 4 years. Traction: 11 discovery interviews, 62 on the waitlist, lots of interest from firms, and 2 firms doing a free 30-day pilot starting next week. No revenue."
@@ -120,9 +120,10 @@ Google Sheets close checklists, Karbon and TaxDome workflow templates, doing not
 ~~~
 
 **Still missing:** none. "Lots of interest" was left out because it has no count; "reach firms cheaply" was left out at your call.
-Write this? Reply yes, or tell me what to change.
+**Clarity check:** 50-char version gap: the one-liner is 90 characters; short option "Month-end close tracker for small bookkeeping firms" · progress yes · why this yes (4 years running ops at a bookkeeping firm), why now gap (you skipped it) · what you see that others miss gap: you said "nobody does this properly", which says what's wrong with them, not what you know · how you make money yes (B2B SaaS, about $150/month per firm)
+Write this? Reply yes, or tell me what to change. Answer any gap in a line, or skip it.
 
-> Founder: "Yes."
+> Founder: "Yes. Keep the long one-liner. Skip the other two for now."
 
 **Agent, after writing**
 
@@ -132,9 +133,11 @@ Written to `.foundora/company.md`. I also created `.foundora/journal.md` with th
 ### 2026-10-20 — decision: Company context created
 - Changed: new file; stage recorded as validation (founder said "pre-seed, kind of in beta"; no product in regular use)
 - Why: biggest risk set to paying separately from Karbon/TaxDome; reach risk left out at founder's call
-- Still missing: none
+- Still missing: clarity gaps skipped: why now; what we understand that Sheets and Karbon/TaxDome templates miss
 - Source: company-context
 ```
+
+Those two gaps are worth an answer before you write a landing page or pitch anyone. `positioning` can help with the second one.
 
 There is no `CLAUDE.md` or `AGENTS.md` here, so other agents won't know to read this file. Want me to create one with the 4-line Foundora section (read both files at session start, log in the journal, never edit company.md without asking, start with `cofounder`)? Which file name does your tool use?
 

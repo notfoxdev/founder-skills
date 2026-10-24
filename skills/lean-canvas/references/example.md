@@ -73,6 +73,10 @@ Break-even price for the base case: 3:1 needs LTV ≥ 3 × 950 = $2,850, so gros
 - Monthly churn, pessimistic: 6% vs 5%. Retention data starts only after the first firms pay; until then this stays a range.
 - LTV:CAC, base: 3.2 clears 3 by a thin margin. A $10 price cut or one more point of churn breaks it.
 - Evidence: 100% of inputs are `[ASSUMPTION]`. Confidence is low. These are rough heuristics, not laws.
+- Underpricing: can't tell yet, and that's a gap worth closing before the pilots convert. $150 came from the 90-day goal, not from what a slipped close costs a firm [NEED: hours lost per close, and who loses them]. If reviewers redo several hours of work every month, $150 is likely low. Don't cut below $150 to win the pilots. If both firms say yes on the spot, take that as a sign to quote higher to the next firm.
+
+## Default alive?
+Dead at current growth, which is expected with no revenue. Monthly burn isn't in company.md [NEED: monthly burn], so here it is per $10,000 of burn: break-even = 10,000 ÷ $120 base contribution margin = 83.3, so 84 paying firms. With about 7 months of runway that's 84 ÷ 7 = 12 new paying firms a month, against a 90-day goal of 3 in total. So the canvas can't get you to profitability on this runway at $10,000/month of burn; revenue has to grow much faster or money has to come in. If you plan to raise, pick the month to start now (several months before cash runs out) and route to fundraising. The per-customer economics and the survival math are separate questions; the pilots answer the first, not the second.
 
 ## Top 3 risks
 1. **Revenue streams: firms will pay ≥ $150/month for close tracking on top of Karbon or TaxDome.** Likelihood 3 x impact 3 = 9. Nobody has been asked for money yet, and this is the biggest risk in your own file. Test below.
@@ -83,7 +87,8 @@ Break-even price for the base case: 3:1 needs LTV ≥ 3 × 950 = $2,850, so gros
 Revenue streams. Before the pilot starts next week, ask both pilot firms to sign a one-page conversion agreement: free for 30 days, then $150/month unless they cancel before day 30. In the same 14 days, offer the 9 in-band waitlist firms a paid founding pilot at $150/month. Pass if ≥ 3 written commitments (signed agreement or card on file) by 2026-11-04. Fail at ≤ 1: stop feature work and run pricing-strategy and customer-research on why. At exactly 2, extend 14 days with 10 more firms. You will want to argue the free pilot proves enough. It does not: free usage tests the problem, not the payment.
 
 ## Open data
-- [NEED: monthly burn, to check the test fits inside 7 months of runway]
+- [NEED: monthly burn, to check the test fits inside 7 months of runway and to finish the default-alive check]
+- [NEED: hours lost per close at the pilot firms, for the underpricing check]
 - [NEED: how many of the 11 interviews raised blocked-client visibility unprompted]
 - [NEED: what the pilot firms pay today for Karbon or TaxDome, from the firms themselves]
 - [NEED: founder hours per pilot firm per month]

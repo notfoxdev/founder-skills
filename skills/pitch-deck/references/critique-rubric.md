@@ -28,7 +28,7 @@ Overall deck: average slide score plus the headline test (pass/fail) and the 30-
 Rank by impact on the investor decision, in this order of weight:
 
 1. Anything that breaks trust: unsourced or inconsistent numbers, inflated traction labels, "no competitors", top-down-only market.
-2. Missing core answer: no why-now, no clear customer, no ask/milestone.
+2. Missing core answer: no why-now, no clear customer, no ask/milestone, or any clarity-check question (what you do, progress, why you, what you understand that competitors don't, how you make money) the deck alone cannot answer.
 3. Story order: strongest asset buried after slide 6.
 4. Headlines that are labels.
 5. Visual and density problems.

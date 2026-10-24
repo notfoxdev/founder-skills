@@ -12,6 +12,7 @@
 
 **North Star:** Firms committed to pay: firms that have paid, or agreed in writing, to continue at $150/month or more. Baseline: 0.
 **Why this one:** it is your 90-day goal and your biggest risk in one number. It will read 0 until the pilots reach day 30 (about 2026-11-25). That is expected; the inputs below move weekly and tell you early whether it will.
+**Weekly growth goal:** absolute, not a percentage. The base is 0, so a weekly rate means nothing yet: 0 → 2 committed firms by 2026-11-27, 3 by 2027-01-18 [ASSUMPTION: 90 days from 2026-10-20]. Switch to a weekly revenue growth rate once MRR has a real base.
 
 | Candidate | Customer value | Weekly | Movable in weeks | Leads to revenue | Closest to risk | Pick |
 |---|---|---|---|---|---|---|

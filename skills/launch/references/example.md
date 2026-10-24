@@ -9,7 +9,7 @@
 ---
 
 ## Recommendation
-Go smaller: a paid pilot cohort offered to your own waitlist, not a public launch. Trigger: at least 1 of the 2 pilots signs at $150/month or more by Friday 2026-12-04. Launch day is Tuesday 2026-12-15, after December close. Target: enough new paying firms to reach 3 in total by 2027-01-18 (the 90-day mark from 2026-10-20).
+Go smaller: a paid pilot cohort offered to your own waitlist, not a public launch. Treat it as launch one of several. Nine firms hearing about it from you directly is the right size for a product two founders run by hand, and nobody else noticing is fine. Trigger: at least 1 of the 2 pilots signs at $150/month or more by Friday 2026-12-04. Launch day is Tuesday 2026-12-15, after December close. Target: enough new paying firms to reach 3 in total by 2027-01-18 (the 90-day mark from 2026-10-20).
 
 ## Launch summary
 - Launching: Ledgerline paid pilot cohort | Type: paid pilot cohort
@@ -56,7 +56,7 @@ Verdict: go smaller, because Complete fails by design and three operational item
 | Asset | Status | Owner | Due | Skill |
 | --- | --- | --- | --- | --- |
 | Landing page with cohort offer and call link | In progress | Founder | 2026-12-08 | `website-design`, `landing-page-copy` |
-| Personal email to 9 in-band firms (one per firm, with their signup context) | Missing | Founder | 2026-12-11 | `landing-page-copy` |
+| Plain-text founder email to 9 in-band firms (one per firm, with their signup context and an offer to set it up together) | Missing | Founder | 2026-12-11 | `human-voice` |
 | Pilot result with permission (quote or before/after) | Missing | Founder | 2026-12-04 | none |
 | LinkedIn post: what 30 days of pilot close tracking showed | Missing | Founder | 2026-12-11 | `landing-page-copy` |
 | 60s demo video | Missing | Founder, Priya | 2026-12-04 | `video-script` |
@@ -100,6 +100,14 @@ Bad-numbers playbook:
 | Under 3 replies from 9 by T+3 | Timing or message | Phone the firms that opened; check you did not land in a close week |
 | Calls, no paid by T+7 | "We already pay for Karbon" | Log each objection verbatim; take them to `pricing-strategy`; do not discount yet |
 | LinkedIn reach, no in-band calls | Audience mismatch | Stop posting broadly; ask pilot partners for intros instead |
+
+Retention threshold before widening: every paying firm still updating its board weekly in its 4th paid week (counts, not a rate: there will be 3 firms at most), checked 2027-01-18. `[ASSUMPTION: threshold chosen now; set by founders, not a benchmark]`
+
+## Next launches
+| # | What launches | Trigger | Circle (who hears) | Earliest date |
+| --- | --- | --- | --- | --- |
+| 2 | Board updates itself from QBO (first integration) | Retention threshold met, and the integration ships | Paying firms, then the 53 out-of-band signups and pilot referrals | `[NEED: integration date]` |
+| 3 | Public pricing and self-serve signup | 3+ paying firms retained; manual setup under 2 hours per firm | Founder LinkedIn, the bookkeeping communities, practice-tool marketplaces if an integration listing is possible | `[NEED]`; avoid tax season `[ASSUMPTION: confirm busy months with pilot firms]` |
 
 ## Open items
 - [NEED: founder LinkedIn follower count, time zone, billing method, legal pages]

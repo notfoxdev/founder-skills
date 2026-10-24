@@ -13,7 +13,7 @@ description: >-
 license: MIT
 metadata:
   pack: foundora
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Motion video
@@ -85,6 +85,7 @@ Turn the script into a table at 30fps: scene id, start and end frames, duration,
 
 - Text holds at least 45 + 9 × words frames (1.5s + 0.3s per word) after it is fully in. If a card fails, lengthen the scene or cut words; never shorten the hold.
 - VO density at most 2.7 words per second per scene. Over it: flag the line for `video-script`; do not speed up the read.
+- You place the words; you don't rewrite them. When a card or VO line must change to fit a hold, a scene, or an aspect, cut words rather than paraphrase, keep the founder's phrasing, and list the edit for approval. Any new line must sound like the founder said it, with none of the AI tells listed in CONVENTIONS. Anything more than a trim goes back to `video-script`, or to `human-voice` for a voice pass.
 - The first frame carries the hook (no fade from black, no logo). It is also the thumbnail and the muted autoplay frame.
 - Scene starts snap to beats when music exists: beat n at `round(n × 1800 / BPM)` frames.
 - Transitions that overlap scenes shorten the total; recompute every start frame after adding one.
@@ -101,6 +102,7 @@ Before any scene code, one `tokens.ts`: named palette with computed contrast, ty
 - Each scene reads the composition size and re-lays itself out for 9:16 and 1:1. Never crop or letterbox the 16:9 frame into a vertical cut.
 - Product UI: recreated components with sample data, or real 2x screenshots and recordings. Anything not shipped carries a visible "Prototype" or "Concept" label for its full duration.
 - Captions as a component, inside the safe zones, burned into every social cut.
+- Build for the next launch too. Launches repeat (each meaningful improvement can be its own short launch), so scene text, sample data, and timing live in data, and the end card, captions, camera, and labels are shared. The next feature launch should be a new scene and a new 30s composition in this project, not a new project.
 
 ### 8. Preview and fix
 
@@ -159,7 +161,7 @@ Each needs a subject-specific reason in the plan to survive: random particle or 
 
 ## Edge cases
 
-- **No storyboard or script:** write a minimal one (spine, 5–9 scenes, on-screen text, scratch VO within 2.25 words per second of runtime) marked `[DRAFT]`, and recommend `video-script` before the final render.
+- **No storyboard or script:** write a minimal one (spine, 5–9 scenes, on-screen text, scratch VO within 2.25 words per second of runtime, built from the founder's own words in `company.md`) marked `[DRAFT]`, and recommend `video-script` before the final render.
 - **No brand assets:** build a neutral token set from the company's material world (as website-design does), set the name as type instead of a logo, and mark `[NEED: logo SVG]`. Never generate a logo.
 - **No product UI yet:** recreate the planned UI as components with sample data and a persistent "Prototype" label, or make the video about the problem and the founder's credential. Never mock a finished product.
 - **Founder wants a 3D, AI-generated, or "make it pop" look:** say what it costs in one sentence (template look, slower render, attention off the product) and offer the want underneath it: tighter pacing, one emphasis moment, a signature motion from the subject. If they still want it after one pushback, build it inside the token system and log the decision. Do not argue twice. AI-generated people never appear as customers or team.
@@ -217,4 +219,7 @@ Total: <n>/20. Gates: ... Verdict: ...
 
 - `video-script` when words, story, or VO density need changing, or no script exists.
 - `website-design` to embed the hero loop (poster, reduced motion, pause control) or the demo in `how-it-works`.
-- `launch` to schedule which cut goes to which channel and when.
+- `launch` to schedule which cut goes to which channel and when, and the next launch clip.
+- `human-voice` when on-screen text or VO was trimmed here and needs a voice check before render.
+
+_Method credit: Michael Seibel (Y Combinator), "How to Launch (Again and Again)"; Paul Graham, "Write Like You Talk"._

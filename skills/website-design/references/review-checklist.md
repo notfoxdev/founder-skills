@@ -98,8 +98,8 @@ At 375x667 (and 320 for overflow):
 
 ### A9 Content audit
 
-- **Do:** read every visible string and number.
-- **Pass:** no lorem; every number has a source; every quote and logo has permission; button labels are specific verbs; empty, error, and success states have real words; `[NEED]` and `[DRAFT]` markers are listed for the founder.
+- **Do:** read every visible string and number, top to bottom, as the founder's sharpest customer would. Then walk the primary action from landing to its success state and count every click, field, page load, and decision.
+- **Pass:** no lorem; every number has a source; every quote and logo has permission; button labels are specific verbs; empty, error, and success states have real words; no line reads like a brochure or carries an AI tell from CONVENTIONS (if one does, rewrite it in the founder's words or flag it for `human-voice`); the friction count has nothing that could be cut (waitlist: one field; no account before value); at least one honest sign that real people are behind the page (founder name or note, a contact that reaches a person); `[NEED]` and `[DRAFT]` markers are listed for the founder.
 
 ## Scorecard
 
@@ -170,6 +170,7 @@ Content and meta
 - [ ] Favicon and apple-touch-icon present; canonical URL set; preview deployments `noindex`.
 - [ ] Analytics event on the primary CTA if the founder uses analytics.
 - [ ] Privacy and terms links present if collecting data.
+- [ ] Success message and confirmation email (if any) come from a named person, with a reply address that reaches them.
 
 ## Critique output (paste into the answer)
 

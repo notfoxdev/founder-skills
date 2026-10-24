@@ -31,17 +31,19 @@ Two calls on timing and scope:
 |---|---|---|
 | 0–3 | Open | "Thanks for making time before the pilot starts. Today isn't about the pilot or our tool. I want to understand how close works at <firm> right now, before anything changes. There are no right answers. OK if I take notes?" Record only with consent. |
 | 3–8 | Context | 1. "Walk me through a normal month. Where does month-end close show up for you?" 2. "How many clients did you close last month, and who did the work?" |
-| 8–18 | Last close | 3. [MUST] "Take me through last month's close from day one. What did you open first?" 4. "Where do you track which clients are done, blocked, or waiting on documents? Can you show me?" 5. [MUST] "Which client was hardest to close last month? What held it up, and when did the partner find out?" 6. "Was any work redone at review last month? What happened, and how long did the redo take?" |
-| 18–23 | Tools and cost | 7. [MUST] "Which tools does the firm pay for that touch close: Karbon, TaxDome, QBO, Xero, anything else? Which do you open during close?" 8. [MUST] "Has anyone at the firm tried running close in <Karbon/TaxDome>'s templates? When? What happened?" 9. "Roughly how many hours did you spend last month chasing status rather than reconciling? How do you know?" |
-| 23–26 | Priority and buying | 10. "Where does close rank among what you're dealing with this quarter?" 11. "Think of the last tool the firm added. Who suggested it, who approved it, and how was it paid for: card, invoice, or bundled into something you already had?" 12. "When it came in, did anything get cancelled or replaced?" |
-| 26–30 | Close | 13. "Who else at the firm should I talk to about how close works?" 14. [MUST] "Could you send me last month's close tracker, as it is? It gives us the baseline for the pilot." Then, and only then, two minutes on how the pilot will run. No demo. |
+| 8–18 | Hardest part, last time, why | 3. [MUST] "What's the hardest part of close for you?" 4. [MUST] "Tell me about the last time that happened. Which client, which month, and what did you do first?" 5. "Why was that one hard? What held it up, and when did the partner find out?" 6. "Where do you track which clients are done, blocked, or waiting on documents? Can you show me?" 7. "Was any work redone at review last month? What happened, and how long did the redo take?" |
+| 18–23 | What they've tried, what they don't love | 8. [MUST] "What have you tried to fix it? Has anyone at the firm run close in <Karbon/TaxDome>'s templates? When, and what happened?" 9. [MUST] "What don't you love about how you track it now?" 10. "Which tools does the firm pay for that touch close: Karbon, TaxDome, QBO, Xero, anything else? Which do you open during close?" 11. "Roughly how many hours did you spend last month chasing status rather than reconciling? How do you know?" |
+| 23–26 | Priority and buying | 12. "Where does close rank among what you're dealing with this quarter?" 13. "Think of the last tool the firm added. Who suggested it, who approved it, and how was it paid for: card, invoice, or bundled into something you already had?" 14. "When it came in, did anything get cancelled or replaced?" |
+| 26–30 | Close | 15. "Who else at the firm should I talk to about how close works?" 16. [MUST] "Could you send me last month's close tracker, as it is? It gives us the baseline for the pilot." Then, and only then, two minutes on how the pilot will run. No demo. |
 
-Probes throughout: "Can you show me?", "What happened next?", "You said 'usually'. When was the last time?", "What did that cost you?", and three seconds of silence after each answer.
+Q3, Q4, Q5, Q8 and Q9 are the spine: hardest part, last time, why it was hard, what they tried, what they don't love. If the call gets cut to 15 minutes, ask those five and Q16. The Karbon/TaxDome question sits inside Q8 on purpose: it's the biggest risk, asked as something that already happened.
+
+Probes throughout: "Can you show me?", "What happened next?", "You said 'usually'. When was the last time?", "What did that cost you?", and three seconds of silence after each answer. You run these calls yourself, and you should be talking for well under half of each one.
 
 Do not ask, and ask instead:
-- "Would you use a tool that tracks close?" → Q4.
-- "Would the firm pay for this on top of Karbon?" → Q7, Q11, Q12. Price levels go to `pricing-strategy`.
-- "Is close tracking a problem for you?" → Q5.
+- "Would you use a tool that tracks close?" → Q6.
+- "Would the firm pay for this on top of Karbon?" → Q10, Q13, Q14. Price levels go to `pricing-strategy`.
+- "Is close tracking a problem for you?" → Q3.
 - "What should the pilot include?" → "What would let you stop updating that sheet?"
 
 ## Screener (or why it is skipped)
@@ -64,7 +66,7 @@ Skipped for the 2 pilot ops leads: the pilot already selected them. Use this for
 **Cold, to in-band waitlist ops leads** (62 words):
 > Hi <name>, you joined the Ledgerline waitlist from <firm>. I'm talking to ops leads at firms with 3–15 staff about how month-end close runs today, especially how you see which clients are blocked. I'm not selling anything on this call. Would 20 minutes next week work? I'll share what I learn across the conversations. If it's not a fit, no reply needed.
 
-[NEED: which of the 9 in-band signups are ops leads. If a partner signed up, ask them for an intro and use the warm variant.] No community post: you have enough named people for 5.
+[NEED: which of the 9 in-band signups are ops leads. If a partner signed up, ask them for an intro and use the warm variant.] No community post: you have enough named people for 5. Both drafts use your words from company.md ("close", "blocked"); swap in how you'd actually say it to someone you ran close alongside, and send from your own inbox.
 
 ## Notes template
 
@@ -95,9 +97,9 @@ Logged to `.foundora/journal.md` (created):
 
 | Rubric line | Where it shows |
 |---|---|
-| Context use | Research question derived from the biggest risk; buyer/user split from company.md; nothing re-asked |
+| Context use | Research question derived from the biggest risk; buyer/user split from company.md; the founder's own words in the outreach; nothing re-asked |
 | Honesty | Kickoff dates and ops-lead identities marked `[NEED]`; user-reported spend not treated as budget |
 | Decision quality | Answer pattern that changes the decision stated up front; sample floor and stop rule applied |
 | Pushback | Interview before kickoff; 2 interviews named as Signals at most; no price hypotheticals |
 | Format | Mode (a) template; tables; US spelling; outreach under 90 words |
-| Actionability | Five [MUST] questions, a data commitment ask, synthesis due 2026-11-06 |
+| Actionability | Five-question spine plus a data commitment ask, synthesis due 2026-11-06 |

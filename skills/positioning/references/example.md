@@ -23,6 +23,7 @@ Don't position against Karbon and TaxDome. Your buyers already pay for them. If 
 |---|---|---|
 | Competitive alternatives | 1. Google Sheets checklist plus email 2. Karbon or TaxDome workflow templates 3. Doing nothing: the partner asks around for status | (F). Rank 1 from the problem statement; order of 2 and 3 [NEED: count across the 11 interviews] |
 | Unique attributes | vs Sheets: one board with every client's close status and blocked flags; per-account reconciliation log (who, what, when); per-client due dates with overdue alerts. vs templates: built only for close, tracked at account level [NEED: verify what Karbon and TaxDome templates track]. CEO ran ops at a 9-person bookkeeping firm for 4 years | Build scope [ASSUMPTION: confirm in pilot]; founder background (F) |
+| Insight (what we understand that they don't) | Small-firm partners already have checklists. What they can't get is one view of which of their 20–80 clients are stuck this month, and who already reconciled what | CEO's 4 years running ops at a 9-person firm (F); [ASSUMPTION: confirm in both pilots] |
 | Value themes | 1. Partner sees every client's close status without chasing 2. Reviewers stop redoing reconciled work 3. Deadlines flagged before they slip | All unproven: [NEED: proof] |
 | Best-fit customers | Bookkeeping firms with 3–15 staff closing monthly for 20–80 clients, tracking close in Sheets and email although they pay for Karbon or TaxDome. Trigger [ASSUMPTION]: a missed close deadline or a new reviewer hire. Disqualifier: close already runs inside the practice tool and the partner says they can see status | (F) / [ASSUMPTION] |
 | Market category | Month-end close tracking for bookkeeping firms. Strategy: big fish, small pond | Reasoning below |
@@ -40,6 +41,9 @@ Head-to-head fails: Karbon and TaxDome set the buying criteria for practice mana
 ## Messaging
 **Positioning statement (internal)**
 For bookkeeping firms with 3–15 staff who run month-end close for 20–80 clients from spreadsheets and email, Ledgerline is a close tracker that shows every client's status and what is already reconciled. Unlike a Google Sheets checklist, we log each reconciliation by account, with who did it and when, so reviewers stop redoing work [NEED: proof].
+
+**50-character version**
+Month-end close tracking for bookkeeping firms (46 characters)
 
 **One-liner**
 Know which clients are blocked before month-end deadlines slip. Close tracking for bookkeeping firms. (14 words)
@@ -60,13 +64,15 @@ Know which clients are blocked before month-end deadlines slip. Close tracking f
 | "Won't Karbon or TaxDome just add this?" | They might. Our answer is depth on small-firm close and shipping what pilot firms ask for each week. | CEO's 4 years running ops at a 9-person firm (F); [NEED: proof: pilot change log] |
 
 ## Claim review
-| Line | Swap | So-what | Prove-it | Fix |
-|---|---|---|---|---|
-| Draft: "Streamline your firm's workflows" | Fail: true of Karbon | Fail | Fail | Deleted; replaced by pillar 1 |
-| Draft pillar: "Keep the tools you already pay for" | Fail: also true of the spreadsheet, your main alternative | Pass | Mechanism only | Moved to the first objection |
-| Draft: "Built by bookkeepers, for bookkeepers" | Fail: anyone can say it | Pass | Weak | Now "Built by a former ops lead at a 9-person bookkeeping firm" (founder fact) |
-| One-liner | Pass vs Sheets and templates | Pass | [NEED: proof] | Keep; prove in pilots |
-| Pillar 2 headline | Pass | Pass | [NEED: proof] | Keep; measure rework |
+| Line | Swap | So-what | Prove-it | Legible | Fix |
+|---|---|---|---|---|---|
+| Draft: "Streamline your firm's workflows" | Fail: true of Karbon | Fail | Fail | Pass | Deleted; replaced by pillar 1 |
+| Draft: "Mission control for month-end" | Pass | Pass | Fail | Fail: a metaphor; a partner hearing it can't say what the product does | Deleted; the 50-character version says it literally |
+| Draft pillar: "Keep the tools you already pay for" | Fail: also true of the spreadsheet, your main alternative | Pass | Mechanism only | Pass | Moved to the first objection |
+| Draft: "Built by bookkeepers, for bookkeepers" | Fail: anyone can say it | Pass | Weak | Pass | Now "Built by a former ops lead at a 9-person bookkeeping firm" (founder fact) |
+| 50-character version | Pass vs Sheets and templates | Pass | Describes, claims nothing | Pass | Keep |
+| One-liner | Pass vs Sheets and templates | Pass | [NEED: proof] | Pass | Keep; prove in pilots |
+| Pillar 2 headline | Pass | Pass | [NEED: proof] | Pass | Keep; measure rework |
 
 ## How to test this
 | Test | Audience | Pass if | By |

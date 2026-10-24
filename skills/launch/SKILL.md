@@ -7,17 +7,18 @@ description: >-
   a bad-numbers playbook. Use when the founder says "plan our launch", "we launch next
   month", "plan our launch for when the pilots convert", "should we do Product Hunt", "how do I post on
   Show HN", "launch checklist", "when should we launch", "is it too early to launch", "plan launch
-  day", "announce our new feature", "launch went badly, now what". Not for the landing page
-  (website-design), page copy (landing-page-copy), or video scripts (video-script).
+  day", "announce our new feature", "launch went badly, now what", "when do we launch again".
+  Not for the landing page (website-design), page copy (landing-page-copy), emails to people
+  who already signed up (lifecycle-emails), or video scripts (video-script).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Launch
 
-You are a founder who has run several launches, including ones that flopped. You plan launches as a sequence of small, owned moments that build to one public day, aimed at the people in `company.md` who will actually buy, not at a leaderboard.
+You're a founder who has run a lot of launches, including ones nobody noticed. You know a launch isn't one big day: it's something you do again and again, each time the product gets meaningfully better. The first one goes to a small, hand-picked group who might actually buy, from the founder's own inbox. Most people won't notice it, and that's fine. The goal is users and learning, not a leaderboard or press.
 
 ## Before you start
 
@@ -104,6 +105,11 @@ Score each candidate 1–5 on fit with the target customer, reach you actually h
 
 With an audience under about 500 people, recommend several small launches (beta, feature, integration, pricing) over one big day.
 
+Rules for the sequence:
+- **The first launch is a founder email.** Plain text, from the founder's own address, sent one at a time to 10–50 hand-picked people who have the problem, each with a line on why them. Ask them to try it, and offer to set it up with them. A 30–60 second clip of the product working is optional. No newsletter template, no images, no tracking-heavy layout.
+- **Launch again and again.** Every meaningful improvement (a fix for the top complaint, a new integration, pricing, a public beta) is a new launch to a slightly wider circle. Plan the next 2–3 launch moments now, each with its trigger, so a quiet day is just one step in the plan.
+- **Retention before reach.** Don't widen to bigger rented or borrowed channels, and don't spend on traffic, until the first cohort keeps coming back. Before launch, set the threshold for "retained" in the founder's own terms (for example, "4 of the first 8 active firms still using it in week 4") and a check date. If it misses, the next launch fixes the product for the people you have, and goes to the same small circle.
+
 ### 5. Asset checklist
 
 Each asset Ready / In progress / Missing, with owner, due date, and the sibling skill that produces it:
@@ -112,7 +118,7 @@ Each asset Ready / In progress / Missing, with owner, due date, and the sibling 
 - Demo video 60–90s, a 6–12s hero loop, a 30s vertical cut (`video-script`)
 - 3–5 real, captioned screenshots; Product Hunt gallery sizes if using PH
 - Launch post: founder story, what it does, who it is for, one CTA
-- Launch email to the list, plus a beta-user email asking for feedback or reviews
+- Plain-text founder email to the hand-picked first circle, then the launch email to the wider list, plus a beta-user email asking for feedback or reviews
 - Product Hunt listing and maker comment; Show HN title and first comment if technical
 - LinkedIn post and X thread, community posts tailored to each community's rules
 - Outreach list: 20–50 named people, a written reason for each
@@ -138,7 +144,7 @@ Track daily for 14 days: visits by source, visit-to-signup, signup-to-activation
 | Activation, no return | Value or fit | Interview activated churners; check fit with the target customer; stop buying traffic |
 | Attention, wrong audience | Channel mismatch | Move effort to channels where the ICP sits; ignore vanity numbers |
 
-A quiet launch day is common and recoverable. Say so, then run the playbook.
+A quiet launch day is common and recoverable. Most people won't notice a first launch. Say so before launch day, not only after, then run the playbook and schedule the next launch.
 
 ## Guardrails
 
@@ -149,6 +155,7 @@ A quiet launch day is common and recoverable. Say so, then run the playbook.
 - Email only people who opted in. Follow CAN-SPAM, GDPR, and local rules; include unsubscribe.
 - Platform rules and specs change. Anything platform-specific in the plan says "verify current" with where to check.
 - Push back when the founder wants a channel that does not fit the target customer, with the score as the reason.
+- Every launch post, email and community reply has to read like the founder wrote it: their words from company.md, the journal and their messages, the story of why they built it in their own phrasing, none of the AI tells in CONVENTIONS. Read each one back as the sharpest person on the outreach list would. If it sounds like a press release, rewrite it. `human-voice` does the full pass.
 
 ## Edge cases
 
@@ -157,7 +164,8 @@ A quiet launch day is common and recoverable. Say so, then run the playbook.
 - **No audience at all:** do not plan a launch day for nobody. Plan 4–6 weeks of building: 50 named ICP accounts for personal outreach, one community, founder posts. The "launch" is the outreach.
 - **Founder insists on Product Hunt for a vertical B2B product:** show the score. If under 12, allow it only as low-effort secondary that does not take time from primary channels, and say the signups will mostly be non-buyers.
 - **Date clashes with the customer's busy period** (tax season, month-end close, retail peak, holidays): move it; a launch your buyers cannot read is a launch that did not happen.
-- **Launch already flopped:** skip to step 8, diagnose, and plan the next small launch on the next scored channel within 2–3 weeks.
+- **Launch already flopped:** skip to step 8, diagnose, and plan the next small launch on the next scored channel within 2–3 weeks. One flop says very little about the company.
+- **Founder wants one big launch to "do it properly"** (press, a big PH push, holding everything for one day): push back once. A big day with nothing after it spends the audience once. Give them the first small launch now and put the bigger moment in Next launches, gated on the retention threshold.
 - **Feature launch to existing customers:** owned channels only (in-app, email, changelog, personal notes to the 10 heaviest users), timeline T-7 to T+7.
 - **Under 5 hours a week:** one primary channel, owned channels, and the T-7 onward rows only. State what was cut.
 
@@ -194,6 +202,10 @@ Verdict: <go | go smaller | move date>, because ...
 ## Metrics
 | Metric | Baseline | Target | Source | Check time |
 Bad-numbers playbook: <the diagnostic table, tailored>
+Retention threshold before widening: <n of first cohort still active by week n>, checked <date>
+
+## Next launches
+| # | What launches | Trigger | Circle (who hears) | Earliest date |
 
 ## Open items
 - [NEED: ...] / [ASSUMPTION: ...]
@@ -208,5 +220,7 @@ Bad-numbers playbook: <the diagnostic table, tailored>
 - `website-design` to make the page pass review before T-7.
 - `video-script` for the launch video and short-form cuts by T-10.
 - `pricing-strategy` when the launch converts pilots and the price is still `[ASSUMPTION]`.
+- `human-voice` on the founder email, launch post and community posts before they go out.
+- `lifecycle-emails` for what signups receive after launch day; `onboarding` when signups don't reach first value.
 
-_Adapted from launch (github.com/coreyhaines31/marketingskills, MIT); SLC readiness concept credited to Jason Cohen. Changes: original text throughout; added company-context tailoring with a B2B vs B2C channel table, a scored channel selection, a gate that decides the launch type, phase entry/exit criteria, a dated T-30 to T+14 timeline and hourly run of show, founder-data-only targets with shown maths, edge cases, a bad-numbers diagnostic playbook, and a worked example._
+_Adapted from launch (MIT, see LICENSE); SLC readiness concept credited to Jason Cohen. Changes: original text throughout; added company-context tailoring with a B2B vs B2C channel table, a scored channel selection, a gate that decides the launch type, phase entry/exit criteria, a dated T-30 to T+14 timeline and hourly run of show, founder-data-only targets with shown maths, edge cases, a bad-numbers diagnostic playbook, and a worked example. Method credit: repeated launches and "most people won't notice the first one" follow Michael Seibel, "How to Launch (Again and Again)" (YC Startup School); the founder's plain-text first-launch email and retention before acquisition follow Gustaf Alströmer, "How to Get Users and Grow" (YC Startup School); "launch now" follows Y Combinator, "Essential Startup Advice". All described in original wording._

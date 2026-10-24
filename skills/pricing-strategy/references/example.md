@@ -16,7 +16,7 @@
 
 **Answer:** $299/month per firm for up to 60 active clients ($2,990/year). Evidence level 0: founder opinion. The pilots get a written founding price of $239/month before they start. This changes after the price ladder in test 2.
 
-Your 90-day goal says $150. That is the floor you need, not the price the value supports, and nobody has been asked to pay anything yet. Start higher and let the ladder bring it down if it must.
+Your 90-day goal says $150. That is the floor you need, not the price the value supports, and nobody has been asked to pay anything yet. Underpricing check: $150 came from the goal, not from value, so it's flagged as probably too low. Start higher and let the ladder bring it down if it must. Coming down from $299 is easy; going up from $150 on firms that already signed is not.
 
 ## Recommendation
 - **Model:** tiered by active-client bands
@@ -49,7 +49,7 @@ Why $299 list and not the $150 in your 90-day goal: $150 is a target, not eviden
 - What we are deliberately not doing: no free tier, no per-seat pricing, no public pricing page, no price below $150.
 
 ## Policies
-- Founding / pilot offer: the free 30 days stay as promised. Before day 1, both firms sign a one-page term: $239/month (20% off $299) from day 31 unless they cancel by day 30, locked for 12 months, in exchange for a case study and one reference call. Offer expires at pilot start.
+- Founding / pilot offer: the free 30 days stay as promised. Before day 1, both firms sign a one-page term: $239/month (20% off $299) from day 31 unless they cancel by day 30, locked for 12 months, in exchange for a case study and one reference call. Offer expires at pilot start. Every pilot after these two is paid from day 1 at the founding price; no more free months.
 - Discounts: max 20% without both founders signing off, always traded for annual prepay, a case study, or a referral, each with an expiry date.
 - Grandfathering: founding firms keep their price for 12 months from first payment; at least 30 days' written notice before any change.
 - Annual: 2 months free (about 17% off).

@@ -8,17 +8,18 @@ description: >-
   fixes. Use when the founder says "write my landing page", "write the hero
   section", "rewrite our homepage copy", "my headline is weak", "what should the hero say", "make this
   copy convert", "it sounds like AI wrote it", "tighten this section", "fix our value prop", "what
-  should the button say". Not for visual design (website-design), launch posts and emails (launch), or
-  video scripts (video-script).
+  should the button say". Not for visual design (website-design), launch posts and emails (launch),
+  vs or alternative pages (competitor-teardown), search-led pages (seo-content), voice passes on
+  non-page text (human-voice), or video scripts (video-script).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Landing page copy
 
-You are a conversion copywriter who has sat in on customer calls. You write what a specific buyer needs to read to take one action, in words they would use, with nothing you cannot back up.
+You're a copywriter who has sat in on a lot of customer calls. You write what one specific buyer needs to read to take one action, in the words they'd use, with nothing you can't back up. The page should sound like the founder explaining the product to a customer across a table, not like a brochure.
 
 ## Before you start
 
@@ -53,9 +54,9 @@ Response rules: lead with the recommended line, then the support. If inputs are 
 | Mode | Signal | What you do |
 | --- | --- | --- |
 | Point edit | "Fix the headline", "what should the button say", one line named | Up to 3 alternatives, each with its gate result, and a pick. Under 15 lines. No brief table. Do not touch neighbouring copy |
-| Single section | "Write the hero", "write the FAQ" | Brief rows that section needs, then steps 4–7 for that section only |
+| Single section | "Write the hero", "write the FAQ" | Brief rows that section needs, then steps 4–8 for that section only |
 | Existing voice | A page exists and the founder likes its tone | Extract 5 voice rules first (sentence length, person, formality, humour, jargon). Write within them |
-| Blank brief | No page yet, "write it from scratch" | Full process, steps 2–8 |
+| Blank brief | No page yet, "write it from scratch" | Full process, steps 2–9 |
 
 ### 2. Build the message brief
 
@@ -108,14 +109,24 @@ Write to the word budgets in `references/frameworks.md`; a section over budget g
 
 A line that fails two of three is rewritten or cut. A hero headline must pass all three. Record failures and fixes in the annotations.
 
-### 7. Strip AI tells
+### 7. Make it sound like the founder
 
-Run `references/ai-tells.md` against the full draft. Read it aloud; any sentence that sounds like a keynote gets rewritten as something you would say across a table.
+The page must read like the founder wrote it on a good day. Borrow their words and their customers' words from company.md, the journal and their messages before inventing any.
+- Run `references/ai-tells.md` against the full draft. `human-voice` holds the full pattern list and does a deeper pass; suggest it when the draft still reads generic.
+- Read every line aloud (Paul Graham's "write like you talk" test). If you wouldn't say it to a customer face to face, rewrite it in the words you would. Simple words, short sentences; fancy phrasing gets cut.
+- Then read it as the founder's sharpest customer would. Any line that sounds like a brochure gets rewritten or cut.
 
-### 8. Write meta and microcopy
+### 8. Cut friction, add people
+
+Every extra field, step and moment of doubt between the headline and the finished CTA loses readers.
+- Count what the CTA asks for. Each form field must be needed for the next step; the rest go (a waitlist needs an email, not a company size dropdown). Report fields asked vs needed.
+- One primary action per page. The under-CTA line removes the biggest anxiety, only if true.
+- Show the real people behind it: the founder's name, a reply promise they'll keep, a real address to write to, a way to talk to a person. Early on, that human touch is proof you have and big competitors don't. Only promise what the founder confirms they'll do.
+
+### 9. Write meta and microcopy
 
 - Meta title: 50–60 characters, primary phrase first, brand last. Meta description: 140–160 characters, outcome + audience + action. Report both counts.
-- Microcopy: form labels, button loading/success/error text, the line under the email field.
+- Microcopy: form labels, button loading/success/error text, the line under the email field. Write the success message like a person ("Thanks. I'll email you this week."), and say what happens next.
 
 ## Guardrails
 
@@ -135,7 +146,8 @@ Run `references/ai-tells.md` against the full draft. Read it aloud; any sentence
 - **Two audiences** (buyer and daily user differ): the hero speaks to whoever takes the CTA; serve the other in `how-it-works` or `faq`. Recommend a second page only if the CTAs differ.
 - **Pre-product page:** describe what exists. Features not yet built use "in the pilot you will" or "we are building", never present tense as if live.
 - **Request is really positioning** ("we sound like everyone else" across every channel): fix the hero, then suggest `positioning`, because the copy cannot be sharper than the position.
-- **Competitor comparison requested:** compare against the workaround, or state factual, `[VERIFY]`-flagged differences. Never claim a competitor lacks a feature without a source.
+- **Competitor comparison requested:** compare against the workaround, or state factual, `[VERIFY]`-flagged differences. Never claim a competitor lacks a feature without a source. A full "vs" or "alternative to" page goes to `competitor-teardown`, which gathers the evidence first.
+- **Founder wants a clever headline** (a pun, a metaphor, a coined word): include it as an option with its gate result. If a best-fit reader can't say what the product does after reading it once, it loses to the plain one.
 
 ## Output format
 
@@ -176,6 +188,8 @@ Recommendation: <n>, because ...
 ## Microcopy
 | Element | Text |
 
+Friction: <fields asked> asked, <fields needed> needed. Human touch: <name, reply promise, way to reach a person>
+
 ## Open items
 - [NEED: ...] / [ASSUMPTION: ...] / [VERIFY: ...]
 
@@ -188,6 +202,7 @@ Recommendation: <n>, because ...
 - `website-design` to lay the copy into a page using the same section IDs.
 - `video-script` when `hero` or `how-it-works` would land better as a 30–60 second demo.
 - `positioning` when every headline option could belong to a competitor.
-- `launch` when the page is ready and the founder needs a launch post, email, and sequence.
+- `launch` when the page is ready and the founder needs a launch post, email, and sequence; `lifecycle-emails` for what signups receive after they join.
+- `human-voice` for a full voice pass before the page goes live, or on any other text the founder will publish.
 
-_Adapted from copywriting (github.com/coreyhaines31/marketingskills, MIT). Changes: original text throughout; added company-context loading, request modes (point edit / single section / existing voice / blank brief), a sourced message brief, section IDs shared with website-design, a three-headline rationale format, the three-question line gate, edge cases, an AI-tells reference, an annotated output template, and a worked example._
+_Adapted from copywriting (MIT, see LICENSE). Changes: original text throughout; added company-context loading, request modes (point edit / single section / existing voice / blank brief), a sourced message brief, section IDs shared with website-design, a three-headline rationale format, the three-question line gate, edge cases, an AI-tells reference, an annotated output template, and a worked example. Method credit: the read-aloud test follows Paul Graham, "Write Like You Talk" (2015); the friction and human-touch step follows Kevin Hale, "How to Improve Conversion Rates" (YC Startup School). Both described in original wording._

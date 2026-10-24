@@ -1,5 +1,38 @@
 # Changelog
 
+## 1.3.0 — 2026-10-23
+
+Eight new skills, and every existing skill rewritten to sound more like a person and to lean on hard-won founder advice. The pack is now 26 skills.
+
+**New skills**
+- `human-voice`: paste anything you're about to post or send and get it back in your own voice. Every fact, number and name is kept, nothing is made up, and claims you can't back up are flagged before a customer calls them out. Share 2–3 things you wrote yourself and every skill reuses your voice notes.
+- `competitor-teardown`: a fair, deep look at the one to three alternatives your buyers actually use, including the spreadsheet and doing nothing. Only calls something a win when two separate sources back it, and gives you a sales battlecard and a comparison page that would survive the competitor reading it.
+- `feature-spec`: turns a feature idea into a spec you can review in two minutes and your coding agent can build without guessing: the job, a time box, what's deliberately out, numbered checks for done, and agent-sized build steps. Also trims a bloated PRD and turns a bug into a fix spec.
+- `onboarding`: finds the moment your product clicks for new users from what the people who stayed actually did, cuts every step that doesn't need to come first, and tells you when setting customers up yourself beats building anything.
+- `product-analytics`: the few numbers that matter with a handful of users, whether you need a tool yet, and a tracking plan of 12 events at most that your coding agent can wire up.
+- `sales-call`: a one-page prep for every call, a demo that follows the pain the buyer just described, honest answers to the usual objections, and a close on one dated next step. Keeps your pipeline honest: no next meeting, no deal.
+- `lifecycle-emails`: the 3–5 emails that matter at your stage instead of a 20-email drip, each sent from you, with one ask and replies coming straight back to you.
+- `seo-content`: the handful of pages your buyers search for, written from your own experience, with a short technical checklist and no invented keyword numbers.
+
+**Every skill**
+- Sounds like a person. A new "Sound like a person" convention: plain words, your own phrasing from `company.md` and the journal, no AI tells, and a read-back as your sharpest customer would read it before anything goes out.
+- Sharper decision rules built from widely taught founder advice: launch early and often, do things that don't scale, talk to users about the last time it happened, charge from day one, and know whether you're default alive.
+- Version 1.3.0, routing updated for the new siblings.
+
+**Highlights by skill**
+- `cofounder`: flags busy work that no customer would notice, keeps building and talking to users in the top three, asks the default-alive question when runway is short, and routes to all 25 siblings.
+- `weekly-review`: weekly growth of your main metric with a small-number caveat, users talked to as a standing row, and a monthly default-alive check.
+- `idea-validator`: rates the problem itself (popular, growing, urgent, expensive, mandatory, frequent) and checks for four patterns that sink ideas before any code is written.
+- `customer-research`: a fixed five-question interview spine about the last time the problem happened.
+- `company-context`: a five-question clarity check before writing, without changing the file format.
+- `mvp-scoper`: a one-line 90/10 version, concierge by default, and a fixed time box where scope gives way.
+- `positioning`: a 50-character version and a legibility test.
+- `pricing-strategy` and `lean-canvas`: an underpricing check and paid pilots by default.
+- `launch`: the first launch is a plain email from you to a hand-picked group, with the next launches planned up front and retention before reach.
+- `cold-outreach`: funnel counts at every stage and a push for a clear yes or no.
+- `fundraising`: raise for the next milestone, investors in parallel, fast yes or no.
+- `pitch-deck`, `investor-update`, `landing-page-copy`, `website-design`, `video-script`, `motion-video`: clarity checks, less friction, and words that sound like the founder.
+
 ## 1.2.0 — 2026-10-23
 
 **New skill**

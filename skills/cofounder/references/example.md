@@ -37,6 +37,8 @@ Scoring notes:
 
 - Impact 5 means it directly moves "3 firms paying at least $150/month" (company.md, 90-day goal). Confidence is 3 at most because nothing has been tested with your own customers yet.
 - Item 3 is Impact 5 because of arithmetic: even if both pilots convert, 2 paying firms is fewer than 3. Taking the goal as 90 days from 2026-10-20 [ASSUMPTION], the deadline is 2027-01-18, so a 30-day pilot has to start by 2026-12-19 to convert in time.
+- Runway check: 7 months and no revenue means default dead at current growth. That's not a crisis, it's the reason the pilots have to carry a price. Monthly burn isn't in company.md [NEED: monthly burn]; jot it down when you send the terms.
+- Item 6 is fake progress at this stage: no firm in the pilot would notice a better waitlist page this week.
 
 **Pushback:**
 

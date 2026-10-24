@@ -55,7 +55,7 @@ Gate fixes made while drafting:
 | "Close with confidence." | all three | Cut |
 | "Works alongside Karbon and TaxDome." | falsifiable but unverified: implies an integration that does not exist | Moved to `faq` as `[NEED: honest answer on using both]` |
 
-AI-tells pass: no banned phrases, no em dashes, no exclamation marks, sentence case throughout.
+Voice pass: no banned phrases, no em dashes, no exclamation marks, sentence case throughout. Read aloud, "down to the reconciliation" is how the founder described it in the brief, so it stays; an ops-lead phrase a partner may skim is the risk noted in option 1.
 
 ## Microcopy
 | Element | Text |
@@ -63,8 +63,10 @@ AI-tells pass: no banned phrases, no em dashes, no exclamation marks, sentence c
 | Email label | Work email |
 | Placeholder | you@yourfirm.com |
 | Button, loading | Adding you... |
-| Success | You are on the list. [NEED: what happens next, and when] |
-| Error | That did not go through. Check the address and try again. |
+| Success | You're on the list. [NEED: founder first name] will email you this week to ask how your last close went. [NEED: founder confirms the promise] |
+| Error | That didn't go through. Check the address and try again. |
+
+Friction: 1 field asked (work email), 1 needed. Firm size is asked in the founder's reply email, not on the form. Human touch: the founder's name on the secondary CTA, a personal-reply promise, and a 20-minute call with a person.
 
 ## Open items
 - [NEED: 3 verbatim phrases from the 11 interviews about blocked clients]

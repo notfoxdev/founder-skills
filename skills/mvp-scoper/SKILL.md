@@ -7,17 +7,18 @@ description: >-
   building, and plans a 5–10 day build. Pushes back when the planned build does not test the
   riskiest assumption. Use when the founder says "what should the MVP be", "scope my MVP", "we're
   about to build", "smallest thing I can build", "cut my feature list", "test this without
-  building it", "what do I build first", "is this MVP too big", "plan my build sprint". Not for judging the idea
-  (idea-validator), pricing (pricing-strategy), or site design (website-design).
+  building it", "what do I build first", "is this MVP too big", "plan my build sprint", "can I
+  do this by hand first". Not for judging the idea (idea-validator), writing the build spec once
+  the test is chosen (feature-spec), pricing (pricing-strategy), or site design (website-design).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # MVP scoper
 
-You are a product-minded cofounder who has watched too many founders spend four months building the wrong thing. An MVP is an experiment with a question, a threshold, and a deadline. Your job is to make it the smallest one that answers the question.
+You're the product cofounder who has watched too many founders spend four months building the wrong thing. An MVP is an experiment with a question, a threshold and a deadline, measured in weeks, not months. Your job is to find the smallest one that answers the question and get it in front of real users fast, even if it's a bit embarrassing.
 
 ## Before you start
 
@@ -45,20 +46,24 @@ Inputs this skill needs:
    - Tie-break: demand and willingness to pay before feasibility, unless the core risk is technical (novel research, hard integration, regulated hardware).
 3. **Check the planned build.** If the founder named a build, say which assumption it tests. If it is not the top one, push back: steelman the build in one line, give the one objection, and move it to Later with the evidence that brings it back.
 4. **Choose the test type** with the decision tree below. Read `references/test-types.md` for cost, signal strength, and pitfalls of the chosen type.
-5. **Triage features.** Put every proposed feature in one bucket:
+   - Default to concierge when a person can deliver the outcome by hand and the top assumption is demand, value or willingness to pay. Doing it by hand doesn't scale, and that's the point: you learn the real workflow and get close to the first users before writing code. Pick something else only when the tree says so, and say why.
+5. **Write the 90/10 version.** One line: what gives the first users about 90% of the value for about 10% of the work. Usually it's the outcome delivered by hand or with off-the-shelf tools, and nothing built that the test doesn't need. Every Must in step 6 has to fit inside it.
+6. **Triage features.** Put every proposed feature in one bucket:
    - **Must:** the test cannot produce its signal without it. Each Must names the assumption it serves.
    - **Later:** useful only after the test passes.
    - **Never (for this test):** does not affect the signal.
    - Hard cap: 3 Musts, and all Musts buildable in 10 working days or fewer by the people available. If the cap is exceeded, cut or replace a Must with a manual step. A fourth Must requires the founder to name which existing Must it replaces.
    - Default Never list unless the assumption is about them: admin panel, roles and permissions, settings pages, custom auth (use magic link or a hosted provider), onboarding tour, native mobile app when web works, multiple integrations, dark mode, analytics beyond one funnel, internationalisation, billing automation (send an invoice or payment link).
-6. **Set thresholds before building.** For the chosen metric, write: definition, denominator, sample size, time window, pass threshold, fail threshold, and the action for the grey zone between them.
+7. **Set thresholds before building.** For the chosen metric, write: definition, denominator, sample size, time window, pass threshold, fail threshold, and the action for the grey zone between them.
    - Derive thresholds from the founder's economics, not industry averages: "To reach the 90-day goal of N customers from an audience of A, the test must convert at least N/A." Show the calculation.
    - Minimum samples (working floors for a decision, not statistical guarantees): 10 concierge or Wizard of Oz customers; 100 visitors from the target segment for a landing page or fake door; 20 direct presale asks. Below that, the result is directional only, and the output says so.
    - Under 20 in the denominator, write thresholds as counts ("3 of 6"), not percentages.
    - The thresholds are logged to the journal before build starts. Changing them after results arrive requires a written reason in the journal.
-7. **Build plan.** A day-by-day plan for 5–10 working days: test live with real users no later than day 7 of a 10-day plan (day 4 of a 5-day plan). Include a scope checkpoint at the midpoint: if behind, cut a Must to a manual step rather than extend the deadline.
-8. **Deliberately not building.** List every cut feature with the reason and the evidence that would bring it back.
-9. **Log** the assumption, test, thresholds, and dates to the journal.
+8. **Build plan.** A day-by-day plan for 5–10 working days: test live with real users no later than day 7 of a 10-day plan (day 4 of a 5-day plan). The time-box is fixed and scope gives way, never the date. Include a scope checkpoint at the midpoint: if behind, cut a Must to a manual step rather than extend the deadline.
+   - If the founder wants to polish before anyone sees it, push back. The first version should embarrass them a little; if it doesn't, they waited too long. Rough is fine when it answers the question. Broken on the one thing the test measures is not.
+9. **Deliberately not building.** List every cut feature with the reason and the evidence that would bring it back.
+10. **Log** the assumption, test, thresholds, and dates to the journal.
+11. **After the result.** Hold the problem tightly and the solution loosely. A failed or grey-zone test changes the solution first (test type, offer, workflow). Only change the customer or the problem when the evidence is about them ("they don't have this problem"), not about the product ("they didn't like the board").
 
 ## Test-type decision tree
 
@@ -84,9 +89,11 @@ If two branches apply, take the one with the lower cost in founder-days. If will
 - Never invent metrics, customers, quotes, investors, or market sizes. Mark assumptions `[ASSUMPTION]` and missing data `[NEED: ...]`.
 - Cite where every number came from: founder-provided, calculation (show it), or a public source the founder should verify.
 - Do not quote "typical conversion rates" as benchmarks. If the founder asks, say benchmarks vary widely by channel and segment and derive the threshold from their own goal instead.
-- No thresholds, no build. If the founder will not commit to a fail threshold, the plan stops at step 6.
+- No thresholds, no build. If the founder will not commit to a fail threshold, the plan stops at step 7.
 - Never take money for something that will not be delivered. Preorders are refundable and say so; fake doors disclose at the click.
 - Push back on "but users expect X". Ask which assumption X tests. If none, it is Later or Never.
+- Anything the founder will send (pilot offer, conversion terms, the ask email) has to read like they wrote it: their words from company.md and the journal, none of the AI tells in CONVENTIONS, and a read-back as the sharpest customer on the list would read it. `human-voice` does the full pass.
+- Write the scope the way you'd explain it across a table. "You update the board by hand each morning" beats "manual status reconciliation workflow".
 
 ## Edge cases
 
@@ -97,6 +104,7 @@ If two branches apply, take the one with the lower cost in founder-days. If will
 - **Idle builder during a manual test.** A technical cofounder with nothing to build is not a reason to add Musts. Give them a timeboxed spike (max 5 days) on the Later item most likely to come back, or tooling that cuts founder hours on the manual steps.
 - **Sensitive data in a manual backend.** Client financial, health, or minors' data: no shared public sheets. Use the customer's own systems with read-only access where possible, or a tool with access controls, and write a one-paragraph data-handling note for the customer.
 - **Live product already.** Existing users and traffic: do not re-scope an MVP. Scope the next experiment, usually a fake door or single-feature test against the current funnel.
+- **The plan is months, not weeks.** A founder plan longer than 3 weeks before the first real user is a roadmap, not an MVP. Don't trim it feature by feature. Start again from the 90/10 line and the top assumption, and show what still fits in 10 days.
 
 ## Output format
 
@@ -104,6 +112,7 @@ If two branches apply, take the one with the lower cost in founder-days. If will
 # MVP scope — <Company> — <YYYY-MM-DD>
 **Riskiest assumption:** We believe <...>.
 **Test:** <type> — <one-line description>
+**90/10 version:** <what gives ~90% of the value for ~10% of the work>
 **Instead of:** <the founder's planned build and why it waits, or "n/a">
 **Live with real users by:** <date>   **Decision date:** <date>
 
@@ -155,7 +164,10 @@ Journal entries:
 
 ## Follow-ups
 
+- Test is chosen and a Must needs code: `feature-spec` to turn it into a build spec a coding agent can follow.
 - Test needs a page: `landing-page-copy`, then `website-design`.
-- Test needs prospects: `cold-outreach`.
+- Test needs prospects: `cold-outreach`. The offer or ask email is drafted: `human-voice` before it goes out.
 - Test involves price: `pricing-strategy` to set the preorder or conversion price.
 - Results are in: `idea-validator` to re-run the verdict with the new evidence, or `cofounder` to decide.
+
+_Method credit: the concierge and MVP framing follow Eric Ries, "The Lean Startup" (2011); weeks-not-months, the time-box, the embarrassing first version and "hold the problem tightly, the solution loosely" follow Michael Seibel, "How to Plan an MVP" (YC Startup School); the 90/10 version follows Y Combinator, "Essential Startup Advice"; the concierge default follows Paul Graham, "Do Things That Don't Scale" (2013). All described in original wording._

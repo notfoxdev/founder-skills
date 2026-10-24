@@ -21,7 +21,15 @@ One realistic request per skill, run against `fixture-company.md` (Ledgerline). 
 | fundraising | "Should we raise now?" | Uses 7 months runway; likely "raise after the pilots convert" with the milestone; disclaimer; no investor names |
 | investor-update | "Write this month's update for our 4 angels." | Lowlights present; metrics only from the file, missing ones as [NEED]; specific asks |
 | weekly-review | "Set up my weekly review." | Setup mode; North Star tied to paid pilots; inputs include the risk; kill list non-empty |
-| company-context | "Help me set up my company context file." | Asks in small batches; writes the exact company.md format; confirms before overwriting |
+| company-context | "Help me set up my company context file." | Asks in small batches; writes the exact company.md format; runs the clarity check; confirms before overwriting |
+| human-voice | "I had an AI tool draft my LinkedIn post announcing our two pilots and it sounds nothing like me. Make it sound like me, posting tomorrow." | 60–200 words; every fact kept, nothing added; catches "signed customers" vs company.md's free pilot; marks unsourced claims [NEED: source] instead of softening; removes the tells; fact check and sharpest-customer read |
+| competitor-teardown | "Tear down Karbon and our Sheets checklist. Honestly Karbon is clunky and everyone hates it. Make me a battlecard and a Karbon alternative page." | "Everyone hates it" stays a Hunch, Karbon steelmanned; no guessed prices or features (URL + date or [NEED]); Win needs 2 independent sources, else "no proven win yet"; honest "if they ship it"; public page held |
+| feature-spec | "Spec a partner view of blocked clients so Priya's agent can build it this week, and add QBO and Xero sync." | Verdict first; job story with evidence in counts; appetite before scope; QBO/Xero as a no-go with its trigger; 3–8 observable checks incl. no cross-firm data; empty/error/expired states; runnable agent-sized steps; 5-minute click-through |
+| onboarding | "Pilots start next week and I want a product tour so the ops leads know where everything is." | Aha moment as an observable action, [ASSUMPTION] with no users; steps and fields counted; team invite and connect steps deferred; concierge setup call first; tour pushback with a test; copy in the customer's words; thresholds in counts |
+| product-analytics | "What should we track before the pilots start? Priya wants to set up an analytics tool this weekend." | Primary metric is never signups; activation event marked [ASSUMPTION]; retention fits the monthly cycle; no tool yet with a revisit trigger; each event tied to a question, object_action names, server-side, account identity; no PII; counts not percentages; no A/B test |
+| sales-call | "Tuesday is the day-30 call with Firm A's partner. I want her on $150/month. She said Karbon already does this. Prep me." | Dated call goal first; Karbon objection handled with her own words, no invented Karbon features; [NEED] for missing success criteria; price stated plainly, no discount on the call; walk-away line; funnel check against the 90-day goal |
+| lifecycle-emails | "Write the emails for our 62-person waitlist. Pilots start next week." | Refuses one blast; 9 in-band firms get a hand-typed note and one follow-up; the other 53 get one honest update with a sorting question; drips cut with reasons; plain text from the founder; unsubscribe on bulk; counts |
+| seo-content | "Plan our blog. I was thinking 30 AI-written posts so we rank by the time pilots finish." | Says search won't deliver the 90-day goal; pushes back on 30 posts with a 5–8 page test; volumes [NEED], none invented; comparison page held; programmatic SEO gated; one brief with title/meta counts; measurement in counts |
 
 ## Rubric (score each 0–2, ship at 10+/12)
 
@@ -31,3 +39,5 @@ One realistic request per skill, run against `fixture-company.md` (Ledgerline). 
 4. **Pushback** — challenges the founder where the evidence says to.
 5. **Format** — matches the skill's output template and the founder's tone preference.
 6. **Actionability** — ends with a concrete next step with a date or threshold.
+
+Since 1.3.0, anything publishable in the answer must also read like the founder wrote it (CONVENTIONS, "Sound like a person"). A draft full of AI tells scores 0 on Format.

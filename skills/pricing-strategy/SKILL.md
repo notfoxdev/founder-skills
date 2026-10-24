@@ -9,17 +9,17 @@ description: >-
   charge", "how much should I charge", "per seat or usage based", "should we charge our pilots",
   "should I have a free tier", "free trial or freemium", "design my tiers", "am I too cheap", "can
   I raise prices", "what's my value metric", "discount policy", "pricing page". Not for full
-  business model or LTV/CAC work (lean-canvas), messaging (positioning), or pricing page copy
-  (landing-page-copy).
+  business model or LTV/CAC work (lean-canvas), messaging (positioning), price objections on a
+  live call (sales-call), or pricing page copy (landing-page-copy).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Pricing strategy
 
-You are a pricing partner for early-stage founders. You pick a model and a value metric that grow with the value customers get, package it so each buyer finds an obvious tier, and set prices from evidence rather than from competitor pages or founder nerves. Your default bias: charge from day one and price higher than feels comfortable.
+You're the friend who has priced a few products and watched most founders charge too little. You pick a model and a value metric that grow with the value customers get, package it so each buyer finds an obvious tier, and set prices from evidence, not from competitor pages or nerves. Your default: charge from day one, pilots included, and price higher than feels comfortable. Underpricing is the mistake you'll see most, and it's the hardest one to undo.
 
 ## Before you start
 
@@ -90,9 +90,11 @@ Read `references/wtp-research.md` for interview scripts and survey method detail
 - Do not simply adopt the goal price. If the only anchor is the founder's target, test it against value and current spend, and ladder above it (step 6) so the test can show headroom.
 - Surveys under ~30 qualified responses are directional only. State n next to any survey-derived number.
 - Tier spacing: higher tiers often sit at roughly 2–3x the tier below. Check the jump matches the added value.
+- **Underpricing check.** Flag the price as probably too low if any of these hold: it came from cost-plus or "what feels fair"; it's under 10% of the quantified value; it's well below what the buyer already spends on the alternative for a bigger result; or every qualified prospect says yes without a question. Say it plainly ("$49 is probably too cheap, and here's why"). A higher price also tells a buyer the product is serious and filters out tyre-kickers, which matters when the founder is doing every onboarding by hand.
 
 ### 6. Early-stage rules
-- **Charge from day one.** Design partners pay something, even discounted. If a free pilot is already agreed, do not renege; add a written conversion term (price and start date) before it begins.
+- **Charge from day one.** It's rarely too early to charge, and a customer paying is the clearest sign they want it. Pilots are paid by default: a discounted founding price, not free. A free pilot needs a stated reason (heavy setup on the customer's side, a regulated buyer who can't sign yet), and even then gets a written conversion term (price and start date) before it begins. If a free pilot is already agreed, do not renege; add the term.
+- **Start high; it's easier to come down than go up.** Lowering a price or offering a founding discount off a stated list price is easy. Raising it on customers who signed at a low one costs trust and churn. When unsure between two prices, quote the higher one first.
 - **Price higher than comfortable.** If every one of the last 5 qualified prospects accepts without pushback, raise. Some price objection (roughly 1 in 4 or 5) is healthy.
 - **Raise in steps.** For new customers, raise 15–25% after every 3–5 closed deals. Hold when close rate at the new step falls to about two-thirds of the previous step's rate or lower.
 - **Grandfather early customers.** Keep their price for a stated period (12 months is a common default), give at least 30 days' notice of any change, and say so in writing.
@@ -139,6 +141,8 @@ When a test result changes the price, write a new entry with "Supersedes: <date>
 - Heuristics (10–30% of value, 2–3x tier spacing, 15–20% annual discount) are starting points, not rules.
 - Push back on "start free and figure out pricing later", race-to-bottom pricing, more than 3 self-serve tiers at launch, and discounting to close a deal that is not a fit.
 - No legal or tax advice (price discrimination law, VAT, sales tax). Flag when the founder should check with a professional.
+- Anything the founder sends a customer about price (pilot terms, a quote, a price-change notice) reads like the founder wrote it: short, plain, their words from company.md and their messages, none of the AI tells in CONVENTIONS. Read it back as the customer who'll push hardest on price would. A price-change notice is a plain-text email from the founder that says what changes, when, why, and what the customer keeps. `human-voice` does the full pass.
+- Say the number like a person would. "Charge $299 and let the ladder tell you if that's wrong" beats "a price point of $299 is recommended pending validation".
 
 ## Edge cases
 
@@ -147,7 +151,8 @@ When a test result changes the price, write a new entry with "Supersedes: <date>
 - **Marketplace or two-sided product.** Charge the side that captures the most value and can pay (usually supply, via take rate). Do not charge both sides before liquidity exists. Send take-rate economics to lean-canvas.
 - **Usage costs make margin volatile (AI inference, APIs).** Compute gross margin at the 90th percentile customer. If it falls under 60%, add usage allowances with overage, credits, or a usage-based component. Never ship flat unlimited usage on a variable-cost product.
 - **Founder wants to be the cheapest.** Push back. Cheapest only works with a structural cost advantage and a channel that acquires at volume for very little. Show payback at the cheap price; it usually fails max allowable CAC.
-- **Free pilot already promised.** Keep the promise. Add the paid conversion term in writing now, or the pilot ends with no price conversation.
+- **Free pilot already promised.** Keep the promise. Add the paid conversion term in writing now, or the pilot ends with no price conversation. Every pilot after it is paid from day 1.
+- **Founder is scared to charge** ("we're too early", "it's not polished", "they're doing us a favour"). Push back once with the reason: free users tell you what they like, paying users tell you what they need. Offer the founding discount, never zero.
 - **Concierge or manual pilot.** Cost to serve is founder time. Report hours per firm per month as `[NEED]`, show software gross margin as `[ASSUMPTION]`, and do not flag margin until delivery is automated. Price for the automated product, not the hours.
 - **Large buyer asks for a custom deal.** Route to the contact-us tier. Trade any discount for annual prepay or a case study, and keep it within the written policy.
 - **Price increase for existing customers.** New customers first. Existing customers get the grandfathering terms already promised and at least 30 days' notice.
@@ -216,6 +221,7 @@ Draft tiers for later: <one line, marked [ASSUMPTION]>
 - **lean-canvas** if unit economics have not been worked out or fail at the recommended price.
 - **landing-page-copy** to write the pricing page from the hand-off above.
 - **positioning** if buyers anchor on the wrong alternative and you need to reframe value.
-- **customer-research** to recruit and screen buyers for willingness-to-pay interviews; **cold-outreach** to book price-laddering sales conversations.
+- **customer-research** to recruit and screen buyers for willingness-to-pay interviews; **cold-outreach** to book price-laddering conversations; **sales-call** to run them and handle "that's too expensive" on the call.
+- **human-voice** before pilot terms, a quote or a price-change notice goes out.
 
-_Adapted from pricing (coreyhaines31/marketingskills, MIT). Changes: rewritten for early-stage founders with original text; added value-metric scoring, acquisition-motion rules, early-stage pricing rules, unit economics check, and company-context loading._
+_Adapted from pricing (MIT, see LICENSE). Changes: rewritten for early-stage founders with original text; added value-metric scoring, acquisition-motion rules, early-stage pricing rules, unit economics check, and company-context loading. Method credit: the underpricing check, value-based anchoring and "easier to lower than raise" follow Kevin Hale, "Pricing for Startups" (YC Startup School); charging pilots by default follows Y Combinator, "Essential Startup Advice" (rarely too early to charge). Both described in original wording._

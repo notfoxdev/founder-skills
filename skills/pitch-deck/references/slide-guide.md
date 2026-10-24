@@ -18,8 +18,8 @@ If the evidence is thin, say what has been learned and what the raise will prove
 
 ## 1. Title / one-liner
 - **Job:** tell the reader what the company does in under 10 seconds.
-- **Good:** company name, one plain-language line ("Payroll for restaurant chains with hourly staff"), founder name, contact, date.
-- **Mistakes:** taglines instead of descriptions ("Reimagining work"); category jargon ("AI-native orchestration layer").
+- **Good:** company name, one plain-language line ("Payroll for restaurant chains with hourly staff"), founder name, contact, date. Optional second line with the strongest evidence, so the slide reads as the two-sentence description.
+- **Mistakes:** taglines instead of descriptions ("Reimagining work"); category jargon ("AI-native orchestration layer"); wordplay a partner has to decode.
 - **Visual:** logo, one line, nothing else. Optional product screenshot behind if it helps comprehension.
 
 ## 2. Problem

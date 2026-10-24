@@ -70,6 +70,34 @@ Acute pain is any one of: occurs weekly or more; or costs a measurable amount of
 - 4: Unusual insight or access competitors lack (proprietary data, distribution, years in the role).
 - 5: Demonstrated: the founder has already reached and sold to this segment.
 
+## Problem profile (Mode A, step 2)
+
+Rate the problem, never the product. Evidence caps still apply: desk research alone can make "popular" or "growing" at most "partly"; the founder's own experience alone makes any rating "partly" at best.
+
+| Question | "Yes" means | Feeds |
+|---|---|---|
+| Popular | Many people or companies in the segment have it; you can name 10+ and estimate the total from a source the founder can check | H1 |
+| Growing | The number who have it is rising (new regulation, more firms, a shift in behaviour) with a dated source | H6 |
+| Urgent | It has to be dealt with now: a deadline, a customer waiting, money leaving | H3 |
+| Expensive | Each occurrence costs measurable money or hours, or people already pay to work around it | H3, H4 |
+| Mandatory | Something outside their choice requires it: law, a client contract, the business can't run without it | H3 |
+| Frequent | It happens weekly or monthly, not yearly | H3 |
+
+Reading it: urgent plus expensive or mandatory is a painkiller. All three "no" is a nice-to-have, and H3 caps at 2. Popular and growing without urgency is the "wide, not deep" pattern. Don't add up the yeses; one strong "mandatory" can carry an idea that's only moderately frequent.
+
+## Red flags (Mode A, step 4)
+
+| Flag | Test | Clears when |
+|---|---|---|
+| Solution in search of a problem | Ask: "Who was the last person to hit this, and what happened?" If the honest answer starts with the technology ("AI could...") or a product ("an app that..."), it's present | 3+ people in the segment describe the problem from a specific past event without the founder prompting the solution |
+| Tarpit | List the companies that tried this and why they stalled. Consumer coordination ideas ("find things to do with friends") are the classic case: easy to build, hard to get people to change behaviour. Present if several attempts died for the same structural reason and the founder can't say what's different now | The founder names the attempts, the shared reason they died, and a dated change or insight that removes it; or a search finds no meaningful failed attempts |
+| Made-up idea | Does the founder want it? Does anyone they know want it badly enough to try a rough version this month? Present if the answer is "people would probably like it" | One named person outside the founder's circle asks for it or commits time |
+| Wide, not deep | Count people who need it now versus people mildly interested. Present when the only signals are aggregate (waitlist, likes, survey "yes" rates) | 5+ people who need it now, ideally in one tight group, where you can serve them by hand |
+
+Questions worth asking in any pressure test, mapped to hypotheses: founder–market fit (H7); how acute is it (H3); who else does this (red team; having competitors is usually fine); do you or people you know want it (made-up check); what changed recently to make it possible (H6); is there a proxy company with a similar model that shows the model can work (desk evidence for H4 or H5, cap 3); would you stay in this problem space for years (H7 KILL clause); and is it easy to change if the first version is wrong (lowers the cost of a KEEP TESTING).
+
+Ideas that are noticed rather than brainstormed (the founder hit the problem while doing the job) usually clear the first and third flags. A problem that's tedious to solve ("schlep") is not a red flag; it often keeps competitors away.
+
 ## Reading the total
 
 Do not sum scores into a single number for the verdict; the verdict rules in SKILL.md use individual hypotheses. A sum hides a fatal 1 behind several 5s. You may report the profile ("strong problem, no channel") as a summary.

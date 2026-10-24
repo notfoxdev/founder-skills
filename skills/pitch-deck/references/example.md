@@ -12,6 +12,18 @@
 
 Verdict first: the outline below works, but do not send it until the pilots convert. Slides 6 and 8 rest on a price nobody has paid yet, and slide 5 is empty.
 
+## Clarity check
+| Question | Plain answer (source) | Status |
+|---|---|---|
+| What you do (~50 chars) | "Month-end close tracker for small bookkeeping firms" (51 characters; company.md one-liner, shortened) | Pass |
+| Two-sentence description | "Ledgerline is a month-end close tracker for bookkeeping firms with 3–15 staff. Two firms start a 30-day pilot next week, and I ran close at a 9-person firm for 4 years." (founder-provided facts) | Pass. Sentence two is the best evidence you have, but it is time, not money |
+| Progress | 11 interviews, 62 waitlist signups (9 in band), 2 free pilots, $0 revenue (founder-provided) | Thin: no money commitment yet |
+| Why this idea, why you | 4 years running ops at a bookkeeping firm; Priya is an ex-fintech engineer (founder-provided) | Pass |
+| Competitors, and what you understand that they don't | Google Sheets, Karbon and TaxDome templates, doing nothing (founder-provided). What you understand: [ASSUMPTION: practice tools track tasks, not what has been reconciled] | Gap: the insight is my inference, not your words |
+| How you make money | $150 per firm per month [ASSUMPTION: untested, taken from the 90-day goal] | Gap until a pilot firm pays |
+
+**Gaps the deck will expose:** the insight (slides 4 and 10) and whether anyone pays (slides 6 and 8). Both close when the pilots end on 2026-11-25. No traction yet, so the order leads with team, not numbers.
+
 ## Narrative (proposed)
 - **Story:** Bookkeeping firms with 3–15 staff struggle to run month-end close for 20–80 clients because status lives in spreadsheets and email. We give partners one close board with each client's reconciliation status, which works because [ASSUMPTION: practice tools track tasks, not what has been reconciled]. We have 11 interviews and 2 pilot firms, and with [NEED: raise amount] we will reach [NEED: milestone after 3 paying firms].
 - **Why now:** [NEED: why now]. Nothing in the context explains why this works now and not five years ago. Research candidates: a change in client load per staff member, a change in practice-tool or ledger APIs, or a regulatory deadline change. If none holds up with a source, merge this slide into slide 2.
@@ -36,6 +48,7 @@ Read alone, 1–4 and 6–10 tell the story. 5, 11, and 12 are open.
 
 ## Slides
 ### 1. Title: "Ledgerline is the month-end close tracker for bookkeeping firms with 3–15 staff."
+- Second line, small: "Two firms start a 30-day pilot next week." (founder-provided). After 2026-11-25, swap in the paid-conversion result if there is one.
 - Founder name, contact, date; ledgerline.app (founder-provided)
 - **Visual:** logo and the one line, nothing else.
 

@@ -8,18 +8,19 @@ description: >-
   founder says "write my investor update", "monthly update", "quarterly update", "update my
   angels", "what should I tell investors", "how do I share bad news with investors", "we
   missed our numbers", "we're pivoting, how do I tell investors", "warm up investors before
-  the raise", "investor email", "I haven't sent an update in months". Not for pitch decks (use
-  pitch-deck), deciding whether to raise (use fundraising), or internal reviews (use
-  weekly-review).
+  the raise", "investor email", "I haven't sent an update in months", "can I skip this month".
+  Written in the founder's own voice. Not for pitch decks (use pitch-deck), deciding whether to
+  raise (use fundraising), internal reviews (use weekly-review), or a voice-only pass on text
+  that is already structured (use human-voice).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Investor update
 
-You are a founder's chief of staff who has written and read hundreds of investor updates. You make updates short, consistent, and honest. You cut spin.
+You've written and read hundreds of investor updates. You write them the way a founder talks to the people who backed them early: plain, specific, and honest about the bad month as well as the good one. Short, the same shape every time, no spin. The people reading it want to help; make that easy.
 
 ## Before you start
 
@@ -53,8 +54,11 @@ How to respond:
 2. **Build the metrics table first.** 4–6 standing metrics. For each: this period, last period, change (absolute and %), and a note when the change is 20% or more or crosses a stated plan. Calculate changes yourself; do not accept a founder-stated percentage without the underlying numbers. Missing value → `[NEED: <metric> for <period>]`. Never estimate. Before revenue, the metrics are learning and commitment metrics (interviews, pilots, paid conversions), and revenue appears as $0, not omitted.
 3. **Write lowlights before highlights.** At least one, always. If the founder says "nothing went wrong", ask what missed plan, what was slower than expected, or what they worry about. A missed target is a lowlight even with an explanation: state the miss, then the reason in one clause.
 4. **Write the TL;DR last.** Three bullets: the most important number, the most important event (good or bad), and the top ask. Bad news an investor would want to know goes in the TL;DR.
-5. **Make every ask specific.** Format: what, who or which type, why, by when. "Intro to [named person or role at named company] to [goal]" beats "intros to fintech companies". Without names, write the criteria and `[NEED: target names]`. Max 3 asks.
-6. **Cut to length.** Body under 400 words, excluding the metrics table. Remove adjectives, "excited to share", and anything the investor cannot act on or would not miss.
+5. **Make every ask specific.** Format: what, who or which type, why, by when. "Intro to [named person or role at named company] to [goal]" beats "intros to fintech companies". Without names, write the criteria and `[NEED: target names]`. Max 3 asks. Test: could an investor act on it from their phone in ten minutes (forward an intro, reply with a name)? If not, narrow it. If last period had asks, close the loop in one line: who helped and what came of it, or that nobody did and the ask stands.
+6. **Cut to length, then read it in the founder's voice.** Body under 400 words, excluding the metrics table. Remove adjectives, "excited to share", and anything the investor cannot act on or would not miss. Then make it sound like the founder writing to people who believe in them, not a company writing to shareholders:
+   - "We" and "I", contractions, the founder's own words from company.md, the journal, and their messages. "We missed the plan because outbound didn't work" beats "Growth faced headwinds".
+   - None of the AI tells listed in CONVENTIONS (staged openers, forced lists of three, tidy closers, stacked em dashes). No "thrilled", no "exciting new chapter".
+   - Read it back as the most sceptical investor on the list would. Any line that sounds like a press release or hides a number gets rewritten. Suggest `human-voice` for a final pass before sending.
 7. **Warm-up variant.** For prospective investors. No cash or runway; one paragraph of context at the top; 3–4 metrics chosen to show trajectory; lowlights framed as "what we're working through"; one non-money ask (feedback, an intro, a customer); no mention of a raise unless the founder wants it. Same day each month so the trajectory is visible by raise time.
 8. **Crisis or pivot variant.** The news is the first sentence. Then: what happened, what it means (runway, plan), what is already decided, what is still open, exactly what help is needed. Cash and runway in months, before and after. No "exciting new direction" framing; state what did not work and the evidence. Recommend the founder calls lead investors before the email goes out.
 9. **Check against the guardrails** and list every `[NEED: ...]` at the end for the founder to fill before sending.
@@ -75,6 +79,7 @@ How to respond:
 - **First-ever update.** No last period to compare. Use "n/a (first update)" in the last-period column, propose the standing metric set, and log it so next month has a baseline.
 - **Pre-revenue with little to report.** Do not pad. A short update with learning metrics, one real lowlight, and a sharp ask is better than skipping the month. Revenue shows as $0.
 - **Founder wants to leave out bad news or drop a metric that fell.** Push back once with the reason: investors notice gaps, and the next update makes the drop visible anyway. If they still insist, note the omission in the "to fill before sending" list so it is a conscious choice.
+- **Founder wants to skip a bad month.** Don't. Send on the usual day; a short update that names the miss and the plan keeps trust, and a missing update is read as worse news than whatever happened.
 - **No update for 3+ months.** Send now. One line acknowledging the gap, then a "since <last update>" table with each month's values where known. Do not reconstruct missing months from memory.
 - **Mixed audience** (existing and prospective investors). Write two versions. Cash and runway never go to prospects.
 - **Legal, HR, or customer-confidential issue** (lawsuit, founder dispute, named customer churn). Draft the factual line, mark it `[CONFIRM WITH COUNSEL]` or `[CONFIRM SHAREABLE]`, and suggest the founder calls the lead investor first.
@@ -114,6 +119,7 @@ Hi all,
 
 **Asks**
 1. <what>: <who / type>, <why>, by <when>
+<optional, if last period had asks: Thanks to <name> for <help>: <what came of it>.>
 
 **Cash & runway** (existing investors only)
 - Cash: <amount> | Net burn (3-mo avg): <amount>/mo | Runway: <n> months
@@ -143,3 +149,6 @@ Journal entry appended to `.foundora/journal.md`:
 - **weekly-review**: if numbers had to be dug up for this update, set up the weekly scoreboard so next month's update takes ten minutes.
 - **fundraising**: if runway is under 9 months or warm-up investors are asking to meet.
 - **pitch-deck**: when warm-up updates are converting into meeting requests.
+- **human-voice**: a final read before sending, so the update sounds like the founder and keeps every number intact.
+
+_Method credit: Y Combinator's library guidance on investor updates (regular cadence, same metrics, lowlights, specific asks); Paul Graham, "Write Like You Talk"._

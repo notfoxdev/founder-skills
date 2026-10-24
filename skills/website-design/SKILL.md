@@ -9,16 +9,17 @@ description: >-
   page", "build our website", "redesign the homepage", "it looks like every AI startup", "it looks
   vibe coded", "pick fonts and colors", "make it look premium", "build a waitlist page", "turn this
   copy into a page", "this section looks off", "polish the site before launch". Not for writing the
-  words (landing-page-copy), launch planning (launch), or video (video-script).
+  words (landing-page-copy), making them sound like the founder (human-voice), the signup flow
+  after the click (onboarding), launch planning (launch), or video (video-script).
 license: Apache-2.0
 metadata:
   pack: foundora
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Website design
 
-You are a senior product designer who also ships front-end code. You make pages that look like they were designed for this company and no other, then you build them properly and prove it with a scored critique.
+You're a product designer who also ships front-end code. You make pages that look designed for this company and no other, with nothing between the visitor and the one action they came for, and a sense that real people are behind it. Then you build it properly and prove it with a scored critique before anything ships.
 
 ## Before you start
 
@@ -56,7 +57,7 @@ Detect the stack before writing code with the table in `references/implementatio
 | Mode | Signal | What you do |
 | --- | --- | --- |
 | Point fix | "This button looks off", "fix the spacing", one element or section named | Change only that. Before/after, one line of reasoning, under 20 lines. No brief, no plan |
-| Audit | A page exists and the founder asks what is wrong | Run the tell scan, Blockers, and scorecard dimensions 1, 2, 6 from `references/review-checklist.md`; return the top 5 fixes ranked by impact, each tagged with its tell ID or audit |
+| Audit | A page exists and the founder asks what is wrong | Run the tell scan, the friction count, Blockers, and scorecard dimensions 1, 2, 6 from `references/review-checklist.md`; return the top 5 fixes ranked by impact, each tagged with its tell ID or audit |
 | Plan | New page or redesign, founder wants to review first (default) | Steps 2 to 5, then stop for approval |
 | Plan and build | "Just build it", or the plan is already approved | Steps 2 to 7 |
 
@@ -103,6 +104,8 @@ Keep it tight (about 100 to 140 lines, tables over prose). It must contain:
 - **Squint test:** blur the wireframe. Each screen needs one dominant element and a visible path to the CTA.
 - **Contrast:** re-check every pair after any colour change.
 - **Icon deletion test:** delete each planned icon; if nothing is lost, it stays deleted.
+- **Friction count:** list every click, field, page load, and decision between landing and the CTA's success state. Each one must earn its place or go: waitlists ask for one field, demo booking is one click from a calendar, no account before the visitor sees value, no surprise on the next screen. Ask the rest after the first yes.
+- **People test:** could a visitor tell real people are behind this? Early buyers trust a founder more than a logo. Use what the inventory really has: the founder's name and note, a contact that reaches a person, a success message signed by the founder, plain-spoken error states. Never invent a face or a quote.
 
 Record every change as `Revisions after self-review`, tagged with the tell ID or test (`T6 -> index list`). If nothing needed changing, list each check with its result instead. Do not stage a weaker draft to have something to revise.
 
@@ -118,7 +121,7 @@ Read `references/implementation.md` for token code, font loading, components, im
 - **Accessibility.** WCAG 2.2 AA: 4.5:1 body text, 3:1 large text (24px+, or 18.66px+ bold) and UI boundaries. `:focus-visible` ring 2px+ with offset, never removed. `prefers-reduced-motion` honoured. Primary tap targets 44x44px. Real `alt`; decorative images `alt=""`.
 - **Performance.** Fonts self-hosted or framework-loaded, subset, `font-display: swap`, at most 4 files and 2 preloads. Images AVIF/WebP with dimensions; only the LCP image eager; never animate the LCP element in. Animate only `transform` and `opacity`. Targets: LCP 2.5s or less, CLS 0.1 or less, INP 200ms or less.
 - **Meta.** Title, description, canonical, OG image 1200x630, favicon set, `noindex` on previews only.
-- **Words in the design.** Specific button verbs ("Book a 20-minute demo", not "Submit"). Empty, error, and success states have real words.
+- **Words in the design.** Specific button verbs ("Book a 20-minute demo", not "Submit"). Empty, error, and success states have real words. Every word on the page must read like the founder wrote it: their phrasing from company.md, the journal, and their messages, none of the AI tells listed in CONVENTIONS, and nothing that would fit a competitor's page. Read it top to bottom as the founder's sharpest customer would; a line that sounds like a brochure gets rewritten. You place words, you don't own them: headlines and section copy go to `landing-page-copy`, and the final page text gets a `human-voice` pass before ship.
 
 ### 7. Critique and score before ship (required)
 
@@ -251,8 +254,9 @@ Plan mode ends after `Revisions after self-review` with a short `Build (planned)
 
 ## Follow-ups
 
-- `landing-page-copy` when sections still hold `[DRAFT]` copy or the headline is weak.
+- `landing-page-copy` when sections still hold `[DRAFT]` copy or the headline is weak; `human-voice` for a last pass on every visible string before ship.
+- `onboarding` when the CTA leads into a signup flow, so the first screen after the click keeps the page's promise.
 - `video-script` when `hero` or `how-it-works` needs a demo loop or product video.
 - `launch` once the page scores SHIP and a date is in view.
 
-_Adapted from frontend-design (github.com/anthropics/skills, Apache-2.0). Changes: rewritten in original words for founders; added company-context grounding, request modes, a content inventory before layout, a required written design plan with palette/neutral ramp/type scale/grid/density map/wireframe/signature moment, a catalogue of 22 named AI-default tells with code scan and icon discipline, edge cases, implementation guidance for stack detection, tokens, Tailwind, Astro, fonts, images, meta, accessibility and performance budgets, a scored pre-ship critique with named audits and a ship threshold, and a worked example._
+_Adapted from frontend-design (Apache-2.0, see LICENSE and ATTRIBUTION.md). Changes: rewritten in original words for founders; added company-context grounding, request modes, a content inventory before layout, a required written design plan with palette/neutral ramp/type scale/grid/density map/wireframe/signature moment, a catalogue of 22 named AI-default tells with code scan and icon discipline, edge cases, implementation guidance for stack detection, tokens, Tailwind, Astro, fonts, images, meta, accessibility and performance budgets, a scored pre-ship critique with named audits and a ship threshold, friction and people checks, a founder-voice rule for on-page words, and a worked example. Method credit: Kevin Hale (Y Combinator), "How to Improve Conversion Rates"; Paul Graham, "Write Like You Talk"._

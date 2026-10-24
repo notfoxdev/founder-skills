@@ -150,6 +150,8 @@ Board sequence: last tick row starts at 5 × 90 = 450ms and ends at 690ms; the s
 - T6 and T7: `problem` drafted as 3 icon cards -> index list with mono numerals.
 - T12 / honesty: `proof` draft showed "62 on the waitlist" -> cut; only 9 are in-band firms and a partner reads 62 as small. The pilot statement carries more weight.
 - Material overuse: ledger rules covered the whole page -> hero and board only, so they read as material, not wallpaper.
+- Friction count: the draft form asked for work email, firm size, and name (3 fields, then a confirm page) -> work email only, success shown in place; firm size moves to a one-tap question on the success state, so the 3–15 staff filter still happens.
+- People test: the hero card is a founder note drafted from company.md's `## Team` line (ran ops at a 9-person bookkeeping firm for 4 years), `[DRAFT]` until the founder rewrites it in their own words, signed with initials; the success message will come from the founder by name: pass. No headshot until the founder supplies one.
 - Swap test with Karbon's logo: 5 elements would be wrong (Caslon records type, ledger margin axis, tick-red from pencil ticks, the blocked-client board, close-day vocabulary): pass. Squint: hero reads as h1 plus form, board reads as the stamped row: pass.
 
 ## Build (planned)
@@ -271,7 +273,7 @@ Screenshots taken with the browser tool on the local dev server at 320, 375, 768
 | A6 Mobile 375 | Pass after fix | h1 in 4 lines; CTA above the fold at 375x667; inputs 16px. Failed row: board region had no focus or hint -> `role="region"`, `aria-labelledby`, `tabindex="0"`, visible "Scroll for all 6 steps" below 768px |
 | A7 Keyboard | Pass after fix | Board region now focusable and scrolls with arrow keys; skip link first; FAQ opens with Enter and Space; focus ring ink on paper 14.34 |
 | A8 Performance | Not verified | Static checks pass: 4 font files, 2 preloads, LCP element is the h1 text and is not animated, no raster images above the fold, no effect library. Lighthouse needs a deployed preview |
-| A9 Content | Pass, with markers | No lorem; every number traces to company.md; button reads "Join the waitlist"; error and success states have real words; 3 `[NEED]`s listed above |
+| A9 Content | Pass after fix, with markers | No lorem; every number traces to company.md; button reads "Join the waitlist"; error and success states have real words; 3 `[NEED]`s listed above. Read as a skeptical partner: the starter's success message "You're on the list. Exciting things are coming." -> "Thanks, you're on the list. Reply to the confirmation email and it reaches me directly. [NEED: founder first name; confirm replies reach the founder]". Friction: one field, one click, success on the same page |
 
 ### Scorecard
 | Dimension | First pass | Final | Evidence / fix |

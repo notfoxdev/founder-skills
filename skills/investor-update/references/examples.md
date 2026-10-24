@@ -8,7 +8,7 @@ ExampleCo (fictional) sells scheduling software to independent physiotherapy cli
 
 ## 1. Regular monthly update
 
-**Subject:** ExampleCo — March 2099 update
+**Subject:** ExampleCo: March 2099 update
 
 Hi all,
 
@@ -46,8 +46,10 @@ Hi all,
 3. Hire a second account manager for groups.
 
 **Asks**
-1. Intros to heads of operations at clinic groups with 5+ sites in the UK or Ireland — to test the group motion — this month.
-2. Advice from anyone who has competed against a bundled incumbent feature — 30-minute call.
+1. Intros to heads of operations at clinic groups with 5+ sites in the UK or Ireland, so we can test selling to groups. This month.
+2. A 30-minute call with anyone who has competed against a feature an incumbent bundles for free.
+
+Thanks to Jordan (fictional) for last month's intro to two clinic owners: one is now trialling.
 
 **Cash & runway**
 - Cash: $856k | Net burn (3-mo avg): $60k/mo | Runway: 14 months
@@ -59,7 +61,7 @@ Sam (fictional)
 
 ## 2. Pre-raise warm-up update (prospective investors)
 
-**Subject:** ExampleCo — March 2099 progress
+**Subject:** ExampleCo: March 2099 progress
 
 Hi Alex,
 
@@ -94,7 +96,7 @@ Sam (fictional)
 
 ## 3. Crisis / pivot update
 
-**Subject:** ExampleCo — important update: runway and plan change
+**Subject:** ExampleCo: important update on runway and plan
 
 Hi all,
 
@@ -106,7 +108,7 @@ We are stopping sales to single-site clinics and focusing only on multi-site gro
 
 **What we have decided**
 - Single-site: no new sales; existing customers stay supported.
-- Team: reduced from 9 to 6. Two roles in single-site sales and one in marketing. All three received [severance terms — placeholder].
+- Team: reduced from 9 to 6. Two roles in single-site sales and one in marketing. All three received [severance terms: placeholder].
 - Net burn falls from $78k to $42k per month from June.
 
 **Cash & runway**
@@ -116,8 +118,8 @@ We are stopping sales to single-site clinics and focusing only on multi-site gro
 - Whether the group motion reaches $60k MRR within 9 months. If not, we will tell you by month 6 and lay out options.
 
 **What we need**
-1. Intros to operations leaders at clinic groups with 5+ sites — this is now the only thing that moves the company.
-2. A 30-minute call with anyone who has run a segment narrowing — next two weeks.
+1. Intros to operations leaders at clinic groups with 5+ sites. This is now the only thing that moves the company.
+2. A 30-minute call in the next two weeks with anyone who has cut a company down to one segment.
 
 I called our lead investor before sending this. Happy to talk with anyone individually this week.
 
@@ -130,6 +132,7 @@ Sam (fictional)
 - The TL;DR names the bad news (churn notice, missed plan) instead of hiding it.
 - Metric changes are calculated, not described ("+6%", not "strong growth").
 - Lowlights state the miss first, then the reason in one clause.
-- Asks name criteria and timing. With real targets, the founder would name the person and company.
+- Asks name criteria and timing. With real targets, the founder would name the person and company. The regular update thanks last month's helper by name and says what came of it.
+- The voice is the founder's: "we", plain verbs, the miss stated as a miss ("Outbound to single-site clinics produced 3 deals against a target of 8"), not "headwinds".
 - The warm-up omits cash and runway and makes a non-money ask.
 - The crisis update puts the decision in the first sentence and includes runway before and after.

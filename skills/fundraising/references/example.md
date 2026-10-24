@@ -41,12 +41,12 @@ Monthly net burn is not in the file, so here is the math in burn units (B = mont
 |---|---|---|
 | Cash today | 7 months × B | 7B |
 | Cash at close (~3.5 months out) | 7B − 3.5B | 3.5B |
-| Low end: 18 months, 10% buffer | 18B × 1.10 − 3.5B | 16.3B |
-| High end: 24 months, 20% buffer | 24B × 1.20 − 3.5B | 25.3B |
+| Low end: 12 months, 10% buffer | 12B × 1.10 − 3.5B | 9.7B |
+| High end: 18 months, 20% buffer | 18B × 1.20 − 3.5B | 18.1B |
 
-**Net burn:** [NEED: monthly net burn] | **Runway target:** 18–24 mo | **Buffer:** 10–20%
-**Round:** roughly 16–25 × today's monthly burn, before any hires. [NEED: monthly plan with hires and one-off costs]; any hire raises B for the post-raise months and the round with it.
-**Milestone reached:** [NEED: the seed milestone, e.g. a paying-firm count and monthly revenue target] by [NEED: month]. Do not set the amount until this is written down.
+**Net burn:** [NEED: monthly net burn] | **Runway target:** 12–18 mo [ASSUMPTION: pre-seed default until the seed milestone is written down; then it becomes months to that milestone + ~6] | **Buffer:** 10–20%
+**Round:** roughly 10–18 × today's monthly burn, before any hires. [NEED: monthly plan with hires and one-off costs]; any hire raises B for the post-raise months and the round with it.
+**Milestone reached:** [NEED: the seed milestone, e.g. a paying-firm count and monthly revenue target] by [NEED: month]. Do not set the amount until this is written down. If it takes 9 months to reach, the target is 9 + 6 = 15 months.
 **Instrument considered:** post-money SAFE is common for US pre-seed; [NEED: where the company is incorporated]. Outside the US, ask counsel for the local equivalent.
 
 ## Pipeline (prep only, no outreach yet)
@@ -56,7 +56,7 @@ Monthly net burn is not in the file, so here is the math in burn units (B = mont
 | B | [NEED] | | |
 | C | [NEED] | | |
 
-Criteria: invests at pre-seed now, first check sized for [NEED: round], B2B SaaS or vertical software for accounting firms in its stated thesis, active in the last 12 months, no practice-management tool in the portfolio, warm path exists. No names until they are researched with a source URL and date. Target 40–80 qualified names; fewer than 20 potential leads means the list is not ready.
+Criteria: invests at pre-seed now, first check sized for [NEED: round], B2B SaaS or vertical software for accounting firms in its stated thesis, active in the last 12 months, no practice-management tool in the portfolio, warm path exists. No names until they are researched with a source URL and date. Target 40–80 qualified names; fewer than 20 potential leads means the list is not ready. Within each tier, put first the investors likeliest to say yes quickly: angels who ran or advised bookkeeping and accounting firms often decide faster than funds (heuristic), and one early yes makes the January meetings easier.
 
 ## Process timeline
 | Dates | Activity | Target |
@@ -77,7 +77,7 @@ Logged to `.foundora/journal.md`:
 ### 2026-10-20 — decision: Raise readiness
 - Verdict: raise after pilots convert; runway at close 7 − 1.5 − 2 = 3.5 months
 - Milestone: pilot firms paying ≥ $150/month by 2026-12-04; trigger date 2026-12-04 → 0 paying means no raise, cut burn
-- Round: 16–25 × monthly net burn [NEED: burn]; instrument considered: post-money SAFE, confirm with counsel
+- Round: 10–18 × monthly net burn [NEED: burn]; instrument considered: post-money SAFE, confirm with counsel
 - Revisit: 2026-12-04
 - Source: fundraising
 ```

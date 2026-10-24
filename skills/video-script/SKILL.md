@@ -12,7 +12,7 @@ description: >-
 license: MIT
 metadata:
   pack: foundora
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Video script
@@ -59,6 +59,7 @@ Response rules: lead with the recommended concept, hook, and production mode in 
 
 Decision rules:
 - No goal given: ask which one action it must drive, then pick. Several needs: write the 60s master first and cut the rest from it.
+- Launches repeat. Treat this video as the first of several: each meaningful improvement can be its own 30s launch clip. Keep the hook pattern, sample data, and end card reusable so the next one takes an afternoon. Don't pour the whole budget into one big film; most people miss the first launch, and that's fine.
 - A demo of 90s or less uses launch beats with the product moment at 50 to 60% of runtime. Over 90s, use the chaptered demo in `references/formats.md`.
 
 ### 2. Pick the production mode
@@ -134,6 +135,8 @@ Report words per row and the total. No row may exceed 2.7 words per second. Over
 
 Timestamped rows, one scene or shot each. VISUAL says exactly what is on screen (shot type, UI state, motion, on-screen text). AUDIO / VO holds spoken words, music cues, and SFX. One breath per VO line (12 to 18 words max). One idea per scene.
 
+VO and on-screen text must sound like the founder on a good day, not an ad. Build lines from their words in `company.md`, interview notes, the journal, and their messages. Use contractions, and leave out the AI tells listed in CONVENTIONS ("it's not X, it's Y", forced threes, tidy closers). If the founder wouldn't say a line to a customer across a table, rewrite it. Offer `human-voice` for a full pass before recording.
+
 ### 9. Write on-screen text and captions
 
 - Cards: 2 to 7 words, at most 2 lines, held at least 1.5s + 0.3s per word (this keeps cards under about 2 words per second).
@@ -155,7 +158,7 @@ Every launch master ships with a cutdown plan: each cut's aspect, length, source
 
 ### 12. Run the self-check before delivering
 
-Read the VO against a timer (over by more than 10%: cut). Then score every deliverable and include the table in the answer:
+Read the VO aloud against a timer (over by more than 10%: cut), then once more as the founder's sharpest customer would hear it; any line that sounds like a brochure gets rewritten in the founder's words. Then score every deliverable and include the table in the answer:
 
 | # | Check | 2 | 1 | 0 |
 | --- | --- | --- | --- | --- |
@@ -251,4 +254,7 @@ Total: <n>/14 -> <ship | fix first>
 - `motion-video` to build the storyboard as motion graphics, once the hand-off block is approved.
 - `landing-page-copy` so the hook line and CTA match the page headline and button.
 - `website-design` to place the hero loop or demo in `hero` or `how-it-works` with poster, captions, and controls.
-- `launch` to schedule where each cut goes and when.
+- `launch` to schedule where each cut goes and when, and the next launch clip after it.
+- `human-voice` for a last pass on the VO and on-screen text before recording.
+
+_Method credit: Michael Seibel (Y Combinator), "How to Launch (Again and Again)"; Paul Graham, "Write Like You Talk"._

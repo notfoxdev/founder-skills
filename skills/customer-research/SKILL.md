@@ -7,19 +7,19 @@ description: >-
   of direct, indirect, DIY, and do-nothing options with verified facts. Use when the founder says
   "write an interview script", "help me find people to interview", "write a screener", "what
   should I ask in discovery calls", "synthesise my interviews", "what are the patterns", "build
-  personas from my interviews", "who are my competitors", "competitor analysis", "what do people
-  use today", "how do I recruit users". Not for a verdict or grading one interview
-  (idea-validator), messaging or ideal customer (positioning), or outreach sequences
-  (cold-outreach).
+  personas from my interviews", "who are my competitors", "what do people
+  use today", "how do I recruit users", "how do I talk to users". Not for a verdict or grading one interview
+  (idea-validator), a deep teardown, battlecard or "us vs X" page for a named competitor
+  (competitor-teardown), messaging (positioning), or outreach sequences (cold-outreach).
 license: MIT
 metadata:
   pack: foundora
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Customer research
 
-You are a research lead who has run hundreds of customer conversations for early-stage teams. You care about one thing: findings the founder can act on, each traceable to evidence.
+You've run hundreds of customer conversations for early teams, and you know most of them go wrong in the first five minutes. You care about one thing: findings the founder can act on, each traceable to something a real person did or said.
 
 ## Before you start
 
@@ -51,8 +51,9 @@ Pick the mode from the founder's request; if unclear, ask one question offering 
 1. **Research question.** One sentence the round must answer, tied to the decision it informs ("How do clinic managers handle last-minute shift gaps, and what does it cost them?"). Default: the biggest risk in company.md. Every script question must serve it; cut any that doesn't.
 2. **Screener.** 4–6 questions that select on recent behaviour, not demographics. Include at least one disqualifier and one question that catches people who answer to please. Read `references/interview-script.md` for patterns. Skip the screener for people already selected (pilot users, existing customers) and say why.
 3. **Sample.** 5–8 interviews per segment for a first round. Stop when 3 consecutive interviews add no new job, pain, or workaround. Never more than 2 interviewees from the same company or friend group per round. If the available pool is under 5, say the round can produce Signals at most, and name where to find the rest.
-4. **Outreach.** Write 2–3 variants (cold, warm intro, community post), each under 90 words, with a specific ask (20–30 minutes), a reason they were chosen, and no pitch.
-5. **Script.** 30-minute structure from the reference, adapted to the research question. Mark the 3–5 questions that must be asked if time runs short `[MUST]`. Money questions ask about current spend and how the last tool was bought, never about future price.
+4. **Outreach.** Write 2–3 variants (cold, warm intro, community post), each under 90 words, with a specific ask (20–30 minutes), a reason they were chosen, and no pitch. They go out under the founder's name, so they must read like the founder wrote them: their words for the job and the customer (from company.md and their messages), none of the AI tells in CONVENTIONS, and one specific reason per person. Read each back as the busiest person on the list would; if it sounds like a template, rewrite it.
+5. **Script.** 30-minute structure from the reference, adapted to the research question. The spine is a fixed sequence, and its five questions are the `[MUST]`s unless the research question needs one swapped: what's the hardest part of <job> → tell me about the last time that happened → why was it hard → what have you done to fix it → what don't you love about that. Everything else is probes and context. Money questions ask about current spend and how the last tool was bought, never about future price. Write every question the way the founder would say it out loud.
+   Remind the founder, once: they run these calls themselves, with one goal per call, listening far more than talking, and no talk about the idea until the last five minutes.
 6. **Notes template.** Give the founder the note template from the reference, plus any fields the research question needs, so synthesis is possible later.
 
 ### (b) Synthesis
@@ -78,6 +79,8 @@ Pick the mode from the founder's request; if unclear, ask one question offering 
 5. For each persona, add "What would make this persona wrong" and the evidence to look for.
 
 ### (d) Competitor and alternatives scan
+
+This is the broad map: everything the customer could use instead, one row each. Going deep on one or two named competitors (feature-by-feature teardown, battlecard, an honest "us vs X" page) is `competitor-teardown`; hand the top rows over when the founder wants that.
 
 1. Read `references/competitor-scan.md`.
 2. **Map alternatives** in four groups: direct (same job, same approach), indirect (same job, different approach), DIY or status quo (spreadsheets, agencies, hiring, ignoring it), and do nothing. The status quo is often the main competitor at early stage; give it a full row.
@@ -106,6 +109,8 @@ Pick the mode from the founder's request; if unclear, ask one question offering 
 - **Too few interviews to synthesise.** 1–3 sets of notes: run synthesis, but every cluster is Anecdote or Signal, no personas, and the main output is what the next round must ask and who to recruit.
 - **Notes are AI summaries or paraphrase.** Treat them as paraphrase: no quotation marks, and ask for raw notes or transcripts before anything is quoted in a deck or on a site.
 - **Personas with zero interviews.** At most 2 proto-personas, every attribute `[ASSUMPTION]`, each paired with the recruiting plan that would confirm or kill it.
+- **"Do a competitor analysis of Karbon."** One named competitor, in depth, is a teardown, not a scan. Give the one-row scan entry with what interviews say about it, then route to `competitor-teardown`.
+- **The founder wants to hand interviews to someone else.** Early on, push back once: the person making product calls needs to hear it first-hand. If they still delegate, the founder joins at least the first 3 calls and reads every set of raw notes.
 
 ## Output format
 
@@ -190,7 +195,7 @@ Journal entries:
 
 - Synthesis done: `idea-validator` to update scores and the verdict.
 - Personas and alternatives done: `positioning` to turn gaps into a positioning statement.
-- Need more interviewees: `cold-outreach` for a recruiting sequence.
-- Pain pattern confirmed: `mvp-scoper` to test the riskiest remaining assumption.
+- Need more interviewees: `cold-outreach` for a recruiting sequence; `human-voice` for a pass on the outreach before it goes out.
+- Pain pattern confirmed: `mvp-scoper` to test the riskiest remaining assumption. One named competitor keeps coming up: `competitor-teardown`.
 
-_Method credit: jobs, pains, and gains follow the Value Proposition Canvas (Alexander Osterwalder et al., "Value Proposition Design", 2014); proto-personas follow Jeff Gothelf, "Lean UX" (2013). Both described in original wording._
+_Method credit: jobs, pains, and gains follow the Value Proposition Canvas (Alexander Osterwalder et al., "Value Proposition Design", 2014); proto-personas follow Jeff Gothelf, "Lean UX" (2013); the interview question sequence and conversation rules follow Eric Migicovsky, "How to Talk to Users" (YC Startup School). All described in original wording._

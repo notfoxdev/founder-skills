@@ -105,6 +105,34 @@ When almost everything is unknown, flip the question:
 3. Compute LTV, then max allowable CAC = LTV ÷ 3.
 4. Ask: can the chosen first channel acquire a customer for less than that? If the honest answer is "unlikely", the model has a channel-price mismatch now, before any money is spent.
 
+## Price against value (underpricing check)
+
+1. Monthly cost of the problem to one customer = hours lost per month × the hourly cost of the people losing them, plus money lost (penalties, write-offs, churned clients). Founder-provided or `[NEED]`; never estimate a customer's wage from memory.
+2. Monthly spend on the alternative = what they pay now for the tool, contractor, or staff time doing the job.
+3. Put the price next to both. A price that's a small slice of the problem's cost, or set below the alternative only to look cheap, is probably too low. A price above the problem's cost needs a reason (it removes a risk they fear more than the hours).
+4. Signals of underpricing once you're selling: nobody pushes back on price, deals close on the first call, buyers ask "is that per user?". Signals of overpricing: every qualified buyer stalls at the same number.
+
+Lowering a price later is easy and rarely upsets anyone; raising it on existing customers is hard. Start higher than feels comfortable and test with real asks, not surveys.
+
+## Default alive check
+
+The question (Paul Graham, "Default Alive or Default Dead?"): at current expenses and current growth, does the company reach profitability before the cash runs out?
+
+Canvas version (no cash forecast yet):
+- Break-even customers = fixed monthly burn ÷ contribution margin per customer per month. Round up.
+- Pace needed = (break-even customers − current customers) ÷ months of runway left.
+- Compare with current net new customers per month (3-month average). Faster → alive. Slower → dead.
+
+Cash version (once there is revenue):
+1. Month by month: revenue grows at the current monthly growth rate; expenses stay at today's level plus committed hires.
+2. Cash left = cash − cumulative (expenses − revenue).
+3. Alive if revenue ≥ expenses before cash left reaches zero. Report the month either way.
+
+Notes:
+- Pre-revenue or zero growth is dead by definition. Name the date by which revenue or new money must arrive, and the latest month to start raising (count back several months; raises usually take longer than planned).
+- If burn is unknown, show break-even per $10,000 of monthly burn so the founder can scale it.
+- Don't round runway up. "About 7 months" is 7, not 8.
+
 ## Worked example (illustrative numbers only)
 
 Inputs: ARPA $200/month [ASSUMPTION], gross margin 80% [ASSUMPTION], monthly churn 4% [ASSUMPTION], CAC $1,500 [calculation from funnel].

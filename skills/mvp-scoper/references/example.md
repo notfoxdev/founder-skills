@@ -19,6 +19,7 @@
 
 **Riskiest assumption:** We believe managing partners at bookkeeping firms with 3–15 staff will pay at least $150/month for close tracking, separate from Karbon or TaxDome.
 **Test:** Paid concierge pilot. You run each firm's close board by hand for 30 days, with $150/month conversion terms agreed at kickoff.
+**90/10 version:** A shared close board per firm that you keep current, plus a Friday email to the partner listing blocked clients. No sync, no logins.
 **Instead of:** QBO and Xero integrations. The strongest case for them: firms won't take a close tool seriously if status is typed in by hand. The objection: an integration answers "can we build it", and your biggest risk is "will they pay separately". Two pilot firms can be updated by hand, so neither needs a sync to answer that. Integrations move to Later with a trigger.
 **Live with real users by:** 2026-10-27 (day 2) [NEED: actual kickoff dates]   **Decision date:** 2026-11-27 for the first two pilots (30 days after the second kickoff on 2026-10-28 [ASSUMPTION])
 

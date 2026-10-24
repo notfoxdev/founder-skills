@@ -24,6 +24,7 @@ Don't open with cold email. You already have warm paths that should cover part o
 - **Give:** a chance to shape the tool, and a short summary of how other firms run close, if they want it.
 - **Tier:** segment template, one trigger field.
 - **Volume:** 10 interviews ÷ booked rate per contact `[ASSUMPTION]`. Pessimistic 5% = 200 contacts (about 10 sending days). Base 10% = 100 (about 6 days: 5 × 15 + 1 × 25). Optimistic 20% = 50 (about 4 days). Warm bookings reduce these one for one.
+- **Funnel:** 100 contacts → [NEED: reply rate after batch 1] replies → 10+ positive → 10 booked. Discovery, so no next-step stage; the next step is the interview itself. Next batch of 50 contacts listed by 2026-10-28, before batch 1's sequence ends.
 
 ## Signals
 | Signal | Source | Date | Status |
