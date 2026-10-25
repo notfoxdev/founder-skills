@@ -1,6 +1,6 @@
 # Foundora founder skills
 
-Twenty-six agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
+Twenty-eight agent skills that turn Claude Code, Codex, Cursor, or any [Agent Skills](https://agentskills.io)-compatible coding agent into a cofounder that already knows your company.
 
 ## Install
 
@@ -27,6 +27,8 @@ The agent keeps a running decision log in `.foundora/journal.md`.
 | Skill | Use it to |
 |---|---|
 | `cofounder` | Start here. Context-aware sounding board, prioritisation, decisions, weekly check-ins |
+| `office-hours` | Startup office hours: forcing questions one at a time, ending in one assignment |
+| `plan-review` | CEO review of a plan: premise, one-way doors, how it fails, what to cut |
 | `idea-validator` | Pressure-test an idea to a BUILD / KILL / PIVOT verdict; Mom Test interviews and analysis |
 | `lean-canvas` | One-page business model, value proposition fit, unit economics |
 | `customer-research` | Interview kits, synthesis, evidence-based personas, alternatives scan |

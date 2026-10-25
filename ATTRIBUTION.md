@@ -17,6 +17,8 @@ Foundora skills are original writing unless listed below. Where a skill adapts a
 | `onboarding` | `onboarding`, `signup`, [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | Activation and signup-flow patterns | Original text; aha moment from users who stayed; step-by-step cut rule; founder-led setup default; small-number test plan |
 | `product-analytics` | `analytics`, `ab-testing`, [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | Tracking plans, event naming, test sizing | Original text; 6–12 event cap tied to questions; "do we need a tool yet" decision; account identity; privacy basics; coding-agent hand-off |
 | `sales-call` | `sales-enablement`, [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | Discovery, demo and objection handling material | Original text; four-check qualifying; demo of the stated pain; paid-pilot terms; pipeline-honesty stages |
+| `office-hours` | `office-hours`, [garrytan/gstack](https://github.com/garrytan/gstack) | MIT | Six forcing questions, stage routing, anti-sycophancy rules, premise check, approaches, the assignment | Original text; company-context grounding; stage routing from company.md; journal entry; Foundora hand-offs |
+| `plan-review` | `plan-ceo-review`, [garrytan/gstack](https://github.com/garrytan/gstack) | MIT | Premise challenge, scope modes, reversibility thinking, deferred list | Original text; rewritten for founder plans; door-by-size decision table; ten-part review; measures table; journal entry |
 | `lifecycle-emails` | `emails`, [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | MIT | Lifecycle sequences | Original text; 3–5 emails with a reason-to-exist test; hand-sent before automated; replies over opens |
 
 The Apache-2.0 license text for the adapted `website-design` material is available at <https://www.apache.org/licenses/LICENSE-2.0>. The MIT notices for marketingskills and humanizer are reproduced in `LICENSE`.
@@ -65,7 +67,9 @@ Decision rules across the pack draw on published founder advice, described in or
 | Analytics for startups | Ilya Volodarsky, YC Startup School | `product-analytics` |
 | Pitching legibly | Michael Seibel and Kevin Hale, YC Startup School | `pitch-deck`, `positioning` |
 | People-first content; SEO starter guide | Google Search Central | `seo-content` |
-| CAN-SPAM compliance guide | US Federal Trade Commission | `lifecycle-emails` |
+| CAN-SPAM compliance guide | US Federal Trade Commission | `office-hours` | `office-hours`, [garrytan/gstack](https://github.com/garrytan/gstack) | MIT | Six forcing questions, stage routing, anti-sycophancy rules, premise check, approaches, the assignment | Original text; company-context grounding; stage routing from company.md; journal entry; Foundora hand-offs |
+| `plan-review` | `plan-ceo-review`, [garrytan/gstack](https://github.com/garrytan/gstack) | MIT | Premise challenge, scope modes, reversibility thinking, deferred list | Original text; rewritten for founder plans; door-by-size decision table; ten-part review; measures table; journal entry |
+| `lifecycle-emails` |
 | Signs of AI writing | WikiProject AI Cleanup (Wikipedia) | `human-voice` |
 
 ## Original

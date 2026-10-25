@@ -1,0 +1,174 @@
+{
+  "pack": "foundora",
+  "version": "1.4.0+6d39f17284",
+  "skills": [
+    {
+      "name": "cofounder",
+      "version": "1.3.0",
+      "sha256": "65f9c6c3493c6aa07127d8ea378b6d8044edf817b18b36c3471e9239f2c566d5",
+      "path": "skills/cofounder/SKILL.md"
+    },
+    {
+      "name": "cold-outreach",
+      "version": "1.3.0",
+      "sha256": "0442b2a6377ea2bf96f8fa72095025a721471e962619d656f257f1a0b4e215a5",
+      "path": "skills/cold-outreach/SKILL.md"
+    },
+    {
+      "name": "company-context",
+      "version": "1.3.0",
+      "sha256": "c85142aa43e301c88b9fedff28378e19a02aa7cd1881092a2400c13a14edabe5",
+      "path": "skills/company-context/SKILL.md"
+    },
+    {
+      "name": "competitor-teardown",
+      "version": "1.3.0",
+      "sha256": "e45434404f11b1f9ddc58bedda5619778117cc180c5790058245b707630dc9fe",
+      "path": "skills/competitor-teardown/SKILL.md"
+    },
+    {
+      "name": "customer-research",
+      "version": "1.3.0",
+      "sha256": "919ba992bd86d91575963629e0ad759934b6f449819a4b2041c2f88503b8a865",
+      "path": "skills/customer-research/SKILL.md"
+    },
+    {
+      "name": "feature-spec",
+      "version": "1.3.0",
+      "sha256": "9776032bee88f8add85e8d3c3e3a6842449d398a1f7adad32b3ca08c2db22e03",
+      "path": "skills/feature-spec/SKILL.md"
+    },
+    {
+      "name": "fundraising",
+      "version": "1.3.0",
+      "sha256": "abe6aaf84351641151ca52877fa4a7bdb6ff339cdbcec58f53cf8009182899db",
+      "path": "skills/fundraising/SKILL.md"
+    },
+    {
+      "name": "human-voice",
+      "version": "1.3.0",
+      "sha256": "a04eb51e18066af369ff9d666386219d32951de1da5902c91c3f3b726c80cee2",
+      "path": "skills/human-voice/SKILL.md"
+    },
+    {
+      "name": "idea-validator",
+      "version": "1.3.0",
+      "sha256": "64e3894a1080967fd03cfa7ac8bb6d2de4f26c2a3895fa49c87be264e6db4c38",
+      "path": "skills/idea-validator/SKILL.md"
+    },
+    {
+      "name": "investor-update",
+      "version": "1.3.0",
+      "sha256": "1b5c8410821ef46ed55cf87fc3454dc22c187bd73f409dbc530cfb84f3378948",
+      "path": "skills/investor-update/SKILL.md"
+    },
+    {
+      "name": "landing-page-copy",
+      "version": "1.3.0",
+      "sha256": "4c87374ecd5aa9748b6ec8ab2927d30cb399aff7f4c0745c30f244bd0fdc27d3",
+      "path": "skills/landing-page-copy/SKILL.md"
+    },
+    {
+      "name": "launch",
+      "version": "1.3.0",
+      "sha256": "25d5330794cbf362730fa93799ad4ce294b70595a104b1629761a0d915e519ad",
+      "path": "skills/launch/SKILL.md"
+    },
+    {
+      "name": "lean-canvas",
+      "version": "1.3.0",
+      "sha256": "992fe4b09fd9dd8bb052c10510ab98cf9820033c8b8d04c8a632f62f239d4bd3",
+      "path": "skills/lean-canvas/SKILL.md"
+    },
+    {
+      "name": "lifecycle-emails",
+      "version": "1.3.0",
+      "sha256": "eb3f5d12138616bd0dad133f56f884d4fda979f8c65371e454a04806594cf8a8",
+      "path": "skills/lifecycle-emails/SKILL.md"
+    },
+    {
+      "name": "motion-video",
+      "version": "1.3.0",
+      "sha256": "ac387ac1b99df9e7d7c18fb228120045eb4dca5d638507ba19c90f2ee6027d68",
+      "path": "skills/motion-video/SKILL.md"
+    },
+    {
+      "name": "mvp-scoper",
+      "version": "1.3.0",
+      "sha256": "9eafd2b21517a14c0608d38b909b3d02c50fafe7ff26d76abd1c53d6567fbbb6",
+      "path": "skills/mvp-scoper/SKILL.md"
+    },
+    {
+      "name": "office-hours",
+      "version": "1.4.0",
+      "sha256": "1159ed4d68280c4c2a30da182d60d6704ec5ac68e6329c331e41a9c7691ed4a6",
+      "path": "skills/office-hours/SKILL.md"
+    },
+    {
+      "name": "onboarding",
+      "version": "1.3.0",
+      "sha256": "a68623b4df0073475d5dd4d82e00fbe8cb69c1bff6be2986ecb17f1cc264f353",
+      "path": "skills/onboarding/SKILL.md"
+    },
+    {
+      "name": "pitch-deck",
+      "version": "1.3.0",
+      "sha256": "0e3b58791d53599a2b7e70b371a50717646d3ec87ebd586391eb46f5711b3602",
+      "path": "skills/pitch-deck/SKILL.md"
+    },
+    {
+      "name": "plan-review",
+      "version": "1.4.0",
+      "sha256": "3b6e4f2c651997f5ab74197072f97ebeba76e9dd30e318ac7bdd331e137e1b9c",
+      "path": "skills/plan-review/SKILL.md"
+    },
+    {
+      "name": "positioning",
+      "version": "1.3.0",
+      "sha256": "fe6199663522aa2395770f9e2e3eee34557e792f8f1e45199f3ca84767fb6284",
+      "path": "skills/positioning/SKILL.md"
+    },
+    {
+      "name": "pricing-strategy",
+      "version": "1.3.0",
+      "sha256": "6587de3d9304c43d3a06dd764867bbf3e95b7acc47cfa2231b9ab3a0b3a4db54",
+      "path": "skills/pricing-strategy/SKILL.md"
+    },
+    {
+      "name": "product-analytics",
+      "version": "1.3.0",
+      "sha256": "8e48dda34256dd9c6e62bc74cdb3533919f8a07b4f8ca451f495d929554ac1fe",
+      "path": "skills/product-analytics/SKILL.md"
+    },
+    {
+      "name": "sales-call",
+      "version": "1.3.0",
+      "sha256": "08e16c986889fa4a4c3f1f620acff8e0229eb46924655fe05b488f1dd7d10df0",
+      "path": "skills/sales-call/SKILL.md"
+    },
+    {
+      "name": "seo-content",
+      "version": "1.3.0",
+      "sha256": "a468fe3a5b4a60c14e301293bf9ac624bbe63dfae8c57fe441143f2d12dbe593",
+      "path": "skills/seo-content/SKILL.md"
+    },
+    {
+      "name": "video-script",
+      "version": "1.3.0",
+      "sha256": "3f720b8de8720d5baf8a9fac6016e592154280752b84eb318881ce0a917eb477",
+      "path": "skills/video-script/SKILL.md"
+    },
+    {
+      "name": "website-design",
+      "version": "1.3.0",
+      "sha256": "28856d9b36be35adf1215b523c20c9e353f4712c6cb9849cd2fbbc07ba7abbf3",
+      "path": "skills/website-design/SKILL.md"
+    },
+    {
+      "name": "weekly-review",
+      "version": "1.3.0",
+      "sha256": "4a4fd34e8a8f5decc7d06d70be33f03a1766ed41550a5fc4c0ca4dfe889800d4",
+      "path": "skills/weekly-review/SKILL.md"
+    }
+  ]
+}

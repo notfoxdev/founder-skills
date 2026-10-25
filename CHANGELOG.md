@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0 — 2026-10-25
+
+Two new thinking skills, adapted from gstack (MIT). The pack is now 28 skills.
+
+**New skills**
+
+- `office-hours`: twenty minutes with a partner who has heard every pitch. Asks the forcing questions one at a time (demand, status quo, the person who needs it most, the smallest paid version, what surprised you, future fit), takes a position on every answer, and ends with one assignment for this week.
+- `plan-review`: a CEO review of a written plan. Challenges the premise, sorts each decision into one-way and two-way doors, lets you pick the scope mode (expand, hold or cut), lists how it fails first, and writes down what's deferred and why.
+
 ## 1.3.0 — 2026-10-23
 
 Eight new skills, and every existing skill rewritten to sound more like a person and to lean on hard-won founder advice. The pack is now 26 skills.
